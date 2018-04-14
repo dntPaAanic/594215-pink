@@ -40,22 +40,53 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <fieldset class="feedback__field">
-          <ul class="feedback__name-items">
-            <li class="feedback__name-item">
-              <label class="feedback__label" for="surname"> Фамилия:</label>
+          <ul class="feedback__items">
+            <li class="feedback__item">
+              <label class="label label__names" for="surname"> Фамилия:</label>
               <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
             </li>
-            <li class="feedback__name-item">
-              <label class="feedback__label" for="name"> Имя:</label>
+            <li class="feedback__item">
+              <label class="label label__names" for="name"> Имя:</label>
               <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
             </li>
-            <li class="feedback__name-item">
-              <label class="feedback__label" for="patronymic"> Отчество:</label>
+            <li class="feedback__item">
+              <label class="label label__names" for="patronymic"> Отчество:</label>
               <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback__field">
+          <legend class="feedback__title">Ваши безбашенные
+            достижения в путешествии</legend>
+          <ul class="feedback__items">
+            <li class="feedback__item">
+              <input id="selfie" class="checkbox" type="checkbox" checked>
+              <label class="label label__achievement" for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="feedback__item">
+              <input id="beach" class="checkbox" type="checkbox" checked>
+              <label class="label label__achievement" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="feedback__item">
+              <input id="norris" class="checkbox" type="checkbox">
+              <label class="label label__achievement" for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="feedback__item">
+              <input id="gift" class="checkbox" type="checkbox">
+              <label class="label label__achievement" for="gift">Накупил сувениров</label>
+            </li>
+            <li class="feedback__item">
+              <input id="tower-defence" class="checkbox" type="checkbox" checked>
+              <label class="label label__achievement" for="tower-defence">Удержал башню</label>
+            </li>
+            <li class="feedback__item">
+              <input id="hotel" class="checkbox" type="checkbox">
+              <label class="label label__achievement" for="hotel">Разгромил отель</label>
             </li>
           </ul>
 
         </fieldset>
+
 
       </form>
     </section>
