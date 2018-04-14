@@ -97,7 +97,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="feedback__field">
           <legend class="feedback__title">С каким приложением путешествовали?</legend>
           <ul class="feedback__items">
             <li class="feedback-item">
@@ -113,14 +113,23 @@
               <label class="label label--radio" for="win-phone">Windows Phone</label>
             </li>
           </ul>
-
         </fieldset>
-
-
+        <fieldset class="feedback__field">
+          <legend class="feedback__title">Опишите свои эмоции</legend>
+          <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="feedback__wrapper">
+          <input class="feedback__submit" type="submit" value="Отправить форму">
+          <div class="feedback__require">* — обязательные поля</div>
+        </div>
       </form>
     </section>
-
   </main>
+  <section class="page-footer">
+    <a class="logo" href="index.html">
+      <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40">
+    </a>
+  </section>
 
   </body>
 </html>
