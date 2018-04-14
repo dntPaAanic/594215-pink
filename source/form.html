@@ -5,142 +5,142 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <a class="main-nav__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/75x22"  width="75" height="22" alt="Мобильное приложение Pink">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="photo.html">Фото</a>
-        </li>
-        <li class="site-list__item">
-          <a>Формы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="introduce">
-      <div class="introduce-picture">
-        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <!-- картинка города и руки с телефоном бэкграундом-->
-      </div>
-    </section>
-    <section class="feedback">
-      <h2 class="visually-hidden">Напиши нам</h2>
-      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback__slogan">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        </p>
-        <fieldset class="feedback__field">
-          <ul class="feedback__items">
-            <li class="feedback__item">
-              <label class="label label__caption" for="surname"> Фамилия:</label>
-              <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
-            </li>
-            <li class="feedback__item">
-              <label class="label label__caption" for="name"> Имя:</label>
-              <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
-            </li>
-            <li class="feedback__item">
-              <label class="label label__caption" for="patronymic"> Отчество:</label>
-              <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback__field">
-          <legend class="feedback__title">Ваши безбашенные
-            достижения в путешествии</legend>
-          <ul class="feedback__items">
-            <li class="feedback__item">
-              <input id="selfie" class="checkbox" type="checkbox" checked>
-              <label class="label label__achievement" for="selfie">Сделал селфи с акулой</label>
-            </li>
-            <li class="feedback__item">
-              <input id="beach" class="checkbox" type="checkbox" checked>
-              <label class="label label__achievement" for="beach">Обгорел на пляже</label>
-            </li>
-            <li class="feedback__item">
-              <input id="norris" class="checkbox" type="checkbox">
-              <label class="label label__achievement" for="norris">Видел Чака Норриса</label>
-            </li>
-            <li class="feedback__item">
-              <input id="gift" class="checkbox" type="checkbox">
-              <label class="label label__achievement" for="gift">Накупил сувениров</label>
-            </li>
-            <li class="feedback__item">
-              <input id="tower-defence" class="checkbox" type="checkbox" checked>
-              <label class="label label__achievement" for="tower-defence">Удержал башню</label>
-            </li>
-            <li class="feedback__item">
-              <input id="hotel" class="checkbox" type="checkbox">
-              <label class="label label__achievement" for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback__field">
-          <ul class="feedback__items">
-            <li class="feedback__item">
-              <label for="phone-number" class="label label__caption">Номер телефона</label>
-              <input id="phone-number" class="tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
-            </li>
-            <li class="feedback__item">
-              <label for="email" class="label label__caption">Адрес почты</label>
-              <input id="email" class="email" name="email" type="email" placeholder="Введите почту *" required>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback__field">
-          <legend class="feedback__title">С каким приложением путешествовали?</legend>
-          <ul class="feedback__items">
-            <li class="feedback-item">
-              <input class="radio" type="radio" name="app-for-trip" id="ios" value="ios" checked>
-              <label class="label label__radio" for="ios">Pink для iOS</label>
-            </li>
-            <li class="feedback-item">
-              <input class="radio" type="radio" name="app-for-trip" id="android" value="android">
-              <label class="label label__radio" for="android">Pink на Android</label>
-            </li>
-            <li class="feedback-item">
-              <input class="radio" type="radio" name="app-for-trip" id="win-phone" value="win-phone">
-              <label class="label label--radio" for="win-phone">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="feedback__field">
-          <legend class="feedback__title">Опишите свои эмоции</legend>
-          <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <div class="feedback__wrapper">
-          <input class="feedback__submit" type="submit" value="Отправить форму">
-          <div class="feedback__require">* — обязательные поля</div>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="page-header__logo-image" src="http://placehold.it/75x22"  width="75" height="22" alt="Мобильное приложение Pink">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
-      </form>
-    </section>
-  </main>
-  <section class="page-footer">
-    <h2 class="visually-hidden">Мы в социальных сетях</h2>
-    <a class="logo" href="index.html">
-      <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40">
-    </a>
-    <div class="social-links">
-      <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">twitter</a>
-      <a class="social-links__link social-links__link--facebook" href="https://www.facebook.com/">facebook</a>
-      <a class="social-links__link social-links__link--youtube" href="https://www.youtube.com/">youtube</a>
-    </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__link" href="photo.html">Фото</a>
+          </li>
+          <li class="site-list__item">
+            <a>Формы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="page-footer__developer">
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
-      <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
-    </div>
-  </section>
+    <main class="page-main">
+      <section class="introduce">
+        <div class="introduce-picture">
+          <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <!-- картинка города и руки с телефоном бэкграундом-->
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Напиши нам</h2>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="feedback__slogan">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
+          <fieldset class="feedback__field">
+            <ul class="feedback__items">
+              <li class="feedback__item">
+                <label class="label label__caption" for="surname"> Фамилия:</label>
+                <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+              </li>
+              <li class="feedback__item">
+                <label class="label label__caption" for="name"> Имя:</label>
+                <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+              </li>
+              <li class="feedback__item">
+                <label class="label label__caption" for="patronymic"> Отчество:</label>
+                <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__field">
+            <legend class="feedback__title">Ваши безбашенные
+              достижения в путешествии</legend>
+            <ul class="feedback__items">
+              <li class="feedback__item">
+                <input id="selfie" class="checkbox" type="checkbox" checked>
+                <label class="label label__achievement" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="feedback__item">
+                <input id="beach" class="checkbox" type="checkbox" checked>
+                <label class="label label__achievement" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="feedback__item">
+                <input id="norris" class="checkbox" type="checkbox">
+                <label class="label label__achievement" for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="feedback__item">
+                <input id="gift" class="checkbox" type="checkbox">
+                <label class="label label__achievement" for="gift">Накупил сувениров</label>
+              </li>
+              <li class="feedback__item">
+                <input id="tower-defence" class="checkbox" type="checkbox" checked>
+                <label class="label label__achievement" for="tower-defence">Удержал башню</label>
+              </li>
+              <li class="feedback__item">
+                <input id="hotel" class="checkbox" type="checkbox">
+                <label class="label label__achievement" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__field">
+            <ul class="feedback__items">
+              <li class="feedback__item">
+                <label for="phone-number" class="label label__caption">Номер телефона</label>
+                <input id="phone-number" class="tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="feedback__item">
+                <label for="email" class="label label__caption">Адрес почты</label>
+                <input id="email" class="email" name="email" type="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__field">
+            <legend class="feedback__title">С каким приложением путешествовали?</legend>
+            <ul class="feedback__items">
+              <li class="feedback-item">
+                <input class="radio" type="radio" name="app-for-trip" id="ios" value="ios" checked>
+                <label class="label label__radio" for="ios">Pink для iOS</label>
+              </li>
+              <li class="feedback-item">
+                <input class="radio" type="radio" name="app-for-trip" id="android" value="android">
+                <label class="label label__radio" for="android">Pink на Android</label>
+              </li>
+              <li class="feedback-item">
+                <input class="radio" type="radio" name="app-for-trip" id="win-phone" value="win-phone">
+                <label class="label label--radio" for="win-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="feedback__field">
+            <legend class="feedback__title">Опишите свои эмоции</legend>
+            <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <div class="feedback__wrapper">
+            <input class="feedback__submit" type="submit" value="Отправить форму">
+            <div class="feedback__require">* — обязательные поля</div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <section class="page-footer">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a class="logo" href="index.html">
+        <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40">
+      </a>
+      <div class="social-links">
+        <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">twitter</a>
+        <a class="social-links__link social-links__link--facebook" href="https://www.facebook.com/">facebook</a>
+        <a class="social-links__link social-links__link--youtube" href="https://www.youtube.com/">youtube</a>
+      </div>
+
+      <div class="page-footer__developer">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
+        <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+      </div>
+    </section>
   </body>
 </html>
