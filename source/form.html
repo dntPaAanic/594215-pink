@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/75x22"  width="75" height="22" alt="Мобильное приложение Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото</a>
+        </li>
+        <li class="site-list__item">
+          <a>Формы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="introduce">
+      <div class="introduce-picture">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <!-- картинка города и руки с телефоном бэкграундом-->
+      </div>
+    </section>
+    <section class="feedback">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback__slogan">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <fieldset class="feedback__field">
+          <ul class="feedback__name-items">
+            <li class="feedback__name-item">
+              <label class="feedback__label" for="surname"> Фамилия:</label>
+              <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+            </li>
+            <li class="feedback__name-item">
+              <label class="feedback__label" for="name"> Имя:</label>
+              <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+            </li>
+            <li class="feedback__name-item">
+              <label class="feedback__label" for="patronymic"> Отчество:</label>
+              <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
+            </li>
+          </ul>
+
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+
+  </body>
+</html>
