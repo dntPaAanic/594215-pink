@@ -8,23 +8,23 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <img class="page-header__logo-image" src="http://placehold.it/75x22"  width="75" height="22" alt="Мобильное приложение Pink">
           </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -120,7 +120,10 @@
           </fieldset>
           <fieldset class="feedback__field">
             <legend class="feedback__title">Опишите свои эмоции</legend>
+            <label class="visually-hidden" for="feedback-emotion">Опишите свои эмоции</label>
             <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+
           </fieldset>
           <div class="feedback__wrapper">
             <input class="feedback__submit" type="submit" value="Отправить форму">
@@ -130,10 +133,10 @@
       </section>
     </main>
 
-    <section class="page-footer">
+    <footer class="page-footer">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a class="logo" href="index.html">
-        <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40">
+      <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40" alt="HTML Academy">
       </a>
       <div class="social-links">
         <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">twitter</a>
@@ -142,10 +145,10 @@
       </div>
 
       <div class="page-footer__developer">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
-        <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLAcademy"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
       </div>
-    </section>
+    </footer>
 
     <div class="pop-up pop-up--failure pop-up--close">
       <div class="pop-up__wrapper">
@@ -164,7 +167,5 @@
         <button class="feedback__submit">закрыть окно</button>
       </div>
     </div>
-
-
   </body>
 </html>
