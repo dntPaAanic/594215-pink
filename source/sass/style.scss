@@ -1,3 +1,6 @@
 @import "normalize.scss";
-@import "global/fonts";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "blocks/page-header.scss";
 
