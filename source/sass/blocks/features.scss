@@ -1,0 +1,23 @@
+.features {
+  text-align: center;
+  background-color: $background-lightgray;
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: $font-color-headers-dark;
+  }
+  &__desc {
+    margin-top: 20px;
+  }
+}

@@ -14,9 +14,11 @@
   }
 
   &__download {
-    @include container;
-
     background-color: $background-darkblue;
     color: $font-color-top;
+  }
+
+  &__wrapper {
+    @include container;
   }
 }
