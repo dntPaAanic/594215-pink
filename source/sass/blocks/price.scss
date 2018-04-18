@@ -1,0 +1,23 @@
+.price {
+  &__item {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__header {
+    color: $font-color-top;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  &__cost {
+
+  }
+
+
+
+}

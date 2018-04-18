@@ -4,12 +4,9 @@
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
 
-  &__wrapper {
-    @include container;
-  }
-
   &__item {
     text-align: center;
+    @include container;
   }
 
   &__title {
@@ -23,6 +20,7 @@
 
   &__desc {
     margin-top: 18px;
+    line-height: 24px;
   }
 
   &__img {
