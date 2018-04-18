@@ -1,0 +1,22 @@
+.contact {
+  text-align: center;
+}
+
+.contact__slogan {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contact__item-header {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact__item-text {
+  text-decoration: none;
+  color: $font-color-headers-bright;
+  font-size: 24px;
+  font-weight: 300;
+}

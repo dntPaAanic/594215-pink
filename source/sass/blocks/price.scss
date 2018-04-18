@@ -1,14 +1,30 @@
 .price__item {
-  text-align: center;
   vertical-align: middle;
 }
 
+.price__list {
+  @include container;
+  text-transform: uppercase;
+}
+
 .price__header {
+  padding: 20px 0;
   color: $font-color-top;
+  text-align: center;
+  background-color: $background-darkblue;
 }
 
 .price__title {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
 }
+
+.price__cost {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
