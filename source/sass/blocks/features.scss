@@ -1,6 +1,8 @@
 .features {
   text-align: center;
   background-color: $background-lightgray;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
 
   &__wrapper {
     @include container;
@@ -12,6 +14,7 @@
 
   &__title {
     margin-top: 40px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
@@ -19,6 +22,14 @@
   }
 
   &__desc {
-    margin-top: 20px;
+    margin-top: 18px;
+  }
+
+  &__img {
+    padding-bottom: 320px;
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 157px auto;
+    background-position: 50% 148px;
   }
 }
