@@ -1,0 +1,22 @@
+.reviews {
+  @include container;
+
+  &__item {
+    text-align: center;
+  }
+
+  &____item {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__author-name {
+    color: $font-color-headers-dark;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+}
