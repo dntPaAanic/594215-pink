@@ -1,28 +1,27 @@
 .introduce {
-
   text-align: center;
+}
 
-  &__picture {
-    background-color: $background-darkblue;
+.introduce__picture {
+  background-color: $background-darkblue;
+}
+
+
+.introduce__download {
+  background-color: $background-darkblue;
+  color: $font-color-top;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 463px;
+    background:
+      url("../img/iphone-hand-mobile@1x.png") no-repeat 50% bottom,
+      url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+    background-size: auto, cover;
   }
+}
 
-
-  &__download {
-    background-color: $background-darkblue;
-    color: $font-color-top;
-
-    &::before {
-      content: "";
-      display: block;
-      height: 463px;
-      background:
-        url("../../img/iphone-hand-mobile@1x.png") no-repeat 50% bottom,
-        url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
-      background-size: auto, cover;
-    }
-  }
-
-  &__wrapper {
-    @include container;
-  }
+.introduce__wrapper {
+  @include container;
 }

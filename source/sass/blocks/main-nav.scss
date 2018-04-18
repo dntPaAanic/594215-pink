@@ -4,8 +4,9 @@
   background-color: rgba(0, 0, 0, 0.3);
 
   width: 100%;
-
-  &__wrapper {
-    @include container;
-  }
 }
+
+.main-nav__wrapper {
+  @include container;
+}
+
