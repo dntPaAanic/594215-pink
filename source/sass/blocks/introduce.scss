@@ -6,19 +6,38 @@
   background-color: $background-darkblue;
 }
 
+.introduce__title {
+  min-height: 237px;
+  text-align: center;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.introduce__title-text {
+  padding-top: 101px;
+  font-size: 24px;
+  font-weight: 300;
+  color: $font-color-top;
+}
 
 .introduce__download {
-  background-color: $background-darkblue;
   color: $font-color-top;
+
+  background-color: $background-darkblue;
 
   &::before {
     content: "";
+
     display: block;
     height: 463px;
-    background:
-      url("../img/iphone-hand-mobile@1x.png") no-repeat 50% bottom,
-      url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+
+    background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-position: 50% bottom, top;
   }
 }
 

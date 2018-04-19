@@ -3,20 +3,21 @@
 }
 
 .contact__slogan {
-  font-size: 24px;
   font-weight: 300;
+  font-size: 24px;
 }
 
 .contact__item-header {
   margin-top: 28px;
   margin-bottom: 10px;
-  font-size: 18px;
+
   font-weight: 700;
+  font-size: 18px;
 }
 
 .contact__item-text {
-  text-decoration: none;
-  color: $font-color-headers-bright;
-  font-size: 24px;
   font-weight: 300;
+  font-size: 24px;
+  color: $font-color-headers-bright;
+  text-decoration: none;
 }
