@@ -8,18 +8,20 @@
 
 .introduce__title {
   min-height: 237px;
+
   text-align: center;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: top;
+  background-size: cover;
 }
 
 .introduce__title-text {
   padding-top: 101px;
-  font-size: 24px;
+
   font-weight: 300;
+  font-size: 24px;
   color: $font-color-top;
 }
 
@@ -35,9 +37,9 @@
     height: 463px;
 
     background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-size: auto, cover;
     background-repeat: no-repeat;
     background-position: 50% bottom, top;
+    background-size: auto, cover;
   }
 }
 
