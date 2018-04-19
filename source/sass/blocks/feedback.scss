@@ -1,0 +1,33 @@
+.feedback {
+  @include container;
+  text-align: center;
+}
+
+.feedback__field {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.feedback__items {
+  list-style: none;
+}
+
+.feedback__label {
+  text-transform: uppercase;
+  color: $font-color-headers-bright;
+  display: block;
+}
+
+.feedback__input {
+  box-sizing: border-box;
+  padding: 22px 0 18px 20px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.feedback__title {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $font-color-headers-bright;
+}
