@@ -17,8 +17,11 @@
 .feedback__label {
   display: block;
 
-  color: $font-color-headers-bright;
   text-transform: uppercase;
+}
+
+.feedback__label--caption {
+  color: $font-color-headers-bright;
 }
 
 .feedback__input {
