@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -33,36 +34,36 @@
     <main class="page-main">
       <section class="introduce">
         <h1 class="visually-hidden"> Раскрась будни в розовый цвет! </h1>
-        <div class="introduce-picture">
+        <div class="introduce__picture introduce__picture-hand">
         <!-- картинка города и руки с телефоном бэкграундом-->
         </div>
-        <section class="introduce-download">
-          <h2 class="visually-hidden"> Скачай приложение на свой телефон </h2>
-          <a href="http://www.apple.com/itunes/working-itunes/market/" class="introduce-download__download-app">Скачать приложение</a>
-          <div class="introduce-download__mobile-os mobile-os">
-            <ul class="mobile-os__list">
-              <li class="mobile-os__item">
-                <a href="http://www.apple.com/itunes/working-itunes/market/" class="mobile-os__download-app mobile-os__download-app--apple">Приложение для Apple</a>
-              </li>
-              <li class="mobile-os__item">
-                <a href="https://play.google.com/" class="mobile-os__download-app mobile-os__download-app--android">Приложение для Android</a>
-              </li>
-              <li class="mobile-os__item">
-                <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" class="mobile-os__download-app mobile-os__download-app--windows-phone">Приложение для Windows-phone</a>
-              </li>
-            </ul>
+        <section class="introduce__download download">
+          <div class="introduce__wrapper">
+            <h2 class="visually-hidden"> Скачай приложение на свой телефон </h2>
+            <a href="http://www.apple.com/itunes/working-itunes/market/" class="download__download-app">Скачать приложение</a>
+            <div class="download__mobile-os mobile-os">
+              <ul class="mobile-os__list">
+                <li class="mobile-os__item">
+                  <a href="http://www.apple.com/itunes/working-itunes/market/" class="mobile-os__download-app mobile-os__download-app--apple">Приложение для Apple</a>
+                </li>
+                <li class="mobile-os__item">
+                  <a href="https://play.google.com/" class="mobile-os__download-app mobile-os__download-app--android">Приложение для Android</a>
+                </li>
+                <li class="mobile-os__item">
+                  <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" class="mobile-os__download-app mobile-os__download-app--windows-phone">Приложение для Windows-phone</a>
+                </li>
+              </ul>
+            </div>
+            <p class="download__desc">
+              Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8
+            </p>
           </div>
-          <p class="introduce-download__desc">
-            Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8
-          </p>
         </section>
       </section>
 
       <div class="offer">
-        <div class="offer__wrapper">
-          <p class="offer__description">Устали от серости мегаполиса?</p>
-          <p class="offer__description">Нам есть, что вам предложить!</p>
-        </div>
+        <p class="offer__description">Устали от серости мегаполиса?</p>
+        <p class="offer__description">Нам есть, что вам предложить!</p>
       </div>
 
       <section class="features">
@@ -75,11 +76,10 @@
           <h4 class="features__title">Меняет мир вокруг</h4>
           <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </article>
-        <article class="features__item">
+        <article class="features__item features__img">
           <h4 class="features__title">Заводит новых друзей</h4>
           <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </article>
-        <img src="index.html" alt="Фото с примером" class="example-photo">
       </section>
 
       <section class="reviews">
@@ -114,10 +114,10 @@
             <div class="price__item slider__item">
               <div class="price__header">
                 <p class="price__title">
-                  Первая таблица
+                  База
                 </p>
                 <p class="price__cost">
-                  2,99 USD
+                  1,99 USD
                 </p>
               </div>
               <ul class="price__content">
@@ -144,10 +144,10 @@
             <div class="price__item slider__item">
               <div class="price__header">
                 <p class="price__title">
-                  Третья таблица
+                  Анлим
                 </p>
                 <p class="price__cost">
-                  4,99 USD
+                  9,99 USD
                 </p>
               </div>
               <ul class="price__content">
@@ -176,25 +176,25 @@
             <h4 class="contact__item-header">
               Звоните
             </h4>
-            <p class="contact__item-text">
+            <a class="contact__item-text" href="tel:+78125556666">
               +7 (812) 555-66-66
-            </p>
+            </a>
           </article>
           <article class="contact__item">
             <h4 class="contact__item-header">
               Пишите
             </h4>
-            <p class="contact__item-text">
+            <a class="contact__item-text" href="mailto:mail@htmlacademy.ru">
               mail@htmlacademy.ru
-            </p>
+            </a>
           </article>
           <article class="contact__item">
             <h4 class="contact__item-header">
               Приезжайте в гости:
             </h4>
-            <p class="contact__item-text">
+            <a class="contact__item-text" href="https://yandex.ru/maps/-/CBe5uVqS9B">
               ул. Большая Конюшенная, 19/8
-            </p>
+            </a>
           </article>
         </section>
       </div>

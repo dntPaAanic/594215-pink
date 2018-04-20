@@ -1,0 +1,13 @@
+.photo-upload {
+  @include container;
+}
+
+.photo-upload__slogan {
+  padding-top: 53px;
+
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  @include container;
+}

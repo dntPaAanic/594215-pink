@@ -1,0 +1,8 @@
+.page-footer__map {
+  height: 200px;
+
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0, bottom;
+  background-size: 100% auto, cover;
+}

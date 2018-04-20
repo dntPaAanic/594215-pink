@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -32,8 +33,8 @@
 
     <main class="page-main">
       <section class="introduce">
-        <div class="introduce-picture">
-          <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="introduce__title">
+          <h1 class="introduce__title-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
           <!-- картинка города и руки с телефоном бэкграундом-->
         </div>
       </section>
@@ -46,15 +47,15 @@
           <fieldset class="feedback__field">
             <ul class="feedback__items">
               <li class="feedback__item">
-                <label class="label label__caption" for="surname"> Фамилия:</label>
+                <label class="feedback__label feedback__label--caption" for="surname"> Фамилия:</label>
                 <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
               <li class="feedback__item">
-                <label class="label label__caption" for="name"> Имя:</label>
+                <label class="feedback__label feedback__label--caption" for="name"> Имя:</label>
                 <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
               <li class="feedback__item">
-                <label class="label label__caption" for="patronymic"> Отчество:</label>
+                <label class="feedback__label feedback__label--caption" for="patronymic"> Отчество:</label>
                 <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
             </ul>
@@ -89,32 +90,33 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="feedback__field">
             <ul class="feedback__items">
               <li class="feedback__item">
-                <label for="phone-number" class="label label__caption">Номер телефона</label>
-                <input id="phone-number" class="tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
+                <label for="phone-number" class="feedback__label feedback__label--caption">Номер телефона</label>
+                <input id="phone-number" class="feedback__input tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
               </li>
               <li class="feedback__item">
-                <label for="email" class="label label__caption">Адрес почты</label>
-                <input id="email" class="email" name="email" type="email" placeholder="Введите почту *" required>
+                <label for="email" class="feedback__label feedback__label--caption">Адрес почты</label>
+                <input id="email" class="feedback__input email" name="email" type="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="feedback__field">
             <legend class="feedback__title">С каким приложением путешествовали?</legend>
             <ul class="feedback__items">
-              <li class="feedback-item">
+              <li class="feedback__item">
                 <input class="radio" type="radio" name="app-for-trip" id="ios" value="ios" checked>
-                <label class="label label__radio" for="ios">Pink для iOS</label>
+                <label class="feedback__label feedback__label-radio" for="ios">Pink для iOS</label>
               </li>
-              <li class="feedback-item">
+              <li class="feedback__item">
                 <input class="radio" type="radio" name="app-for-trip" id="android" value="android">
-                <label class="label label__radio" for="android">Pink на Android</label>
+                <label class="feedback__label feedback__label-radio" for="android">Pink на Android</label>
               </li>
-              <li class="feedback-item">
+              <li class="feedback__item">
                 <input class="radio" type="radio" name="app-for-trip" id="win-phone" value="win-phone">
-                <label class="label label--radio" for="win-phone">Windows Phone</label>
+                <label class="feedback__label feedback__label-radio" for="win-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -136,7 +138,7 @@
     <footer class="page-footer">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="logo-glass" width="147" height="40" src="http://placehold.it/147x40" alt="HTML Academy">
+        <img class="logo__glass" width="147" height="40" src="http://placehold.it/147x40" alt="HTML Academy">
       </a>
       <div class="social-links">
         <a class="social-links__link social-links__link--twitter" href="https://twitter.com/">twitter</a>
@@ -154,7 +156,7 @@
       <div class="pop-up__wrapper">
         <h4 class="pop-up__title">Что-то пошло не так!</h4>
         <p class="pop-up__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="feedback__submit">ок</button>
+        <button class="pop-up__submit" type="button">ок</button>
       </div>
     </div>
 
@@ -164,7 +166,7 @@
         <p class="pop-up__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
       <div class="pop-up__wrapper-button">
-        <button class="feedback__submit">закрыть окно</button>
+        <button class="pop-up__submit" type="button">закрыть окно</button>
       </div>
     </div>
   </body>

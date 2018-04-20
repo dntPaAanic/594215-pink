@@ -1,0 +1,34 @@
+.price__item {
+  vertical-align: middle;
+}
+
+.price__list {
+  text-transform: uppercase;
+
+  @include container;
+}
+
+.price__header {
+  padding: 20px 0;
+
+  text-align: center;
+  color: $font-color-top;
+
+  background-color: $background-darkblue;
+}
+
+.price__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price__cost {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
