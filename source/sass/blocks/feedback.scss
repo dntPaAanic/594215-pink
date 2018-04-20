@@ -11,6 +11,8 @@
 }
 
 .feedback__items {
+  padding: 0;
+
   list-style: none;
 }
 
@@ -31,20 +33,22 @@
 
   font-size: 18px;
   color: $font-color-main;
-}
 
-.feedback__input::-webkit-input-placeholder {
-  color: $font-color-main;
-}
+  &::-webkit-input-placeholder {
+    color: $font-color-main;
+  }
 
-.feedback__input::-moz-placeholder {
-  color: $font-color-main;
-}/* Firefox 19+ */
-.feedback__input:-moz-placeholder {
-  color: $font-color-main;
-}/* Firefox 18- */
-.feedback__input:-ms-input-placeholder {
-  color: $font-color-main;
+  &::-moz-placeholder {
+    color: $font-color-main;
+  }/* Firefox 19+ */
+
+  &:-moz-placeholder {
+    color: $font-color-main;
+  }/* Firefox 18- */
+
+  &:-ms-input-placeholder {
+    color: $font-color-main;
+  }
 }
 
 .feedback__title {

@@ -2,12 +2,14 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
-@import "global/body.scss";
+@import "global/scaffolding";
+@import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/introduce";
 @import "blocks/users-photo.scss";
+@import "blocks/photo-upload.scss";
 @import "blocks/feedback.scss";
 @import "blocks/offer.scss";
 @import "blocks/features.scss";

@@ -4,16 +4,16 @@
 
 .reviews__item {
   margin: 0;
+
   text-align: center;
 }
 
 .reviews__author-name {
-  color: $font-color-headers-dark;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
+  color: $font-color-headers-dark;
 }
 
 .reviews__text {
   line-height: 30px;
 }
-
