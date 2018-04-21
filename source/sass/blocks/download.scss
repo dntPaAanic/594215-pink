@@ -22,6 +22,10 @@
   @include container;
 }
 
+.download__title {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .download {
     padding-top: 250px;
@@ -36,6 +40,10 @@
     &::before {
       display: none;
     }
+  }
+
+  .download__title {
+    display: block;
   }
 
   .download__wrapper {
