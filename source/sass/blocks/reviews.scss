@@ -2,6 +2,10 @@
   @include container;
 }
 
+.reviews__about-author {
+  display: none;
+}
+
 .reviews__item {
   margin: 0;
 
@@ -16,4 +20,21 @@
 
 .reviews__text {
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__about-author {
+    display: block;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-wrapper {
+    order: 1;
+  }
+
+
 }
