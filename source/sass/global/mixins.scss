@@ -2,11 +2,11 @@
   width: 280px;
   margin: 0 auto;
 
-  @media ($tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 620px;
   }
 
-  @media ($desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 940px;
   }
 }
