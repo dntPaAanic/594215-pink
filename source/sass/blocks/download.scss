@@ -1,0 +1,45 @@
+.download {
+  color: $font-color-top;
+
+  background-color: $background-darkblue;
+
+  @media (min-width: $mobile-width) {
+    &::before {
+      content: "";
+
+      display: block;
+      height: 463px;
+
+      background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% bottom, top;
+      background-size: auto, cover;
+    }
+  }
+}
+
+.download__wrapper {
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background:
+      url('../img/iphone-hand-mobile@1x.png'),
+      url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
+    background-size: 400px, cover;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .download__wrapper {
+    width: 300px;
+    margin: 0 62% 0 auto;
+  }
+}

@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.introduce__picture {
-  background-color: $background-darkblue;
-}
-
 .introduce__title {
   min-height: 237px;
 
@@ -23,26 +19,4 @@
   font-weight: 300;
   font-size: 24px;
   color: $font-color-top;
-}
-
-.introduce__download {
-  color: $font-color-top;
-
-  background-color: $background-darkblue;
-
-  &::before {
-    content: "";
-
-    display: block;
-    height: 463px;
-
-    background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% bottom, top;
-    background-size: auto, cover;
-  }
-}
-
-.introduce__wrapper {
-  @include container;
 }
