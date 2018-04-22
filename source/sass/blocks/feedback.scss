@@ -74,7 +74,6 @@
   .feedback__item {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 
   .feedback__input {
@@ -95,10 +94,15 @@
   }
 
   .feedback__field--emotion {
+    width: 100%;
     order: 4;
   }
 
-
+  .feedback__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,5 +131,4 @@
   .feedback__field--emotion {
     width: 100%;
   }
-
 }
