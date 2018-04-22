@@ -13,6 +13,7 @@
   background-color: $background-lightgray;
 
   width: 280px;
+  min-height: 120px;
   margin: 0 auto;
 }
 
@@ -63,6 +64,7 @@
 
   .user-photo__caption {
     width: 300px;
+    min-height: 155px;
     margin: 0 auto;
   }
 }@media (min-width: $desktop-width) {

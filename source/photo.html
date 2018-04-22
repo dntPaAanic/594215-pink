@@ -108,6 +108,7 @@
           </figure>
         </div>
       </section>
+
       <section class="photo-upload">
         <h2 class="visually-hidden"> Загрузи свои фотографии!</h2>
         <p class="photo-upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
@@ -116,34 +117,35 @@
           <div class="photo-upload__form">
             <input  id="crop-filter" name="upload-filter" type="radio" value="crop-filter" checked>
             <label class="photo-upload__filter-toggle" for="crop-filter">Кадрирование</label>
-            <!--<input id="value" name="value" type="range" min="1" max="100">
-            <label class="visually-hidden" for="value">Диапазон значения</label> -->
             <input id="paint-filter" name="upload-filter" type="radio" value="paint-filter">
             <label class="photo-upload__filter-toggle" for="paint-filter">Яркость</label>
             <input id="contrast-filter" name="upload-filter" type="radio" value="contrast-filter">
             <label class="photo-upload__filter-toggle" for="contrast-filter">Контрасность</label>
           </div>
-          <div class="photo-upload__control-scale control-scale">
-            <div class="control-scale__wrap control-scale__wrap-crop">
-              <input class="control-scale__filter" id="control-scale-crop" name="control-scale-filter" type="range" min="1" max="100">
-              <label class="visually-hidden" for="control-scale-crop">Диапазон значения</label>
+          <div class="photo-upload__control-inner">
+            <div class="photo-upload__control-scale control-scale">
+              <div class="control-scale__wrap control-scale__wrap-crop">
+                <input class="control-scale__filter" id="control-scale-crop" name="control-scale-filter" type="range" min="1" max="100">
+                <label class="visually-hidden" for="control-scale-crop">Диапазон значения</label>
+              </div>
+              <div class="control-scale__wrap control-scale__wrap-paint">
+                <input class="control-scale__filter" id="control-scale-paint" name="control-scale-filter" type="range" min="1" max="100">
+                <label class="visually-hidden" for="control-scale-paint">Диапазон значения</label>
+              </div>
+              <div class="control-scale__wrap control-scale__wrap-contrast">
+                <input class="control-scale__filter" id="control-scale-contrast" name="control-scale-filter" type="range" min="1" max="100">
+                <label class="visually-hidden" for="control-scale-contrast">Диапазон значения</label>
+              </div>
             </div>
-            <div class="control-scale__wrap control-scale__wrap-paint">
-              <input class="control-scale__filter" id="control-scale-paint" name="control-scale-filter" type="range" min="1" max="100">
-              <label class="visually-hidden" for="control-scale-paint">Диапазон значения</label>
+            <div class="photo-upload__buttons">
+              <input class="photo-upload__button photo-upload__button--submit" id="photo-upload-button-submit" value="Запостить" type="submit">
+              <input class="photo-upload__button photo-upload__button--reset" id="photo-upload-button-reset" value="Отмена" type="reset">
             </div>
-            <div class="control-scale__wrap control-scale__wrap-contrast">
-              <input class="control-scale__filter" id="control-scale-contrast" name="control-scale-filter" type="range" min="1" max="100">
-              <label class="visually-hidden" for="control-scale-contrast">Диапазон значения</label>
-            </div>
-          </div>
-          <div class="photo-upload__buttons">
-            <input class="photo-upload__button photo-upload__button--submit" id="photo-upload-button-submit" value="Запостить" type="submit">
-            <input class="photo-upload__button photo-upload__button--reset" id="photo-upload-button-reset" value="Отмена" type="reset">
           </div>
         </form>
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="page-footer__social-wrapper">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

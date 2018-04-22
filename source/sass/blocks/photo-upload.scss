@@ -11,3 +11,21 @@
 
   @include container;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-upload__form-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .photo-upload__form {
+    display: none;
+  }
+
+  .photo-upload__control-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
