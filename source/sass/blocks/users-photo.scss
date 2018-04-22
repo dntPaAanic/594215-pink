@@ -7,3 +7,13 @@
 
   @include container;
 }
+
+@media (min-width: $tablet-width) {
+  .users-photo__inner {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

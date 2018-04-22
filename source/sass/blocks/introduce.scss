@@ -15,8 +15,31 @@
 
 .introduce__title-text {
   padding-top: 101px;
+  margin: 0;
 
   font-weight: 300;
   font-size: 24px;
   color: $font-color-top;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__title {
+    min-height: 440px;
+
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__title {
+    min-height: 400px;
+
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
