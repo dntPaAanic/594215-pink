@@ -44,11 +44,11 @@
           <p class="feedback__slogan">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
-          <fieldset class="feedback__field">
+          <fieldset class="feedback__field feedback__field--input">
             <ul class="feedback__items">
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--caption" for="surname"> Фамилия:</label>
-                <input class="feedback__input" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+                <input class="feedback__input feedback__field--input " id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--caption" for="name"> Имя:</label>
@@ -60,7 +60,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__field">
+          <fieldset class="feedback__field feedback__field--mindblow">
             <legend class="feedback__title">Ваши безбашенные
               достижения в путешествии</legend>
             <ul class="feedback__items">
@@ -91,7 +91,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__field">
+          <fieldset class="feedback__field feedback__field--contact-info">
             <ul class="feedback__items">
               <li class="feedback__item">
                 <label for="phone-number" class="feedback__label feedback__label--caption">Номер телефона</label>
@@ -103,7 +103,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__field">
+          <fieldset class="feedback__field feedback__field--app">
             <legend class="feedback__title">С каким приложением путешествовали?</legend>
             <ul class="feedback__items">
               <li class="feedback__item">
@@ -120,17 +120,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__field">
+          <fieldset class="feedback__field feedback__field--emotion">
             <legend class="feedback__title">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="feedback-emotion">Опишите свои эмоции</label>
             <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-
-
+            <div class="feedback__wrapper">
+              <input class="feedback__submit" type="submit" value="Отправить форму">
+              <div class="feedback__require">* — обязательные поля</div>
+            </div>
           </fieldset>
-          <div class="feedback__wrapper">
-            <input class="feedback__submit" type="submit" value="Отправить форму">
-            <div class="feedback__require">* — обязательные поля</div>
-          </div>
         </form>
       </section>
     </main>

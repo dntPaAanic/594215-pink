@@ -4,9 +4,15 @@
   @include container;
 }
 
+.feedback__form {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .feedback__field {
   box-sizing: border-box;
-  margin: 0 auto;
   padding: 28px 0;
 }
 
@@ -28,7 +34,6 @@
 
 .feedback__input {
   box-sizing: border-box;
-  width: 100%;
   padding: 22px 0 18px 20px;
 
   font-size: 18px;
@@ -55,4 +60,72 @@
   line-height: 18px;
   color: $font-color-headers-bright;
   text-transform: uppercase;
+}
+
+.feedback__label--caption {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__field--input {
+    width: 620px;
+  }
+
+  .feedback__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .feedback__input {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .feedback__field--app {
+    order: 1;
+  }
+
+  .feedback__field--contact-info {
+    order: 2;
+  }
+
+  .feedback__field--mindblow {
+    order: 3;
+  }
+
+  .feedback__field--emotion {
+    order: 4;
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback__field--input {
+    width: 50%;
+  }
+
+  .feedback__field--app {
+    width: 50%;
+    border: 1px solid #000000;
+  }
+
+  .feedback__field--contact-info {
+    width: 100%;
+  }
+
+  .feedback__field--mindblow {
+    width: 100%;
+  }
+
+  .feedback__field--emotion {
+    width: 100%;
+  }
+
 }
