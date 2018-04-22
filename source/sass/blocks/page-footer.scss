@@ -7,8 +7,6 @@
   background-size: 100% auto, cover;
 }
 
-
-
 .page-footer__social-wrapper--index {
   display: none;
 }
@@ -23,9 +21,10 @@
   }
 
   .page-footer__social-wrapper {
-    @include container;
     display: flex;
     justify-content: space-between;
+
+    @include container;
   }
 }
 
