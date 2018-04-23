@@ -5,10 +5,11 @@
 }
 
 .feedback__form {
-  @include container;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include container;
 }
 
 .feedback__field {
@@ -77,8 +78,8 @@
   }
 
   .feedback__input {
-    width: auto;
     flex-grow: 1;
+    width: auto;
   }
 
   .feedback__field--app {
@@ -94,8 +95,8 @@
   }
 
   .feedback__field--emotion {
-    width: 100%;
     order: 4;
+    width: 100%;
   }
 
   .feedback__wrapper {
@@ -117,6 +118,7 @@
 
   .feedback__field--app {
     width: 50%;
+
     border: 1px solid #000000;
   }
 
