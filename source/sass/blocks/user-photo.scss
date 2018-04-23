@@ -10,16 +10,17 @@
 }
 
 .user-photo__caption {
-  background-color: $background-lightgray;
-
   width: 280px;
   min-height: 120px;
   margin: 0 auto;
+
+  background-color: $background-lightgray;
 }
 
 .user-photo__title {
-  font-weight: 700;
   margin-top: 0;
+
+  font-weight: 700;
 }
 
 .user-photo__title-light {
@@ -67,7 +68,9 @@
     min-height: 155px;
     margin: 0 auto;
   }
-}@media (min-width: $desktop-width) {
+}
+
+@media (min-width: $desktop-width) {
   .user-photo__image {
     height: 400px;
   }

@@ -31,6 +31,7 @@
 
 .feedback__label--caption {
   color: $font-color-headers-bright;
+  display: block;
 }
 
 .feedback__input {
@@ -61,10 +62,6 @@
   line-height: 18px;
   color: $font-color-headers-bright;
   text-transform: uppercase;
-}
-
-.feedback__label--caption {
-  display: block;
 }
 
 @media (min-width: $tablet-width) {
