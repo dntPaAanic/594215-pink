@@ -1,0 +1,49 @@
+@media (max-width: $tablet-width) {
+  .effect {
+    display: none;
+  }
+}
+
+.effect {
+  padding-top: 50px;
+
+  @include container;
+}
+
+.effect__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.effect__link {
+  color: $font-color-headers-bright;
+}
+
+@media (min-width: $tablet-width) {
+  .effect__item {
+    position: relative;
+
+    margin-left: 50%;
+    padding-bottom: 80px;
+  }
+
+  .effect__item::after {
+    content: "24";
+    position: absolute;
+    top: -30px;
+    left: -280px;
+
+    display: block;
+    width: 202px;
+    height: 202px;
+
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 192px;
+    text-align: center;
+
+    background: url("../img/icon-editor-diagram-fill.svg") no-repeat center;
+    background-size: contain;
+  }
+}

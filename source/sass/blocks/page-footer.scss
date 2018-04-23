@@ -6,3 +6,30 @@
   background-position: 50% 0, bottom;
   background-size: 100% auto, cover;
 }
+
+.page-footer__social-wrapper--index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__map {
+    height: 373px;
+  }
+
+  .page-footer__social-wrapper--index {
+    display: block;
+  }
+
+  .page-footer__social-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__map {
+    height: 528px;
+  }
+}

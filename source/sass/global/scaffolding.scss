@@ -1,6 +1,7 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  min-width: 320px;
 
   font-weight: normal;
   font-size: $font-size;
@@ -21,4 +22,9 @@ fieldset {
   padding: 0;
 
   border: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }

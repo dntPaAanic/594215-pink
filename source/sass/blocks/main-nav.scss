@@ -1,11 +1,27 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
   min-height: 66px;
 
-  background-color: rgba(0, 0, 0, 0.3);
-
-  width: 100%;
+  background-color: $background-menu;
 }
 
 .main-nav__wrapper {
-  @include container;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  background-color: $background-menu;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 111px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
