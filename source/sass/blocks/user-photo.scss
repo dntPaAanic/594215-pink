@@ -45,10 +45,6 @@
     max-height: 509px;
   }
 
-  .user-photo__caption--panorama {
-    @include container;
-  }
-
   .user-photo__image {
     display: block;
     width: 300px;
@@ -67,6 +63,10 @@
     width: 300px;
     min-height: 155px;
     margin: 0 auto;
+  }
+
+  .user-photo__caption--panorama {
+    @include container;
   }
 }
 
