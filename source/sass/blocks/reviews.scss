@@ -1,5 +1,6 @@
 .reviews {
   @include container;
+  padding-top: 14px;
 }
 
 .reviews__about-author {
@@ -14,12 +15,15 @@
 
 .reviews__author-name {
   font-weight: 700;
+  line-height: 30px;
   font-size: 18px;
   color: $font-color-headers-dark;
+  margin-bottom: 0;
 }
 
 .reviews__text {
   line-height: 30px;
+  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {
