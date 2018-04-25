@@ -3,8 +3,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  background-color: $background-menu;
 }
 
 .main-nav__wrapper {
@@ -13,8 +11,7 @@
   justify-content: space-between;
   padding: 0 20px;
   min-height: 67px;
-
-  background-color: $background-menu;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__logo {
@@ -88,6 +85,22 @@
 
 .main-nav--closed .main-nav__list {
   display: none;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs {
+  position: relative;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  background-color: $background-menu;
+}
+
+.main-nav__wrapper--opened {
+  background-color: $background-menu;
 }
 
 @media (min-width: $desktop-width) {
