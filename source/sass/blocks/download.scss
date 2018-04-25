@@ -12,7 +12,7 @@
 
       background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 50% bottom, top;
+      background-position: 0 bottom, top;
       background-size: auto, cover;
     }
   }
@@ -20,10 +20,46 @@
 
 .download__wrapper {
   @include container;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .download__title {
   display: none;
+}
+
+.download__download-app {
+  padding-top: 14px;
+  padding-right: 33px;
+  padding-bottom: 17px;
+  padding-left: 37px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+
+  border: 3px solid white;
+  border-radius: 30px;
+  transition: 0.3s;
+
+  &:hover {
+    color: $menu-button-hover;
+
+    background-color: white;
+  }
+
+  &:active {
+    color: $mobile-menu-button-down;
+
+    background-color: white;
+  }
 }
 
 @media (min-width: $tablet-width) {

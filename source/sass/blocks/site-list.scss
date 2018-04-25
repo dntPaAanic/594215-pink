@@ -20,10 +20,11 @@
 .site-list__item a {
   font-weight: 700;
   font-size: 18px;
+  line-height: 32px;
   color: $font-color-top;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 32px;
+  transition: 0.3s;
 
   &:hover {
     color: $menu-button-hover;
