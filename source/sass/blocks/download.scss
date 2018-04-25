@@ -21,7 +21,7 @@
 .download__wrapper {
   @include container;
   padding-top: 29px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -63,9 +63,10 @@
 }
 
 .download__desc {
-  margin-top: 14px;
+  margin-top: 9px;
   font-weight: 300;
   line-height: 24px;
+  text-align: center;
 }
 
 

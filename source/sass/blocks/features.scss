@@ -1,24 +1,27 @@
-/*.features {
-  text-align: center;
-
-  background-color: $background-lightgray;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-} */
-
 .features {
   @include container;
 }
 
 .features__offer-wrap {
-  padding-top: 22px;
+  padding-top: 40px;
 
   text-align: center;
 }
 
 .features__offer-title {
+  padding: 0;
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 29px;
+}
+
+.features__wrapper {
+  padding-top: 44px;
+  background-color: $background-lightgray;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
 }
 
 .features__item-wrapper {
@@ -42,7 +45,7 @@
 }
 
 .features__desc {
-  margin-top: 18px;
+  margin-top: 12px;
 
   line-height: 24px;
 }
