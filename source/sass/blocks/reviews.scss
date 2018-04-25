@@ -9,7 +9,6 @@
 
 .reviews__item {
   margin: 0;
-
   text-align: center;
 }
 
@@ -24,6 +23,14 @@
 .reviews__text {
   line-height: 30px;
   margin-top: 14px;
+}
+
+.reviews__prev {
+  display: none;
+}
+
+.reviews__next {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
