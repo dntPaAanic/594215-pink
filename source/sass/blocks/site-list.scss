@@ -24,6 +24,14 @@
   text-transform: uppercase;
   text-decoration: none;
   line-height: 32px;
+
+  &:hover {
+    color: $menu-button-hover;
+  }
+
+  &:active {
+    color: $mobile-menu-button-down;
+  }
 }
 
 @media (min-width: $desktop-width) {
