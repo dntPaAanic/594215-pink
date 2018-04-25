@@ -15,3 +15,13 @@
     fill: $mobile-menu-logo-down;
   }
 }
+
+.page-header__burger:hover path,
+.page-header__cross:hover path {
+  fill: $menu-button-hover;
+}
+
+.page-header__burger:active path,
+.page-header__cross:active path {
+  fill: $mobile-menu-button-down;
+}
