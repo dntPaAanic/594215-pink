@@ -160,97 +160,45 @@
 
       <section class="price">
         <h2 class="visually-hidden">Цены на услуги</h2>
-        <div class="price__wrapper slider">
-          <div class="price__list slider__list">
-            <div class="price__item slider__item">
-              <div class="price__header">
-                <p class="price__title">
-                  База
-                </p>
-                <p class="price__cost">
-                  1,99 USD
-                </p>
-              </div>
-              <ul class="price__content">
-                <li class="price__content-item">Розовый фильтр</li>
-                <li class="price__content-item">Смайлики</li>
-                <li class="price__content-item">Комментарий</li>
-              </ul>
-            </div>
-            <div class="price__item slider__item">
-              <div class="price__header">
-                <p class="price__title">
-                  Стандарт
-                </p>
-                <p class="price__cost">
-                  3,99 USD
-                </p>
-              </div>
-              <ul class="price__content">
-                <li class="price__content-item">Розовый фильтр</li>
-                <li class="price__content-item">Смайлики</li>
-                <li class="price__content-item">Комментарий</li>
-              </ul>
-            </div>
-            <div class="price__item slider__item">
-              <div class="price__header">
-                <p class="price__title">
-                  Анлим
-                </p>
-                <p class="price__cost">
-                  9,99 USD
-                </p>
-              </div>
-              <ul class="price__content">
-                <li class="price__content-item">Розовый фильтр</li>
-                <li class="price__content-item">Смайлики</li>
-                <li class="price__content-item">Комментарий</li>
-              </ul>
-            </div>
+        <div class="price__wrapper">
+          <div class="price__items">
+            <input class="price__switcher" type="radio" name="price" id="price-radio-1">
+            <input class="price__switcher" type="radio" name="price" id="price-radio-2" checked>
+            <input class="price__switcher" type="radio" name="price" id="price-radio-3">
+
+            <table class="price__list">
+              <thead class="price__list-head">
+              <tr>
+                <th class="price__value price__value--empty"></th>
+                <th class="price__value">База<p class="price__cost">1,99 USD</p></th>
+                <th class="price__value price__value--flag">Стандарт<p class="price__cost">3,99 USD</p></th>
+                <th class="price__value">Анлим<p class="price__cost">9,99 USD</p></th>
+              </tr>
+              </thead>
+              <tbody class="price__list-body">
+              <tr>
+                <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="price__field price__field--empty price__field--fill">Смайлики</td>
+                <td class="price__field price__field--cancel">Смайлики</td>
+                <td class="price__field price__field--ok">Смайлики</td>
+                <td class="price__field price__field--ok">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="price__field price__field--empty price__field--fill">Комментарии</td>
+                <td class="price__field price__field--cancel">Комментарии</td>
+                <td class="price__field price__field--cancel">Комментарии</td>
+                <td class="price__field price__field--ok">Комментарии</td>
+              </tr>
+            </tbody>
+          </table>
           </div>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
         </div>
       </section>
-    </main>
-    <footer class="page-footer">
-      <h2 class="visually-hidden">Связь с нами</h2>
-      <div class="page-footer__wrapper">
-        <section class="contact">
-          <p class="contact__slogan">
-            Остались вопросы? Свяжитесь с нами!
-          </p>
-          <div class="contact__item-wrapper">
-            <article class="contact__item">
-              <h4 class="contact__item-header">
-                Звоните
-              </h4>
-              <a class="contact__item-text" href="tel:+78125556666">
-                +7 (812) 555-66-66
-              </a>
-            </article>
-            <article class="contact__item">
-              <h4 class="contact__item-header">
-                Пишите
-              </h4>
-              <a class="contact__item-text" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </article>
-            <article class="contact__item">
-              <h4 class="contact__item-header">
-                Приезжайте в гости:
-              </h4>
-              <a class="contact__item-text" href="https://yandex.ru/maps/-/CBe5uVqS9B">
-                ул. Большая Конюшенная, 19/8
-              </a>
-            </article>
-          </div>
-        </section>
-      </div>
       <div class="page-footer__map">
       </div>
 
