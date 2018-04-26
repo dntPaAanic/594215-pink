@@ -19,14 +19,15 @@
 }
 
 .download__wrapper {
-  @include container;
-  padding-top: 29px;
-  padding-bottom: 15px;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   align-content: space-between;
+  padding-top: 29px;
+  padding-bottom: 15px;
+
+  @include container;
 }
 
 .download__title {
@@ -47,6 +48,7 @@
 
   border: 3px solid white;
   border-radius: 30px;
+
   transition: 0.3s;
 
   &:hover {
@@ -64,12 +66,11 @@
 
 .download__desc {
   margin-top: 9px;
+
   font-weight: 300;
   line-height: 24px;
   text-align: center;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .download {
