@@ -83,6 +83,10 @@
   border-top: none;
 }
 
+.price__control {
+  padding-top: 36px;
+}
+
 @media (max-width: $tablet-width) {
   .price__items {
     display: flex;
