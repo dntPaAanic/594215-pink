@@ -123,21 +123,24 @@
         <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
         <div class="reviews__wrapper slider">
           <div class="reviews__list  slider__list">
-            <blockquote class="reviews__item slider__item">
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
+            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
+            <blockquote class="reviews__item slider__item reviews__item--1">
               <div class="reviews__author-wrapper">
                 <h4 class="reviews__author-name">Николай Петров </h4>
                 <span class="reviews__about-author">25 лет, водитель трамвая</span>
               </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item reviews__item--2">
               <div class="reviews__author-wrapper">
                 <h4 class="reviews__author-name">Николай Петров </h4>
                 <span class="reviews__about-author">25 лет, водитель трамвая</span>
               </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item reviews__item--3">
               <div class="reviews__author-wrapper">
                 <h4 class="reviews__author-name">Николай Петров </h4>
                 <span class="reviews__about-author">25 лет, водитель трамвая</span>
@@ -146,12 +149,12 @@
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
+            <div class="slider__control reviews__nav">
+              <label class="slider__control-button" for="reviews-radio-1">1</label>
+              <label class="slider__control-button" for="reviews-radio-2">2</label>
+              <label class="slider__control-button" for="reviews-radio-3">3</label>
+            </div>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </p>
         </div>
       </section>
 
