@@ -25,10 +25,14 @@
   margin: 0;
 
   text-align: center;
+}
 
+.reviews__item--2,
+.reviews__item--3 {
   visibility: hidden;
   opacity: 0;
 }
+
 
 .reviews__nav {
   position: absolute;
@@ -38,23 +42,6 @@
   transform: translateX(-50%);
 }
 
-#reviews-radio-1:checked ~ .reviews__item--1,
-#reviews-radio-2:checked ~ .reviews__item--2,
-#reviews-radio-3:checked ~ .reviews__item--3 {
-  position: static;
-
-  padding-bottom: 30px;
-
-  visibility: visible;
-  opacity: 1;
-}
-
-#reviews-radio-1:checked ~ .reviews__nav label[for="reviews-radio-1"],
-#reviews-radio-2:checked ~ .reviews__nav label[for="reviews-radio-2"],
-#reviews-radio-3:checked ~ .reviews__nav label[for="reviews-radio-3"] {
-  background-color: white;
-  border: 3px solid #283645;
-}
 
 .reviews__switcher {
   display: none;
