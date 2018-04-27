@@ -47,12 +47,6 @@
   background-color: white;
 }
 
-.price__hit {
-  position: absolute;
-
-  display: none;
-}
-
 .price__value {
   position: relative;
 
@@ -66,6 +60,37 @@
   &:nth-child(2) {
     border-left: none;
   }
+}
+
+.price__value--flag::before {
+  position: absolute;
+  content: "хит";
+
+  height: 10px;
+  width: 28px;
+
+  top: 20px;
+  left: 5px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d22856;
+  transform: rotate(-45deg);
+
+  z-index: 5;
+}
+
+.price__hit {
+  position: absolute;
+
+  display: block;
+  top: 0;
+  left: -3px;
 }
 
 .price__field {
