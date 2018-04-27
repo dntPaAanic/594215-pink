@@ -123,9 +123,6 @@
         <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
         <div class="reviews__wrapper slider">
           <div class="reviews__list  slider__list">
-            <input class="reviews__switcher reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
-            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
-            <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
             <blockquote class="reviews__item slider__item reviews__item--active">
               <div class="reviews__author-wrapper">
                 <h4 class="reviews__author-name">Николай Петров </h4>
@@ -150,8 +147,11 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
             <div class="slider__control reviews__nav">
+              <input class="reviews__switcher reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
               <label class="slider__control-button slider__control-button--checked" for="reviews-radio-1">1</label>
+              <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
               <label class="slider__control-button" for="reviews-radio-2">2</label>
+              <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
               <label class="slider__control-button" for="reviews-radio-3">3</label>
             </div>
           </div>
@@ -162,10 +162,6 @@
         <h2 class="visually-hidden">Цены на услуги</h2>
         <div class="price__wrapper">
           <div class="price__items">
-            <input class="price__switcher" type="radio" name="price" id="price-radio-1">
-            <input class="price__switcher" type="radio" name="price" id="price-radio-2" checked>
-            <input class="price__switcher" type="radio" name="price" id="price-radio-3">
-
             <table class="price__list">
               <thead class="price__list-head">
               <tr>
@@ -197,8 +193,11 @@
             </tbody>
           </table>
             <div class="slider__control price__control">
+              <input class="price__switcher" type="radio" name="price" id="price-radio-1">
               <label class="slider__control-button" for="price-radio-1">1</label>
+              <input class="price__switcher" type="radio" name="price" id="price-radio-2" checked>
               <label class="slider__control-button slider__control-button--checked" for="price-radio-2">2</label>
+              <input class="price__switcher" type="radio" name="price" id="price-radio-3">
               <label class="slider__control-button" for="price-radio-3">3</label>
             </div>
           </div>
