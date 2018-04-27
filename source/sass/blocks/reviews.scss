@@ -26,12 +26,11 @@
   margin: 0;
 
   text-align: center;
+  visibility: hidden;
 }
 
-.reviews__item--2,
-.reviews__item--3 {
-  visibility: hidden;
-  opacity: 0;
+.reviews__item--active {
+  visibility: visible;
 }
 
 
