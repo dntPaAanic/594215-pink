@@ -27,7 +27,7 @@
   fill: $mobile-menu-button-down;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .page-header__logo-tablet,
   .page-header__logo-desktop {
     display: none;
@@ -45,6 +45,7 @@
   .page-header__logo-tablet {
     display: none;
   }
+
   .page-header__logo-desktop {
     display: block;
   }
