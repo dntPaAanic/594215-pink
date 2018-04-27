@@ -47,36 +47,6 @@
   display: none;
 }
 
-.slider__control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-width: 59px;
-  min-height: 12px;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.slider__control-button {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 18px;
-
-  font-size: 0;
-  line-height: 0;
-  vertical-align: middle;
-
-  background-color: #bec2c7;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:first-child {
-    margin-left: 16px;
-  }
-}
-
 .reviews__author-name {
   margin-bottom: 0;
 
