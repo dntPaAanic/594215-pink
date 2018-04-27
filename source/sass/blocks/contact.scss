@@ -1,5 +1,6 @@
 .contact {
   text-align: center;
+  padding-bottom: 39px;
 
   @include container;
 }
@@ -12,15 +13,21 @@
   line-height: 30px;
 }
 
+.contact__item-wrapper {
+  margin-left: 5px;
+}
+
 .contact__item-header {
   margin-bottom: 4px;
-
+  margin-top: 23px;
   font-size: 18px;
   line-height: 21px;
+  font-weight: bold;
 }
 
 .contact__item-text {
   font-weight: 300;
+  line-height: 29px;
   font-size: 24px;
   color: $font-color-headers-bright;
   text-decoration: none;
