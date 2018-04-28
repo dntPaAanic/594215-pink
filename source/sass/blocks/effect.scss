@@ -1,26 +1,25 @@
-@media (max-width: $tablet-width) {
-  .effect {
-    display: none;
-  }
-}
-
 .effect {
-  padding-top: 50px;
-
-  @include container;
-}
-
-.effect__title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.effect__link {
-  color: $font-color-headers-bright;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    padding-top: 40px;
+
+    @include container;
+  }
+
+  .effect__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    color: $font-color-headers-bright;
+  }
+
   .effect__item {
     position: relative;
 
