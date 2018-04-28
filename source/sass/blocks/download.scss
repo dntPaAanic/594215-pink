@@ -10,10 +10,10 @@
       display: block;
       height: 463px;
 
-      background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg") ;
+      background-image:url("../img/bg-back-mobile@1x.jpg") ;
       background-repeat: no-repeat;
-      background-position: 0 bottom, top;
-      background-size: auto, cover;
+      background-position: top;
+      background-size: cover;
 /*
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
@@ -27,7 +27,25 @@
 
 .download__main {
   @include container;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -286px;
+    left: -20px;
+
+    display: block;
+    height: 286px;
+    width: 258px;
+
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-size: 258px 286px;
+  }
 }
+
 
 .download__wrapper {
   display: flex;
@@ -46,10 +64,10 @@
 }
 
 .download__download-app {
-  padding-top: 14px;
-  padding-right: 33px;
+  padding-top: 12px;
+  padding-right: 34px;
   padding-bottom: 17px;
-  padding-left: 37px;
+  padding-left: 36px;
 
   font-weight: 700;
   font-size: 18px;

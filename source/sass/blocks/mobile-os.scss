@@ -1,6 +1,5 @@
 .mobile-os {
   margin-top: 16px;
-  margin-left: 3px;
 }
 
 .mobile-os__list {
@@ -9,6 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .mobile-os__item {
@@ -28,7 +28,6 @@
   width: 47px;
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
-  margin-left: 10px;
 }
 
 .mobile-os__download-app--android {
@@ -37,6 +36,7 @@
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   margin-right: 5px;
+  margin-left: 5px;
 }
 
 .mobile-os__download-app--windows-phone {
@@ -44,5 +44,4 @@
   height: 41px;
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
-  margin-right: 14px;
 }
