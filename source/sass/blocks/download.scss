@@ -132,6 +132,7 @@
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: -40px 10px;
+
     &::before {
       display: none;
     }
@@ -140,7 +141,7 @@
   .download__wrapper {
 
     width: 300px;
-    margin-left: 11px;
+    margin-left: 0;
     padding-top: 5px;
   }
 
@@ -150,8 +151,14 @@
     line-height: 48px;
     font-weight: 300;
     padding-right: 41px;
+    padding-left: 23px;
     padding-top: 24px;
     margin-top: 0;
     margin-left: 18px;
+  }
+
+  .download__download-app {
+    padding-left: 46px;
+    padding-right: 45px;
   }
 }

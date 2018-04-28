@@ -45,3 +45,16 @@
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .mobile-os {
+    margin-top: 30px;
+  }
+
+  .download__desc {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}

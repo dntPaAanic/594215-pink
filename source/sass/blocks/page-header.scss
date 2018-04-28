@@ -28,7 +28,7 @@
   fill: $mobile-menu-button-down;
 }
 
-@media (max-width: $tablet-width - 1px) {
+@media (max-width: $mobile-width-only) {
   .page-header__logo-tablet,
   .page-header__logo-desktop {
     display: none;
