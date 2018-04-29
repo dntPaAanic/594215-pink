@@ -94,7 +94,7 @@
 }
 
 .download__desc {
-  margin-top: 9px;
+  margin-top: 12px;
 
   font-weight: 300;
   line-height: 24px;
@@ -160,5 +160,9 @@
   .download__download-app {
     padding-left: 46px;
     padding-right: 45px;
+  }
+
+  .download__desc {
+    margin-top: 9px;
   }
 }

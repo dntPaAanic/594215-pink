@@ -5,6 +5,8 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: -64px;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__wrapper {
@@ -15,8 +17,6 @@
   justify-content: space-between;
   min-height: 67px;
   padding: 0 20px;
-
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__logo {
@@ -40,6 +40,9 @@
   cursor: pointer;
 }
 
+.main-nav--opened {
+  background-color: $background-menu;
+}
 .main-nav__wrapper--opened .page-header__burger,
 .main-nav__wrapper--closed .page-header__cross {
   display: none;
