@@ -37,14 +37,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 15px;
-  }
-
   .site-list__item {
     margin-left: 10px;
 

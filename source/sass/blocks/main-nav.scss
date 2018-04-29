@@ -85,6 +85,18 @@
     justify-content: space-between;
   }
 
+  .main-nav__wrapper {
+    width: 160px;
+  }
+
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
