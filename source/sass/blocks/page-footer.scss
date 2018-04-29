@@ -30,12 +30,32 @@
 
     @include container;
   }
-}
-@media (min-width: $tablet-width) {
+
   .page-footer {
     padding-top: 47px;
   }
+
+  .page-footer__logo-glass {
+    width: 147px;
+    height: 40px;
+
+    &:hover path {
+      fill: $menu-logo-hover;
+    }
+
+    &:active path {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__map {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-position: 50% 0, -11px -316px;
+    background-size: 100% auto, cover;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .page-footer__map {
