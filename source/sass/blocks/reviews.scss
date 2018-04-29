@@ -71,8 +71,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews__about-author {
-    display: block;
+  .reviews {
+    padding-top: 35px;
   }
 
   .reviews__item {
@@ -83,4 +83,27 @@
   .reviews__author-wrapper {
     order: 1;
   }
+
+  .reviews__author-name {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .reviews__about-author {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  .reviews__nav {
+    left: 51%;
+    bottom: 43px;
+  }
+
+
 }
