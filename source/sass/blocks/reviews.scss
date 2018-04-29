@@ -73,6 +73,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 35px;
+    padding-bottom: 0;
+    margin-bottom: -23px;
   }
 
   .reviews__item {

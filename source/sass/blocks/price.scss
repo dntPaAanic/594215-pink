@@ -112,7 +112,7 @@
   padding-left: 17px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-only) {
   .price__items {
     display: flex;
     flex-direction: column;
@@ -129,5 +129,83 @@
 
     background-color: transparent;
     border: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 68px;
+  }
+  
+  .price__wrapper {
+    @include container;
+  }
+
+  .price__list-head {
+    font-size: 16px;
+  }
+
+  .price__list {
+    transform: none;
+    width: 620px;
+  }
+
+  .price__value {
+    min-width: 0;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    border: none;
+  }
+
+  .price__cost {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .price__value--empty {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  .price__field {
+    min-width: 153px;
+    outline: 2px solid #e5e5e5;
+    border: none;
+    min-height: 45px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .price__field--empty {
+    text-transform: none;
+  }
+
+  .price__hit {
+    display: block;
+    top: -10px;
+    left: -2px;
+
+    &::before {
+      top: 13px;
+      left: 2px;
+    }
+  }
+
+  .price__field--ok {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .price__field--cancel {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .price__control {
+    display: none;
   }
 }

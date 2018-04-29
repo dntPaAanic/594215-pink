@@ -103,13 +103,13 @@
 
   .features__item-wrapper {
     padding-top: 44px;
-    padding-bottom: 35px;
+    padding-bottom: 7px;
   }
 
   .features__item-wrapper::before {
     content: "";
     position: absolute;
-    bottom: 11px;
+    bottom: -9px;
     left: 0;
 
     display: block;
@@ -118,7 +118,7 @@
 
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center;
     background-size: 268px 482px;
   }
 
