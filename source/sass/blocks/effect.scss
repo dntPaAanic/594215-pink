@@ -5,15 +5,23 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
-    padding-top: 40px;
+    padding-top: 37px;
 
     @include container;
   }
 
   .effect__title {
-    font-weight: 700;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    width: 168px;
+    font-weight: bold;
+  }
+
+  .effect__desc {
+    line-height: 24px;
+    margin-top: 5px;
+    width: 300px;
   }
 
   .effect__link {
@@ -25,24 +33,41 @@
 
     margin-left: 50%;
     padding-bottom: 80px;
-  }
 
-  .effect__item::after {
-    content: "24";
-    position: absolute;
-    top: -30px;
-    left: -280px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -310px;
+      top: -36px;
+      width: 238px;
+      height: 276px;
+      background-image: url(../img/icon-timer.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
 
-    display: block;
-    width: 202px;
-    height: 202px;
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 17px;
+      left: -292px;
 
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 192px;
-    text-align: center;
+      display: block;
+      width: 202px;
+      height: 202px;
+      color: #d22856;
 
-    background: url("../img/icon-editor-diagram-fill.svg") no-repeat center;
-    background-size: contain;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 192px;
+      text-align: center;
+
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
