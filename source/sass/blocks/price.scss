@@ -158,6 +158,10 @@
     border: none;
   }
 
+  .price__value--flag::before {
+    top: 10px;
+  }
+
   .price__cost {
     margin-top: 0;
     font-size: 18px;

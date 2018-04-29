@@ -16,7 +16,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 49px;
+  }
+
   .page-footer__map {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-position: 50% 0, -11px -316px;
+    background-size: 100% auto, cover;
     height: 373px;
   }
 
@@ -27,12 +34,9 @@
   .page-footer__social-wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 38px;
 
     @include container;
-  }
-
-  .page-footer {
-    padding-top: 47px;
   }
 
   .page-footer__logo-glass {
@@ -49,10 +53,22 @@
     }
   }
 
-  .page-footer__map {
-    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
-    background-position: 50% 0, -11px -316px;
-    background-size: 100% auto, cover;
+  .page-footer__developer {
+    position: relative;
+    padding-top: 21px;
+    padding-right: 42px;
+  }
+
+  .page-footer__copyright-link {
+    text-decoration: none;
+    color: #283645;
+  }
+
+  .page-footer__HTMLAcademy {
+    position: absolute;
+    fill: #d22856;
+    right: 0;
+    top: 14px;
   }
 }
 
