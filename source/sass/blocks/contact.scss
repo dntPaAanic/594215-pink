@@ -34,8 +34,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact {
+    padding-bottom: 28px;
+  }
+  
+  .contact__slogan {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   .contact__item-wrapper {
     display: flex;
+    padding-top: 23px;
     flex-wrap: wrap;
     margin: 0 auto;
   }
@@ -43,6 +55,27 @@
   .contact__item {
     width: 50%;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .contact__item--call {
+    padding-right: 11px;
+  }
+
+  .contact__item--write {
+    padding-left: 10px;
+  }
+
+  .contact__item-header--write {
+    padding-bottom: 2px;
+  }
+
+  .contact__item--visit {
+    padding-top: 24px;
+  }
+
+  .contact__item-header--visit {
+    padding-bottom: 2px;
   }
 }
 
