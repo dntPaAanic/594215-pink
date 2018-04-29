@@ -18,6 +18,11 @@
   }
 }
 
+.page-header__burger,
+.page-header__cross {
+  padding-left: 21px;
+}
+
 .page-header__burger:hover path,
 .page-header__cross:hover path {
   fill: $menu-button-hover;
@@ -39,6 +44,12 @@
   .page-header__logo-mobile,
   .page-header__logo-desktop {
     display: none;
+  }
+
+  .page-header__burger,
+  .page-header__cross {
+    padding-top: 22px;
+    padding-left: 21px;
   }
 }
 
