@@ -81,8 +81,12 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    flex-direction: row;
-    justify-content: space-between;
+    display: block;
+  }
+
+  .main-nav__main-wrapper {
+    @include container;
+    display: flex;
   }
 
   .main-nav__wrapper {
@@ -96,7 +100,7 @@
     justify-content: space-around;
     padding-top: 15px;
     flex-grow: 1;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 
   .main-nav__toggle {
