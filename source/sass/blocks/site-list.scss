@@ -43,4 +43,30 @@
     border: none;
     box-shadow: none;
   }
+
+  .site-list__item a {
+    text-transform: none;
+    font-weight: normal;
+
+    &:active {
+      color: $desktop-menu-button-down;
+    }
+  }
+
+  .site-list__item--active {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      left: 0;
+
+      height: 2px;
+
+      background: #ffffff;
+    }
+  }
 }
