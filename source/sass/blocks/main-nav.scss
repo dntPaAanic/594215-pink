@@ -95,6 +95,8 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 15px;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-nav__toggle {
