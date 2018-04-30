@@ -63,34 +63,32 @@
 }
 
 .price__value--flag::before {
-  position: absolute;
   content: "хит";
-
-  height: 10px;
-  width: 28px;
-
+  position: absolute;
   top: 20px;
   left: 5px;
+  z-index: 5;
 
+  width: 28px;
+  height: 10px;
+
+  font-weight: 300;
   font-size: 14px;
   line-height: 14px;
-  font-weight: 300;
-
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+
   background-color: #d22856;
   transform: rotate(-45deg);
-
-  z-index: 5;
 }
 
 .price__hit {
   position: absolute;
-
-  display: block;
   top: 0;
   left: -3px;
+
+  display: block;
 }
 
 .price__field {
