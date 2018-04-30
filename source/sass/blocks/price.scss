@@ -63,34 +63,32 @@
 }
 
 .price__value--flag::before {
-  position: absolute;
   content: "хит";
-
-  height: 10px;
-  width: 28px;
-
+  position: absolute;
   top: 20px;
   left: 5px;
+  z-index: 5;
 
+  width: 28px;
+  height: 10px;
+
+  font-weight: 300;
   font-size: 14px;
   line-height: 14px;
-  font-weight: 300;
-
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+
   background-color: #d22856;
   transform: rotate(-45deg);
-
-  z-index: 5;
 }
 
 .price__hit {
   position: absolute;
-
-  display: block;
   top: 0;
   left: -3px;
+
+  display: block;
 }
 
 .price__field {
@@ -146,14 +144,16 @@
   }
 
   .price__list {
-    transform: none;
     width: 620px;
+
+    transform: none;
   }
 
   .price__value {
     min-width: 0;
     padding-top: 9px;
     padding-bottom: 7px;
+
     border: none;
   }
 
@@ -163,6 +163,7 @@
 
   .price__cost {
     margin-top: 0;
+
     font-size: 18px;
   }
 
@@ -173,14 +174,14 @@
 
   .price__field {
     min-width: 153px;
-    outline: 2px solid #e5e5e5;
-    border: none;
     min-height: 45px;
-
     padding-top: 7px;
+    padding-right: 15px;
     padding-bottom: 7px;
     padding-left: 15px;
-    padding-right: 15px;
+
+    border: none;
+    outline: 2px solid #e5e5e5;
   }
 
   .price__field--empty {
@@ -188,9 +189,10 @@
   }
 
   .price__hit {
-    display: block;
     top: -10px;
     left: -2px;
+
+    display: block;
 
     &::before {
       top: 13px;
@@ -224,14 +226,15 @@
   }
 
   .price__value {
-    font-size: 18px;
-
     padding-top: 16px;
     padding-bottom: 22px;
+
+    font-size: 18px;
   }
 
   .price__value--flag::before {
     top: 20px;
+
     width: 34px;
   }
 
@@ -240,9 +243,10 @@
   }
 
   .price__hit {
-    display: block;
     top: 0;
     left: -2px;
+
+    display: block;
 
     &::before {
       top: 20px;
@@ -252,11 +256,10 @@
 
   .price__field {
     min-width: 233px;
-
     padding-top: 12px;
+    padding-right: 24px;
     padding-bottom: 16px;
     padding-left: 20px;
-    padding-right: 24px;
   }
 
   .price__field--empty {

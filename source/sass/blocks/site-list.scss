@@ -47,8 +47,8 @@
 
 
   .site-list__item a {
-    text-transform: none;
     font-weight: normal;
+    text-transform: none;
 
     &:active {
       color: $desktop-menu-button-down;
@@ -60,7 +60,6 @@
 
     &::after {
       content: "";
-
       position: absolute;
       right: 0;
       bottom: 40px;
