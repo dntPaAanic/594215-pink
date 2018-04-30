@@ -135,49 +135,89 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+
+  }
+
+  .features__offer-wrap {
+    padding-top: 66px;
+    padding-bottom: 76px;
+  }
+
+  .features__offer-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .features__offer-title--mini {
+    width: 426px;
+  }
+
   .features__item-wrapper {
+    padding-top: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    &::before {
+      display: none;
+    }
   }
 
   .features__item {
-    width: 222px;
+    margin-top: 0;
+    flex-basis: 300px;
+    margin-left: 0;
+    text-align: center;
   }
 
   .features__item--example1::before {
     content: "";
 
     display: block;
-    height: 280px;
+    height: 302px;
+    width: 292px;
 
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 157px auto;
+    background-position: 4px 0;
+    background-size: 292px auto;
+  }
+
+  .features__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features__desc {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .features__item--example2::before {
     content: "";
 
     display: block;
-    height: 280px;
+    height: 302px;
+    width: 292px;
 
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 157px auto;
+    background-position: 7px 0;
+    background-size: 292px auto;
   }
 
   .features__item--example3::before {
     content: "";
 
     display: block;
-    height: 280px;
+    height: 302px;
+    width: 292px;
 
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 157px auto;
+    background-position: 7px 0;
+    background-size: 292px auto;
   }
 }
