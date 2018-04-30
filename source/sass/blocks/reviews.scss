@@ -109,6 +109,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    margin-bottom: -63px;
+  }
+
   .reviews__wrapper {
     padding-top: 136px;
     padding-bottom: 8px;
