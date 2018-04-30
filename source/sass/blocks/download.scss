@@ -14,13 +14,13 @@
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
-      /*
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+        background-image: url("../img/bg-back-mobile@2x.jpg");
         background-repeat: no-repeat;
-        background-position: 0 bottom, top;
-        background-size: auto, cover;
-      }*/
+        background-position: top;
+        background-size: cover;
+      }
     }
   }
 }
@@ -44,6 +44,13 @@
     background-repeat: no-repeat;
     background-position: 0 bottom;
     background-size: 258px 286px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-repeat: no-repeat;
+      background-position: 0 bottom;
+      background-size: 258px 286px;
+    }
   }
 }
 
