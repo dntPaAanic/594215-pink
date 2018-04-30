@@ -84,6 +84,10 @@
     display: block;
   }
 
+  .main-nav__logo {
+    left: 0;
+  }
+
   .main-nav__main-wrapper {
     @include container;
     display: flex;
@@ -97,7 +101,7 @@
   .main-nav--closed .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     padding-top: 15px;
     flex-grow: 1;
     background-color: transparent;
