@@ -75,7 +75,27 @@
 
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 64px;
+  }
+
   .page-footer__map {
     height: 528px;
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
+    background-position: 50% 0, 0 -256px;
+    background-size: 100% auto, cover;
+  }
+
+  .page-footer__social-wrapper {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .page-footer__developer {
+    padding-top: 19px;
+  }
+
+  .page-footer__copyright-link {
+    font-size: 18px;
   }
 }

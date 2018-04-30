@@ -80,7 +80,40 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact__slogan {
+    width: 640px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 14px;
+  }
+
   .contact__item {
     width: 33%;
+  }
+
+  .contact__item-header--call {
+    margin-bottom: 24px;
+  }
+
+  .contact__item--write {
+    order: 2;
+  }
+
+  .contact__item-header--write {
+    padding-bottom: 0;
+    margin-bottom: 26px;
+  }
+
+  .contact__item--visit {
+    margin-top: -23px;
+  }
+
+  .contact__item-header--visit {
+    padding-bottom: 0;
+    margin-bottom: 23px;
   }
 }
