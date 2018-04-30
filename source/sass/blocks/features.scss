@@ -135,10 +135,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features {
-
-  }
-
   .features__offer-wrap {
     padding-top: 66px;
     padding-bottom: 76px;
@@ -186,13 +182,21 @@
   }
 
   .features__title {
+    margin-top: 56px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .features__desc {
+    margin-top: 24px;
+    padding-right: 26px;
+    padding-left: 26px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .features__break {
+    display: none;
   }
 
   .features__item--example2::before {
