@@ -50,13 +50,10 @@
   .mobile-os {
     margin-top: 30px;
   }
-
-  .download__desc {
-    margin-top: 24px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-  }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .mobile-os {
+    margin-top: 53px;
+  }
+}

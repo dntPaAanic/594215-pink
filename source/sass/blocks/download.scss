@@ -163,7 +163,10 @@
   }
 
   .download__desc {
-    margin-top: 9px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }
 
@@ -176,6 +179,11 @@
   }
 
   .download__main {
+    margin: 0 auto;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: 18px 29px;
     min-height: 674px;
   }
 
@@ -193,5 +201,9 @@
     padding-left: 29px;
     padding-right: 28px;
     font-size: 21px;
+  }
+
+  .download__desc {
+    margin-top: 42px;
   }
 }
