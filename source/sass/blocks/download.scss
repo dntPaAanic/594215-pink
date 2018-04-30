@@ -119,19 +119,18 @@
     background-position: 50% -43px;
     background-size: 1200px auto;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% -43px;
+      background-size: 1200px auto;
+    }
+
     &::before {
       display: none;
     }
   }
-  /*
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-repeat: no-repeat;
-      background-color: $background-darkblue;
-      background-position: -20px bottom, center;
-      background-size: 700px, cover;
-    }
-  } */
+
   .download__main {
     min-height: 555px;
     margin: 0 auto;
@@ -140,6 +139,13 @@
     background-repeat: no-repeat;
     background-position: -40px 10px;
     background-size: 700px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-position: -40px 10px;
+      background-size: 700px;
+    }
 
     &::before {
       display: none;
@@ -184,8 +190,16 @@
     padding-top: 180px;
 
     background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-repeat: no-repeat;
     background-position: 50% 1px;
     background-size: 2563px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-position: 50% 1px;
+      background-repeat: no-repeat;
+      background-size: 2563px auto;
+    }
   }
 
   .download__main {
@@ -196,6 +210,13 @@
     background-repeat: no-repeat;
     background-position: 18px 29px;
     background-size: 1050px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-position: 18px 29px;
+      background-size: 1050px;
+    }
   }
 
   .download__wrapper {
