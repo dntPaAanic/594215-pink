@@ -1,0 +1,133 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .effect__wrapper {
+    @include container;
+  }
+
+  .effect__item {
+
+    position: relative;
+    width: 300px;
+
+    min-height: 183px;
+
+    padding-top: 96px;
+    padding-left: 310px;
+    padding-bottom: 79px;
+
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 115px, 0 57px;
+    background-size: 204px 204px, 241px 278px;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 172px;
+      height: 172px;
+
+      top: 130px;
+      left: 38px;
+
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+
+      font-size: 96px;
+      line-height: 96px;
+      font-weight: bold;
+      color: #d22856;
+
+      top: 162px;
+      left: 66px;
+    }
+  }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    width: 168px;
+    font-weight: bold;
+  }
+
+  .effect__desc {
+    line-height: 24px;
+    margin-top: 5px;
+    width: 300px;
+  }
+
+  .effect__link {
+    color: $font-color-headers-bright;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__item {
+    box-sizing: border-box;
+    width: 940px;
+
+    padding-top: 97px;
+    padding-bottom: 113px;
+    padding-left: 365px;
+
+    background-size: 253px 253px, 298px 345px;
+    background-position: 23px 76px, 0 6px;
+
+    &::before {
+      width: 220px;
+      height: 220px;
+
+      left: 39px;
+      top: 92px;
+    }
+
+    &::after {
+      font-size: 120px;
+      line-height: 120px;
+
+      left: 80px;
+      top: 135px;
+    }
+  }
+
+  .effect__title {
+    width: auto;
+    margin-bottom: 21px;
+  }
+
+  .effect__desc {
+    width: 535px;
+
+    margin-top: 20px;
+    margin-bottom: 31px;
+
+    padding-left: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
