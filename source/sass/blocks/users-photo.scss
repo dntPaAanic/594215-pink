@@ -17,6 +17,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .users-photo__slogan {
+    padding-top: 92px;
+    padding-bottom: 76px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .users-photo__inner {
     display: flex;
     flex-direction: row;
@@ -24,5 +33,13 @@
     justify-content: space-between;
 
     @include container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-photo__slogan {
+    padding-right: 170px;
+    padding-left: 170px;
+    padding-bottom: 88px;
   }
 }
