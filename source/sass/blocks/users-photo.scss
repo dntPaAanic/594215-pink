@@ -12,6 +12,9 @@
   text-align: center;
 }
 
+.users-photo__inner {
+  @include container;
+}
 
 @media (min-width: $tablet-width) {
   .users-photo__inner {

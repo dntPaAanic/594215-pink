@@ -1,7 +1,9 @@
+.user-photo {
+  padding-bottom: 20px;
+}
+
 .user-photo__image {
   display: block;
-  width: 280px;
-  margin: 0 auto;
 }
 
 .user-photo__panorama {
@@ -29,18 +31,25 @@
 
 .user-photo__image-panorama {
   width: 100%;
+  margin: 0 auto;
 }
 
 .user-photo__caption {
+  box-sizing: border-box;
   width: 280px;
   min-height: 120px;
   margin: 0 auto;
+  padding-top: 19px;
+  padding-right: 19px;
+  padding-bottom: 19px;
+  padding-left: 18px;
 
   background-color: $background-lightgray;
 }
 
 .user-photo__title {
   margin-top: 0;
+  margin-bottom: 0;
 
   font-weight: 700;
 }
@@ -53,13 +62,31 @@
 
 .user-photo__comment {
   line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 
 .user-photo__like {
+  position: relative;
   font-size: 12px;
   line-height: 24px;
+  margin-top: 11px;
+  margin-bottom: 0;
   color: $font-color-headers-bright;
   text-transform: uppercase;
+  padding-left: 31px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 4px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
