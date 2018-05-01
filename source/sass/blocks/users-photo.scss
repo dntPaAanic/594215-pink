@@ -1,12 +1,17 @@
+.users-photo__slogan-wrapper {
+  @include container;
+}
+
 .users-photo__slogan {
-  padding-top: 53px;
+  padding-top: 45px;
+  padding-bottom: 48px;
+  margin: 0;
 
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-
-  @include container;
 }
+
 
 @media (min-width: $tablet-width) {
   .users-photo__inner {

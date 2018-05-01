@@ -4,9 +4,31 @@
   margin: 0 auto;
 }
 
+.user-photo__panorama {
+  position: relative;
+
+  @include container;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    padding-top: 7px;
+    padding-right: 21px;
+    padding-left: 18px;
+    padding-bottom: 6px;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #d22856;
+  }
+}
+
 .user-photo__image-panorama {
   width: 100%;
-  margin: 0 auto;
 }
 
 .user-photo__caption {
