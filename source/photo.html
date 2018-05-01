@@ -234,6 +234,7 @@
         </div>
       </section>
 
+<!--
       <section class="photo-upload">
         <h2 class="visually-hidden"> Загрузи свои фотографии!</h2>
         <p class="photo-upload__slogan">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне!</p>
@@ -265,15 +266,15 @@
             <div class="photo-upload__control-wrapper">
               <div class="photo-upload__control-scale control-scale">
                 <div class="control-scale__wrap control-scale__wrap-crop">
-                  <input class="control-scale__filter" id="control-scale-crop" name="control-scale-filter" type="range" min="1" max="100">
+                  <input class="control-scale__filter control-scale__filter-1" id="control-scale-crop" name="control-scale-filter" type="range" min="1" max="100">
                   <label class="visually-hidden" for="control-scale-crop">Диапазон значения</label>
                 </div>
                 <div class="control-scale__wrap control-scale__wrap-paint">
-                  <input class="control-scale__filter" id="control-scale-paint" name="control-scale-filter" type="range" min="1" max="100">
+                  <input class="control-scale__filter control-scale__filter-2" id="control-scale-paint" name="control-scale-filter" type="range" min="1" max="100">
                   <label class="visually-hidden" for="control-scale-paint">Диапазон значения</label>
                 </div>
                 <div class="control-scale__wrap control-scale__wrap-contrast">
-                  <input class="control-scale__filter" id="control-scale-contrast" name="control-scale-filter" type="range" min="1" max="100">
+                  <input class="control-scale__filter control-scale__filter-3" id="control-scale-contrast" name="control-scale-filter" type="range" min="1" max="100">
                   <label class="visually-hidden" for="control-scale-contrast">Диапазон значения</label>
                 </div>
               </div>
@@ -282,6 +283,21 @@
                 <input class="photo-upload__button photo-upload__button--cancel" id="photo-upload-button-reset" value="Отмена" type="reset">
               </div>
             </div>
+          </div>
+        </form>
+
+      </section>-->
+
+      <section class="photo-upload">
+        <h2 class="visually-hidden"> Загрузи свои фотографии!</h2>
+        <p class="photo-upload__slogan">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне!</p>
+        <form class="photo-upload__form-wrapper" action="https://echo.htmlacademy.ru">
+          <div class="photo-upload__form-inner">
+            <picture class="photo-upload__images">
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога">
+            </picture>
           </div>
         </form>
       </section>

@@ -1,4 +1,4 @@
-.control-scale {
+/*.control-scale {
   text-align: center;
   border-bottom: 1px solid #dddfe0;
   padding-top: 29px;
@@ -106,6 +106,11 @@
     padding-top: 10px;
     text-align: right;
     padding-right: 18px;
+    border-bottom: 0;
+  }
+
+  .control-scale__wrap {
+    border-bottom: 1px solid #dddfe0;
   }
 
   .control-scale__wrap-contrast,
@@ -114,7 +119,46 @@
   }
 
   .control-scale__filter {
+    position: relative;
     width: 202px;
     margin-bottom: 55px;
+
+  }
+
+  .control-scale__filter-1::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -55px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-editor-crop--active-small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .control-scale__filter-2::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -55px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-editor-fil--active-small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .control-scale__filter-3::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -53px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-editor-contrast--active-small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
+*/

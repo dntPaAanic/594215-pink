@@ -1,3 +1,4 @@
+
 .photo-upload__slogan {
   padding-top: 22px;
   padding-bottom: 42px;
@@ -15,10 +16,7 @@
   padding-bottom: 29px;
 }
 
-/*.photo-upload__form-inner {
-  @include container;
-}*/
-
+/*
 .photo-upload__images {
   width: 280px;
   margin: 0 auto;
@@ -145,6 +143,7 @@
 
   .photo-upload__form-wrapper {
     padding-top: 57px;
+    padding-bottom: 50px;
   }
 
   .photo-upload__form-inner {
@@ -164,13 +163,14 @@
   }
 
   .photo-upload__control-wrapper {
-    width: 300px;
+    width: 275px;
     display: flex;
     flex-direction: column;
   }
 
   .photo-upload__buttons {
     margin-left: auto;
+    padding-right: 14px;
   }
 
   .photo-upload__button {
@@ -178,7 +178,8 @@
 
     margin-left: 0;
 
-    padding-left: 77px;
+    padding-left: 75px;
     padding-right: 77px;
   }
 }
+*/
