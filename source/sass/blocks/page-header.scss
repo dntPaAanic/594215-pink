@@ -6,14 +6,16 @@
 }
 
 .page-header__logo-mobile,
-.page-header__logo-tablet {
+.page-header__logo-tablet,
+.page-header__logo-desktop {
   transition: 0.3s;
+  fill: #ffffff;
 
-  &:hover path {
+  &:hover {
     fill: $menu-logo-hover;
   }
 
-  &:active path {
+  &:active {
     fill: $mobile-menu-logo-down;
   }
 }
@@ -22,13 +24,18 @@
   padding-left: 21px;
 }
 
-.page-header__burger:hover path,
-.page-header__cross:hover path {
+.page-header__burger,
+.page-header__cross {
+  fill: #ffffff;
+}
+
+.page-header__burger:hover,
+.page-header__cross:hover {
   fill: $menu-button-hover;
 }
 
-.page-header__burger:active path,
-.page-header__cross:active path {
+.page-header__burger:active,
+.page-header__cross:active {
   fill: $mobile-menu-button-down;
 }
 
