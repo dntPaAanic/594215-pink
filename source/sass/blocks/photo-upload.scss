@@ -1,5 +1,5 @@
 .photo-upload__slogan {
-  padding-top: 19px;
+  padding-top: 22px;
   padding-bottom: 42px;
   padding-right: 2px;
 
@@ -15,18 +15,27 @@
   padding-bottom: 29px;
 }
 
-.photo-upload__form-inner {
+/*.photo-upload__form-inner {
   @include container;
+}*/
+
+.photo-upload__images {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
 }
 
 .photo-upload__form {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 37px;
   padding-right: 32px;
-  padding-left: 20px;
+  padding-left: 19px;
 }
 
 .photo-upload__form input {
@@ -56,24 +65,120 @@
 }
 
 .photo-upload__buttons {
-  width: 280px;
+  padding-top: 34px;
+}
+
+.photo-upload__button {
+  display: block;
   margin: 0 auto;
-  padding: 0;
-  border: 0;
+
+  box-sizing: border-box;
+  width: 280px;
+
+  margin-bottom: 12px;
+
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  text-align: center;
+
+  outline: none;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.photo-upload__button--upload {
+  color: #d22856;
+
+  border: 3px solid #d22856;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #d22856;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: 0.1s;
+  }
+}
+
+.photo-upload__button--cancel {
+  color: rgba(40, 54, 69, 0.1);
+
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 30px;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+
+    transition: 0.2s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: #b5b9be;
+    transition: 0.1s;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .photo-upload__slogan {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 45px;
+    padding-bottom: 69px;
+    width: 430px;
+  }
+
+  .photo-upload__form-wrapper {
+    padding-top: 57px;
+  }
+
   .photo-upload__form-inner {
     display: flex;
+    @include container;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+  }
+
+  .photo-upload__images {
+    width: 300px;
+    margin: 0;
   }
 
   .photo-upload__form {
-    margin-left: auto;
+    display: none;
+  }
+
+  .photo-upload__control-wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .photo-upload__buttons {
     margin-left: auto;
+  }
+
+  .photo-upload__button {
+    width: 260px;
+
+    margin-left: 0;
+
+    padding-left: 77px;
+    padding-right: 77px;
   }
 }

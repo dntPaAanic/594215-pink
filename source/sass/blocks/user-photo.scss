@@ -47,6 +47,19 @@
   background-color: $background-lightgray;
 }
 
+.user-photo__caption--panorama {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 120px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 19px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+
+  background-color: $background-lightgray;
+}
+
 .user-photo__title {
   margin-top: 0;
   margin-bottom: 0;

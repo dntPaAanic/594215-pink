@@ -1,6 +1,7 @@
 .control-scale {
   text-align: center;
   border-bottom: 1px solid #dddfe0;
+  padding-top: 29px;
 }
 
 .control-scale__wrap-contrast,
@@ -9,10 +10,13 @@
 }
 
 .control-scale__filter {
-  appearance: none;
+  -webkit-appearance: none;
   width: 240px;
   height: 18px;
-  margin: 0px auto 30px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
   background-color: transparent;
   outline: none;
   border: none;
@@ -39,10 +43,10 @@
   }
 
   &::-webkit-slider-thumb {
-    appearance: none;
+    -webkit-appearance: none;
     box-sizing: content-box;
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     margin-top: -7px;
     border: 2px solid #d22856;
     border-radius: 50%;
@@ -51,7 +55,7 @@
   }
 
   &::-moz-range-track {
-    appearance: none;
+    -moz-appearance: none;
     width: 240px;
     height: 2px;
     background-color: #ffffff;
@@ -60,7 +64,7 @@
   }
 
   &::-moz-range-thumb {
-    appearance: none;
+    -moz-appearance: none;
     width: 14px;
     height: 14px;
     border: 2px solid #d22856;
@@ -94,5 +98,23 @@
     border-radius: 50%;
     background-color: #ffffff;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .control-scale {
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 18px;
+  }
+
+  .control-scale__wrap-contrast,
+  .control-scale__wrap-paint {
+    display: block;
+  }
+
+  .control-scale__filter {
+    width: 202px;
+    margin-bottom: 55px;
   }
 }
