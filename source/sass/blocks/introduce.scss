@@ -6,17 +6,28 @@
   min-height: 237px;
 
   text-align: center;
+  background-color: #283645;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: 340px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
+}
+
+.introduce__wrapper {
+  @include container;
 }
 
 .introduce__title-text {
   margin: 0;
-  padding-top: 101px;
+  padding-top: 96px;
 
+  line-height: 29px;
   font-weight: 300;
   font-size: 24px;
   color: $font-color-top;
@@ -24,22 +35,48 @@
 
 @media (min-width: $tablet-width) {
   .introduce__title {
-    min-height: 440px;
+    min-height: 394px;
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% -43px;
+    background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% -43px;
+      background-size: 1200px auto;
+    }
+  }
+
+  .introduce__title-text {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 136px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .introduce__title {
-    min-height: 400px;
+    min-height: 394px;
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% 0;
+    background-size: 2560px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 11px;
+      background-size: 2560px auto;
+    }
+  }
+
+  .introduce__title-text {
+    padding-left: 207px;
+    padding-right: 207px;
+    padding-top: 173px;
   }
 }
