@@ -11,6 +11,55 @@
 
 .photo-upload__form-wrapper {
   background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 29px;
+}
+
+.photo-upload__form-inner {
+  @include container;
+}
+
+.photo-upload__form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 37px;
+  padding-right: 32px;
+  padding-left: 20px;
+}
+
+.photo-upload__form input {
+  display: none;
+}
+
+.photo-upload__filter-toggle {
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.photo-upload__filter-image {
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949c;
+  }
+}
+
+.photo-upload__filter-image--active {
+  fill: #d22856;
+
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.photo-upload__buttons {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,12 +70,10 @@
   }
 
   .photo-upload__form {
-    display: none;
+    margin-left: auto;
   }
 
-  .photo-upload__control-inner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .photo-upload__buttons {
+    margin-left: auto;
   }
 }
