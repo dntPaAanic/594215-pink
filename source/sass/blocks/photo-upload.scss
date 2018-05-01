@@ -1,15 +1,16 @@
-.photo-upload {
-  @include container;
-}
-
 .photo-upload__slogan {
-  padding-top: 53px;
+  padding-top: 19px;
+  padding-bottom: 42px;
+  padding-right: 2px;
 
-  font-weight: 400;
   line-height: 30px;
   text-align: center;
 
   @include container;
+}
+
+.photo-upload__form-wrapper {
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
