@@ -424,6 +424,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .feedback__submit {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
 }
 
 @media (min-width: $desktop-width) {
