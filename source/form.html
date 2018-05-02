@@ -169,21 +169,21 @@
         <h2 class="visually-hidden">Напиши нам</h2>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="feedback__slogan">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="feedback__fill-form">Пожалуйста, заполните форму ниже:</span>
           </p>
           <fieldset class="feedback__field feedback__field--input">
             <ul class="feedback__items">
-              <li class="feedback__item">
+              <li class="feedback__item feedback__item--input">
                 <label class="feedback__label feedback__label--caption" for="surname"> Фамилия:</label>
-                <input class="feedback__input feedback__field--input " id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+                <input class="feedback__input feedback__input--text" id="surname" type="text" placeholder="Укажите фамилию *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
-              <li class="feedback__item">
+              <li class="feedback__item feedback__item--input">
                 <label class="feedback__label feedback__label--caption" for="name"> Имя:</label>
-                <input class="feedback__input" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
+                <input class="feedback__input feedback__input--text" id="name" type="text" placeholder="Введите ваше имя *" required pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
-              <li class="feedback__item">
+              <li class="feedback__item feedback__item--input">
                 <label class="feedback__label feedback__label--caption" for="patronymic"> Отчество:</label>
-                <input class="feedback__input" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
+                <input class="feedback__input feedback__input--text" id="patronymic" type="text" placeholder="Ну и отчество тоже" pattern="\S+[A-Za-zА-Яа-яЁё]">
               </li>
             </ul>
           </fieldset>
@@ -247,13 +247,13 @@
           <fieldset class="feedback__field feedback__field--contact-info">
             <legend class="feedback__title feedback__title--close">Контактная информация</legend>
             <ul class="feedback__items">
-              <li class="feedback__item">
+              <li class="feedback__item feedback__item--contact-info">
                 <label for="phone-number" class="feedback__label feedback__label--caption">Номер телефона</label>
-                <input id="phone-number" class="feedback__input tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
+                <input id="phone-number" class="feedback__input feedback__input--tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
               </li>
-              <li class="feedback__item">
+              <li class="feedback__item feedback__item--contact-info">
                 <label for="email" class="feedback__label feedback__label--caption">Адрес почты</label>
-                <input id="email" class="feedback__input email" name="email" type="email" placeholder="Введите почту *" required>
+                <input id="email" class="feedback__input feedback__input--email" name="email" type="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -355,5 +355,6 @@
         <button class="pop-up__submit" type="button">закрыть окно</button>
       </div>
     </div>
+  <script src="./js/meu.js"></script>
   </body>
 </html>
