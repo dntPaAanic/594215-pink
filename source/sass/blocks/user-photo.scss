@@ -117,7 +117,7 @@
     padding-bottom: 49px;
   }
 
-  .user__photo__panorama::before {
+  .user-photo__panorama::before {
     top: 57px;
   }
 
@@ -192,9 +192,9 @@
     padding-bottom: 52px;
   }
 
-  .user__photo__panorama::before {
+  .user-photo__panorama::before {
     top: 53px;
-    right: -8px;
+    right: -1px;
   }
 
   .user-photo__caption {
@@ -210,9 +210,6 @@
     padding-right: 29px;
     padding-left: 28px;
     padding-bottom: 15px;
-  }
-
-  .user-photo__like {
   }
 
   .user-photo__like--panorama {
