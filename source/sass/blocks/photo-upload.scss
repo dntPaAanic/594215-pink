@@ -162,8 +162,7 @@
     line-height: 30px;
     padding-bottom: 69px;
     padding-top: 45px;
-    padding-right: 50px;
-    padding-left: 50px;
+    width: 425px;
   }
 
   .photo-upload__images {
@@ -240,10 +239,11 @@
   }
 
   .photo-upload__contrast {
+    position: absolute;
     width: 17px;
     height: 17px;
 
-    top: 155px;
+    top: -4px;
     left: 8px;
 
     background-position: 50% 50%;
