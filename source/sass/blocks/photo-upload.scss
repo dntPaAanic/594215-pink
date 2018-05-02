@@ -16,54 +16,77 @@
   padding-bottom: 29px;
 }
 
-/*
 .photo-upload__images {
-  width: 280px;
-  margin: 0 auto;
+  @include container;
+  height: 374px;
   display: block;
 }
 
-.photo-upload__form {
-  box-sizing: border-box;
+.photo-upload__image {
   width: 280px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 37px;
-  padding-right: 32px;
-  padding-left: 19px;
+  height: 374px;
 }
 
-.photo-upload__form input {
-  display: none;
-}
-
-.photo-upload__filter-toggle {
+.photo-upload__tools {
   font-size: 0;
   line-height: 0;
-  cursor: pointer;
+
+  text-align: center;
 }
 
-.photo-upload__filter-image {
-  fill: #b5b9be;
+.photo-upload__tools-list {
+  position: relative;
+
+  padding-top: 42px;
+  margin-bottom: 38px;
+}
+
+.photo-upload__tool {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 17px;
+  margin-left: 17px;
+
+  padding-bottom: 76px;
+
+  width: 48px;
+  height: 44px;
+
+  font-size: 0;
+  line-height: 0;
+
+  border: 0;
+
+  opacity: 0.3;
 
   &:hover {
-    fill: #8d949c;
+    cursor: pointer;
+    opacity: 0.5;
   }
 }
 
-.photo-upload__filter-image--active {
+.photo-upload__tool--active {
+  opacity: 1;
+}
+
+.photo-upload__crop,
+.photo-upload__fill,
+.photo-upload__contrast {
+  opacity: 1;
   fill: #d22856;
-
-  &:hover {
-    fill: #d22856;
-  }
 }
 
-.photo-upload__buttons {
-  padding-top: 34px;
+.photo-upload__tool--active + .control-scale {
+  display: block;
+}
+
+.photo-upload__tool--active + .control-scale + .control-scale__toggle {
+  background-color: #d22856;
+}
+
+.photo-upload__tool--contrast {
+  position: relative;
 }
 
 .photo-upload__button {
@@ -79,7 +102,6 @@
   padding-right: 88px;
   padding-top: 14px;
   padding-bottom: 17px;
-  cursor: pointer;
 
   font-size: 18px;
   line-height: 18px;
@@ -93,7 +115,7 @@
   background-color: #f2f2f2;
 }
 
-.photo-upload__button--upload {
+.photo-upload__button--submit {
   color: #d22856;
 
   border: 3px solid #d22856;
@@ -102,6 +124,8 @@
   &:hover {
     background-color: #d22856;
     color: white;
+
+    transition: 0.2s;
   }
 
   &:active {
@@ -111,7 +135,7 @@
   }
 }
 
-.photo-upload__button--cancel {
+.photo-upload__button--reset {
   color: rgba(40, 54, 69, 0.1);
 
   border: 3px solid rgba(40, 54, 69, 0.1);
@@ -136,41 +160,94 @@
   .photo-upload__slogan {
     font-size: 18px;
     line-height: 30px;
-    padding-top: 45px;
     padding-bottom: 69px;
-    width: 430px;
-  }
-
-  .photo-upload__form-wrapper {
-    padding-top: 57px;
-    padding-bottom: 50px;
-  }
-
-  .photo-upload__form-inner {
-    display: flex;
-    @include container;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .photo-upload__images {
     width: 300px;
-    margin: 0;
+    height: 400px;
+
+    flex-shrink: 0;
+    margin-left: 0;
+    margin-right: 45px;
   }
 
-  .photo-upload__form {
-    display: none;
+  .photo-upload__image {
+    width: 300px;
+    height: 400px;
   }
 
-  .photo-upload__control-wrapper {
-    width: 275px;
+  .photo-upload__form-wrapper {
+    padding-top: 0;
+    padding-bottom: 54px;
+  }
+
+  .photo-upload__form-inner {
+    @include container;
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 57px;
   }
 
-  .photo-upload__buttons {
-    margin-left: auto;
-    padding-right: 14px;
+  .photo-upload__tools {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    min-height: 400px;
+
+    background-size: cover;
+  }
+
+  .photo-upload__tools-list {
+    padding-top: 13px;
+
+    margin-bottom: 0;
+  }
+
+  .photo-upload__tool {
+    position: absolute;
+
+    left: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-bottom: 0;
+
+    width: 24px;
+    height: 22px;
+    background-size: 24px 22px;
+
+    opacity: 1;
+  }
+
+  .photo-upload__tool--crop {
+    top: 10px;
+    left: 4px;
+  }
+
+  .price__field--fill {
+    top: 85px;
+    left: 4px;
+  }
+
+  .photo-upload__contrast {
+    width: 17px;
+    height: 17px;
+
+    top: 155px;
+    left: 8px;
+
+    background-position: 50% 50%;
+    background-size: 15px 15px;
   }
 
   .photo-upload__button {
@@ -178,8 +255,16 @@
 
     margin-left: 0;
 
-    padding-left: 75px;
+    padding-left: 77px;
     padding-right: 77px;
   }
+
+  .photo-upload__button--submit {
+    margin-top: auto;
+  }
+
+  .photo-upload__button--reset {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
 }
-*/
