@@ -374,6 +374,40 @@
     order: 1;
   }
 
+  .feedback__item--tel,
+  .feedback__item--email {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 20px;
+      height: 19px;
+      background-image: url("../../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+      top: 19px;
+      right: 18px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+
+      width: 62px;
+      height: 62px;
+      background-color: #e5e5e5;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .feedback__item--email::after {
+    background-image: url("../../img/icon-mail.svg");
+  }
+
 
   .feedback__background-color--mindblow {
     background-color: #ffffff;
