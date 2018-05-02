@@ -109,6 +109,10 @@
       <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
     </symbol>
 
+    <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+    </symbol>
+
   </svg>
 
   <header class="page-header">
@@ -183,36 +187,62 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__field feedback__field--mindblow">
-            <legend class="feedback__title">Ваши безбашенные
-              достижения в путешествии</legend>
-            <ul class="feedback__items">
-              <li class="feedback__item">
-                <input id="selfie" class="checkbox" type="checkbox" checked>
-                <label class="label label__achievement" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="feedback__item">
-                <input id="beach" class="checkbox" type="checkbox" checked>
-                <label class="label label__achievement" for="beach">Обгорел на пляже</label>
-              </li>
-              <li class="feedback__item">
-                <input id="norris" class="checkbox" type="checkbox">
-                <label class="label label__achievement" for="norris">Видел Чака Норриса</label>
-              </li>
-              <li class="feedback__item">
-                <input id="gift" class="checkbox" type="checkbox">
-                <label class="label label__achievement" for="gift">Накупил сувениров</label>
-              </li>
-              <li class="feedback__item">
-                <input id="tower-defence" class="checkbox" type="checkbox" checked>
-                <label class="label label__achievement" for="tower-defence">Удержал башню</label>
-              </li>
-              <li class="feedback__item">
-                <input id="hotel" class="checkbox" type="checkbox">
-                <label class="label label__achievement" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="feedback__background-color feedback__background-color--mindblow">
+            <fieldset class="feedback__field feedback__field--mindblow">
+              <legend class="feedback__title">Ваши безбашенные
+                достижения в путешествии</legend>
+              <ul class="feedback__items">
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="selfie" class="feedback__checkbox" type="checkbox" checked>
+                  <label class="feedback__label feedback__label--checkbox" for="selfie">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Сделал селфи с акулой
+                  </label>
+                </li>
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="beach" class="feedback__checkbox" type="checkbox" checked>
+                  <label class="feedback__label feedback__label--checkbox" for="beach">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Обгорел на пляже
+                  </label>
+                </li>
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="norris" class="feedback__checkbox" type="checkbox">
+                  <label class="feedback__label feedback__label--checkbox" for="norris">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Видел Чака Норриса
+                  </label>
+                </li>
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="gift" class="feedback__checkbox" type="checkbox">
+                  <label class="feedback__label feedback__label--checkbox" for="gift">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Накупил сувениров
+                  </label>
+                </li>
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="tower-defence" class="feedback__checkbox" type="checkbox" checked>
+                  <label class="feedback__label feedback__label--checkbox" for="tower-defence">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Удержал башню
+                  </label>
+                </li>
+                <li class="feedback__item feedback__item--mindblow">
+                  <input id="hotel" class="feedback__checkbox" type="checkbox" checked>
+                  <label class="feedback__label feedback__label--checkbox" for="hotel">
+                    <svg class="feedback__icon-yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Разгромил отель
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="feedback__field feedback__field--contact-info">
             <ul class="feedback__items">
