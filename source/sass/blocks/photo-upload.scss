@@ -68,6 +68,11 @@
 
 .photo-upload__tool--active {
   opacity: 1;
+  fill: #d22856;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .photo-upload__crop,
@@ -75,14 +80,6 @@
 .photo-upload__contrast {
   opacity: 1;
  // fill: #d22856;
-}
-
-.photo-upload__tool--active {
-  fill: #d22856;
-
-  &:hover {
-    opacity: 1;
-  }
 }
 
 .photo-upload__tool--active + .control-scale {
@@ -164,12 +161,6 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .photo-upload__tool--fill {
-
-  }
-
-}
 @media (min-width: $tablet-width) {
   .photo-upload__slogan {
     font-size: 18px;
@@ -216,6 +207,13 @@
     min-height: 400px;
 
     background-size: cover;
+  }
+
+  .photo-upload__crop,
+  .photo-upload__fill,
+  .photo-upload__contrast {
+    opacity: 1;
+    fill: #d22856;
   }
 
   .photo-upload__tools-list {
