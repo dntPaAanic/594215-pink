@@ -11,13 +11,63 @@
   background-size: 100% auto, cover;
 }
 
+.page-footer__social-wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 40px;
+}
+
 .page-footer__social-wrapper--index {
   display: none;
 }
 
+.page-footer__logo-glass {
+  fill: #283645;
+  margin-bottom: 37px;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__HTMLAcademy {
+  position: absolute;
+  fill: #d22856;
+  right: 0;
+  top: 3px;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__developer {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 42px;
+}
+
+.page-footer__copyright-link {
+  text-decoration: none;
+  color: #283645;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 49px;
+    padding-top: 15px;
   }
 
   .page-footer__map {
@@ -33,14 +83,15 @@
 
   .page-footer__social-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding-top: 38px;
     padding-bottom: 38px;
+    padding-top: 9px;
 
     @include container;
   }
 
-  .page-footer__logo-glass {
+  /*.page-footer__logo-glass {
     width: 147px;
     height: 40px;
 
@@ -52,12 +103,16 @@
       fill: #283645;
       opacity: 0.3;
     }
+  } */
+
+  .page-footer__logo-glass {
+    padding-top: 8px;
   }
 
   .page-footer__developer {
     position: relative;
-    padding-top: 21px;
     padding-right: 42px;
+    padding-top: 0;
   }
 
   .page-footer__copyright-link {
@@ -69,14 +124,14 @@
     position: absolute;
     fill: #d22856;
     right: 0;
-    top: 14px;
+    top: -9px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 64px;
+    padding-top: 10px;
   }
 
   .page-footer__map {
@@ -87,15 +142,20 @@
   }
 
   .page-footer__social-wrapper {
-    padding-top: 65px;
+    padding-top: 50px;
     padding-bottom: 65px;
   }
 
   .page-footer__developer {
-    padding-top: 19px;
+    padding-top: 0;
+    padding-bottom: 12px;
   }
 
   .page-footer__copyright-link {
     font-size: 18px;
+  }
+
+  .page-footer__HTMLAcademy {
+    top: -4px;
   }
 }
