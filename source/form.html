@@ -262,15 +262,15 @@
             <fieldset class="feedback__field feedback__field--app">
               <legend class="feedback__title">С каким приложением путешествовали?</legend>
               <ul class="feedback__items">
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--app">
                   <input class="feedback__radio" type="radio" name="app-for-trip" id="ios" value="ios" checked>
                   <label class="feedback__label feedback__label--radio" for="ios">Pink для iOS</label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--app">
                   <input class="feedback__radio" type="radio" name="app-for-trip" id="android" value="android">
                   <label class="feedback__label feedback__label--radio" for="android">Pink на Android</label>
                 </li>
-                <li class="feedback__item">
+                <li class="feedback__item feedback__item--app">
                   <input class="feedback__radio" type="radio" name="app-for-trip" id="win-phone" value="win-phone">
                   <label class="feedback__label feedback__label--radio" for="win-phone">Windows Phone</label>
                 </li>
@@ -281,8 +281,10 @@
           <fieldset class="feedback__field feedback__field--emotion">
             <legend class="feedback__title">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="feedback-emotion">Опишите свои эмоции</label>
-            <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <div class="feedback__wrapper">
+            <textarea class="feedback__textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </textarea>
+
+            <div class="feedback__wrapper feedback__wrapper--submit">
               <input class="feedback__submit" type="submit" value="Отправить форму">
               <div class="feedback__require">* — обязательные поля</div>
             </div>
@@ -291,29 +293,50 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo__glass" width="147" height="40" src="http://placehold.it/147x40" alt="HTML Academy">
+  <footer class="page-footer">
+    <div class="page-footer__social-wrapper">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="page-footer__logo-glass" width="147px" height="40px">
+          <use xlink:href="#page-footer__logo-glass"></use>
+        </svg>
+      </a>
+      <ul class="social-links">
+        <li>
+          <a  class="social-links__link social-links__link--twitter" href="https://twitter.com/">
+            <svg class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
+              <use xlink:href="#social__icon--twitter"></use>
+              </g>
+            </svg>
+            twitter
+          </a>
+        </li>
+        <li>
+          <a  class="social-links__link social-links__link--facebook" href="https://www.facebook.com/">
+            <svg class="social__icon social__icon--facebook" width="8.673px" height="18.944px">
+              <use xlink:href="#social__icon--facebook"></use>
+            </svg>
+            facebook
+          </a>
+        </li>
+        <li>
+          <a  class="social-links__link social-links__link--youtube" href="https://www.youtube.com/">
+            <svg class="social__icon social__icon--youtube" width="14.64px" height="13.96px">
+              <use xlink:href="#social__icon--youtube"></use>
+            </svg>
+            youtube
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__developer">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="page-footer__HTMLAcademy" width="26.943px" height="34.09px">
+            <use xlink:href="#page-footer__HTMLAcademy"></use>
+          </svg>
         </a>
-        <ul class="social-links">
-          <li class="social-links__link social-links__link--twitter">
-            <a  href="https://twitter.com/">twitter</a>
-          </li>
-          <li class="social-links__link social-links__link--facebook">
-            <a  href="https://www.facebook.com/">facebook</a>
-          </li>
-          <li class="social-links__link social-links__link--youtube">
-            <a  href="https://www.youtube.com/">youtube</a>
-          </li>
-        </ul>
-        <div class="page-footer__developer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
     <div class="pop-up pop-up--failure pop-up--close">
       <div class="pop-up__wrapper">
