@@ -157,7 +157,12 @@
   display: none;
 }
 
-.feedback__checkbox + .feedback__label--checkbox:active::before {
+.feedback__label--radio::after {
+  display: none;
+}
+
+.feedback__checkbox + .feedback__label--checkbox:active::before,
+.feedback__label--radio:active::before {
   border-color: #d22856;
 }
 
@@ -171,6 +176,22 @@
   fill: #d22856;
 }
 
+
+.feedback__radio + .feedback__label--radio:active::after,
+.feedback__radio:checked + .feedback__label--radio::after {
+  display: block;
+  position: absolute;
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  top: 12px;
+  left: 12px;
+
+  background-color: #d22856;
+  border-radius: 50%;
+}
 
 .feedback__field--contact-info {
   padding-bottom: 39px;
