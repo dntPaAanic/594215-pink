@@ -415,8 +415,14 @@
   }
 
   .feedback__field--emotion {
+    @include container;
     order: 4;
     width: 100%;
+  }
+
+  .feedback__wrapper--submit {
+    @include container;
+    order: 5;
   }
 
   .feedback__wrapper {
@@ -433,29 +439,115 @@
 
 @media (min-width: $desktop-width) {
   .feedback__form {
+    @include container;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .feedback__field {
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
   }
 
   .feedback__field--input {
     width: 50%;
+    padding-right: 35px;
+  }
+
+  .feedback__background-color--app {
+    width: 50%;
+    padding-left: 35px;
   }
 
   .feedback__field--app {
-    width: 50%;
+    width: 100%;
+    flex-shrink: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 51px;
+  }
 
-    border: 1px solid #000000;
+  .feedback__title--app {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .feedback__items--app {
+    margin-left: 74px;
+  }
+
+  .feedback__item--app:first-child {
+    padding-top: 22px;
   }
 
   .feedback__field--contact-info {
     width: 100%;
   }
 
-  .feedback__field--mindblow {
+  .feedback__items--contact-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+  }
+
+  .feedback__item--contact-info {
+    margin-top: 8px;
+    margin-bottom: 13px;
+
+    flex-grow: 1;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    &:last-child {
+      margin-left: 35px;
+      margin-bottom: 13px;
+    }
+  }
+
+  .feedback__background-color--mindblow {
     width: 100%;
+  }
+
+  .feedback__items--mindblow {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      width: 257px;
+    }
+  }
+
+  .feedback__item--mindblow {
+    padding-top: 20px;
+    margin-bottom: 23px;
+
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    width: 257px;
   }
 
   .feedback__field--emotion {
     width: 100%;
+    margin-bottom: 65px;
+    padding-bottom: 35px;
+  }
+
+  .feedback__title--emotion {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }

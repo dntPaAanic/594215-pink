@@ -187,11 +187,12 @@
               </li>
             </ul>
           </fieldset>
+
           <div class="feedback__background-color feedback__background-color--mindblow">
             <fieldset class="feedback__field feedback__field--mindblow">
               <legend class="feedback__title">Ваши безбашенные
                 достижения в путешествии</legend>
-              <ul class="feedback__items">
+              <ul class="feedback__items feedback__items--mindblow">
                 <li class="feedback__item feedback__item--mindblow">
                   <input id="selfie" class="feedback__checkbox" type="checkbox" checked>
                   <label class="feedback__label feedback__label--checkbox" for="selfie">
@@ -246,7 +247,7 @@
 
           <fieldset class="feedback__field feedback__field--contact-info">
             <legend class="feedback__title feedback__title--close">Контактная информация</legend>
-            <ul class="feedback__items">
+            <ul class="feedback__items feedback__items--contact-info">
               <li class="feedback__item feedback__item--contact-info feedback__item--tel">
                 <label for="phone-number" class="feedback__label feedback__label--caption">Номер телефона</label>
                 <input id="phone-number" class="feedback__input feedback__input--tel" name="phone-number" type="tel" placeholder="Номер, пожалуйста">
@@ -260,8 +261,8 @@
 
           <div class="feedback__background-color feedback__background-color--app">
             <fieldset class="feedback__field feedback__field--app">
-              <legend class="feedback__title">С каким приложением путешествовали?</legend>
-              <ul class="feedback__items">
+              <legend class="feedback__title feedback__title--app">С каким приложением путешествовали?</legend>
+              <ul class="feedback__items feedback__items--app">
                 <li class="feedback__item feedback__item--app">
                   <input class="feedback__radio" type="radio" name="app-for-trip" id="ios" value="ios" checked>
                   <label class="feedback__label feedback__label--radio" for="ios">Pink для iOS</label>
@@ -279,16 +280,16 @@
           </div>
 
           <fieldset class="feedback__field feedback__field--emotion">
-            <legend class="feedback__title">Опишите свои эмоции</legend>
+            <legend class="feedback__title feedback__title--emotion">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="feedback-emotion">Опишите свои эмоции</label>
             <textarea class="feedback__textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </textarea>
-
+          </fieldset>
             <div class="feedback__wrapper feedback__wrapper--submit">
               <input class="feedback__submit" type="submit" value="Отправить форму">
               <div class="feedback__require">* — обязательные поля</div>
             </div>
-          </fieldset>
+
         </form>
       </section>
     </main>
