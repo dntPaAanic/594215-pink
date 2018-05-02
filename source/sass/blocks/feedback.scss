@@ -1,44 +1,61 @@
-.feedback {
-  text-align: center;
-
-  @include container;
-}
-
 .feedback__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
 
+.feedback__slogan {
   @include container;
+  line-height: 30px;
+  text-align: center;
 }
 
 .feedback__field {
+  @include container;
+  border: none;
   box-sizing: border-box;
-  padding: 28px 0;
+  padding-top: 28px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 30px;
 }
 
 .feedback__items {
   padding: 0;
+  margin: 0;
 
   list-style: none;
 }
 
 .feedback__label {
-  display: block;
-
-  text-transform: uppercase;
+  line-height: 30px;
 }
 
 .feedback__label--caption {
   color: $font-color-headers-bright;
   display: block;
+  margin-bottom: 5px;
+  padding-left: 23px;
+  text-transform: uppercase;
 }
 
 .feedback__input {
   box-sizing: border-box;
-  padding: 22px 0 18px 20px;
 
   font-size: 18px;
+  line-height: 30px;
+
+  width: 100%;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  margin-bottom: 16px;
   color: $font-color-main;
 
   &::-webkit-input-placeholder {
@@ -55,6 +72,15 @@
 
   &:-ms-input-placeholder {
     color: $font-color-main;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
   }
 }
 
