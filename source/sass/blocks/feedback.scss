@@ -316,6 +316,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback__form {
+    padding-top: 93px;
+  }
+
   .feedback__slogan {
     order: 0;
     box-sizing: border-box;
@@ -350,7 +354,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 52px;
+    margin-bottom: 0;
+    padding-top: 72px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
 
     border: none;
   }
@@ -360,12 +368,26 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 14px;
+    }
   }
 
   .feedback__label--caption {
     margin-bottom: 0;
-    padding-right: 22px;
+    padding-right: 18px;
     padding-left: 0;
+  }
+
+  .feedback__field--app {
+    padding-top: 36px;
+    padding-bottom: 17px;
+    margin-bottom: 11px;
+  }
+
+  .feedback__label--radio::before {
+    margin-right: 20px;
   }
 
   .feedback__input--text {
