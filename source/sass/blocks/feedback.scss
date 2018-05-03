@@ -18,7 +18,7 @@
 
 .feedback__field {
   box-sizing: border-box;
-  padding-top: 28px;
+  padding-top: 34px;
   padding-right: 0;
   padding-bottom: 30px;
   padding-left: 0;
@@ -33,6 +33,15 @@
   padding: 0;
 
   list-style: none;
+}
+
+
+.feedback__field--mindblow {
+  padding-bottom: 0;
+}
+
+.feedback__items--mindblow {
+  padding-top: 6px;
 }
 
 .feedback__checkbox,
@@ -63,7 +72,7 @@
   padding-top: 14px;
   padding-right: 22px;
   padding-bottom: 15px;
-  padding-left: 22px;
+  padding-left: 21px;
 
   font-size: 18px;
   line-height: 30px;
@@ -105,7 +114,7 @@
 .feedback__background-color--mindblow {
   box-sizing: border-box;
   padding-top: 36px;
-  padding-bottom: 18px;
+  padding-bottom: 0px;
 }
 
 .feedback__title {
@@ -142,7 +151,7 @@
 
     vertical-align: middle;
 
-    background-color: white;
+    background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
 
@@ -156,7 +165,7 @@
 }
 
 .feedback__label--checkbox::before {
-  border-radius: 2px;
+  margin-right: 26px;
 }
 
 .feedback__label--radio::before {
@@ -179,12 +188,20 @@
 .feedback__checkbox + .feedback__label--checkbox:active .feedback__icon-yes,
 .feedback__checkbox:checked + .feedback__label--checkbox .feedback__icon-yes {
   position: absolute;
-  top: 9px;
-  left: 5px;
+  top: 8px;
+  left: 10px;
 
   display: block;
 
   fill: #d22856;
+}
+
+.feedback__field--app {
+  padding-bottom: 0;
+}
+
+.feedback__items--app {
+  padding-top: 3px;
 }
 
 .feedback__item--app {
@@ -207,7 +224,8 @@
 }
 
 .feedback__field--contact-info {
-  padding-bottom: 39px;
+  padding-bottom: 29px;
+  padding-top: 29px;
 }
 
 .feedback__title--close {
@@ -217,8 +235,8 @@
 .feedback__background-color--app {
   box-sizing: border-box;
   min-height: 337px;
-  margin-bottom: 58px;
-  padding-top: 36px;
+  margin-bottom: 40px;
+  padding-top: 37px;
 }
 
 .feedback__field--emotion {
@@ -233,10 +251,12 @@
   margin-top: 6px;
   padding-top: 15px;
   padding-right: 21px;
-  padding-left: 21px;
+  padding-left: 18px;
+  font-size: 18px;
+  line-height: 30px;
+
 
   border: 2px solid #e5e5e5;
-  border-radius: 2px;
 }
 
 .feedback__wrapper {
@@ -245,9 +265,13 @@
   justify-content: space-between;
   align-items: center;
   min-height: 128px;
-  padding-top: 44px;
+  padding-top: 4px;
 
   text-align: center;
+}
+
+.feedback__obligatorily {
+  color: #d22856;
 }
 
 .feedback__submit {

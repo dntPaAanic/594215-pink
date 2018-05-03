@@ -116,17 +116,21 @@
 }
 
 .price__field--ok {
+  width: 31px;
+  height: 21px;
   background-image: url("../../img/icon--yes.svg");
   background-repeat: no-repeat;
-  background-position: 220px 20px;
+  background-position: 226px 17px;
   background-size: 31px 21px;
 }
 
 .price__field--cancel {
+  width: 35px;
+  height: 25px;
   background-image: url("../../img/icon--no.svg");
   background-repeat: no-repeat;
-  background-position: 220px 20px;
-  background-size: 31px 21px;
+  background-position: 224px 13px;
+  background-size: 35px 25px;
 }
 
 .price__field-icon--yes {
