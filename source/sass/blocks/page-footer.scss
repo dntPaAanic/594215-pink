@@ -9,7 +9,7 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
+  
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -126,7 +126,7 @@
   .page-footer__map {
     height: 373px;
 
-    background-image: url("../img/bg-map-tablet@1x.png");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: -11px -316px;
     background-size: cover;
