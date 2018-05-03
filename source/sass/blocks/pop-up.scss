@@ -4,18 +4,15 @@
 
 .pop-up {
   position: fixed;
-
-  width: 100%;
-
   top: 25%;
 
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 50px;
 
   text-align: center;
 
   background-color: white;
-
   box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,14 +21,13 @@
 }
 
 .pop-up__title {
+  margin-bottom: 25px;
+
   font-size: 18px;
   line-height: 24px;
-
-  margin-bottom: 25px;
 }
 
 .pop-up__content {
-
   font-size: 14px;
   line-height: 24px;
 }
@@ -59,22 +55,20 @@
 
 
 .pop-up__submit {
-  overflow: hidden;
   display: block;
-  margin: 0 auto;
   min-width: 280px;
-
+  margin: 0 auto;
   padding-top: 15px;
+  padding-right: 25px;
   padding-bottom: 17px;
   padding-left: 25px;
-  padding-right: 25px;
+  overflow: hidden;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-
-  text-transform: uppercase;
   color: white;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
   border: none;
@@ -84,33 +78,35 @@
   &:hover {
     background-color: #1c9b5e;
     border-color: #1c9b5e;
+
     transition: 0.3s;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    transition: 0.1s;
+
     outline: none;
+
+    transition: 0.1s;
   }
 }
 
 @media ($tablet-width) {
   .pop-up {
+    left: 50%;
+
     box-sizing: border-box;
     width: 460px;
-
-    padding-top: 36px;
-
-    left: 50%;
     margin-left: -230px;
+    padding-top: 36px;
 
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), -20px 0 30px -15px rgba(0, 0, 0, 0.1), 20px 0 30px -15px rgba(0, 0, 0, 0.1), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
   }
 
   .pop-up--failure {
+    padding-right: 80px;
     padding-bottom: 52px;
     padding-left: 80px;
-    padding-right: 80px;
   }
 
   .pop-up--success {
@@ -120,8 +116,8 @@
   .pop-up--success .pop-up__content,
   .pop-up--success .pop-up__title,
   .pop-up--success .pop-up__submit {
-    margin-left: 80px;
     margin-right: 80px;
+    margin-left: 80px;
   }
 
   .pop-up--success .pop-up__content:last-of-type {
@@ -154,13 +150,12 @@
   .pop-up--success {
     width: 780px;
     margin-left: -390px;
-
     padding-top: 40px;
 
     .pop-up__content,
     .pop-up__title {
-      margin-left: 190px;
       margin-right: 190px;
+      margin-left: 190px;
     }
 
     .pop-up__content:last-of-type {
@@ -173,4 +168,3 @@
     }
   }
 }
-

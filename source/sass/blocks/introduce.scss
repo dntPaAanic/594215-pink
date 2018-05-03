@@ -6,8 +6,8 @@
   min-height: 237px;
 
   text-align: center;
-  background-color: #283645;
 
+  background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -15,8 +15,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
     background-position: 50% -4px;
+    background-size: 700px auto;
   }
 }
 
@@ -28,9 +28,9 @@
   margin: 0;
   padding-top: 96px;
 
-  line-height: 29px;
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   color: $font-color-top;
 }
 
@@ -52,9 +52,10 @@
   }
 
   .introduce__title-text {
+    padding-top: 136px;
+
     font-size: 50px;
     line-height: 60px;
-    padding-top: 136px;
   }
 }
 
@@ -76,8 +77,8 @@
   }
 
   .introduce__title-text {
-    padding-left: 207px;
-    padding-right: 207px;
     padding-top: 173px;
+    padding-right: 207px;
+    padding-left: 207px;
   }
 }

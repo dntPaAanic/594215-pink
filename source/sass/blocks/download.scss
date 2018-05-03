@@ -196,8 +196,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url(../img/bg-back-desktop@2x.jpg);
-      background-position: 50% 1px;
       background-repeat: no-repeat;
+      background-position: 50% 1px;
       background-size: 2563px auto;
     }
   }

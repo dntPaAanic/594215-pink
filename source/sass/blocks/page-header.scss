@@ -1,14 +1,16 @@
 .page-header {
   position: relative;
-  background-color: $background-menu;
 
   color: $font-color-top;
+
+  background-color: $background-menu;
 }
 
 .page-header__logo-mobile,
 .page-header__logo-tablet,
 .page-header__logo-desktop {
   transition: 0.3s;
+
   fill: #ffffff;
 
   &:hover {

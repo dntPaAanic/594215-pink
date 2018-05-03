@@ -1,15 +1,17 @@
 .contact {
-  text-align: center;
   padding-bottom: 39px;
+
+  text-align: center;
 
   @include container;
 }
 
 .contact__slogan {
-  font-weight: 300;
-  font-size: 24px;
   margin-top: 22px;
   margin-bottom: 34px;
+
+  font-weight: 300;
+  font-size: 24px;
   line-height: 30px;
 }
 
@@ -18,17 +20,18 @@
 }
 
 .contact__item-header {
-  margin-bottom: 4px;
   margin-top: 23px;
+  margin-bottom: 4px;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  font-weight: bold;
 }
 
 .contact__item-text {
   font-weight: 300;
-  line-height: 29px;
   font-size: 24px;
+  line-height: 29px;
   color: $font-color-headers-bright;
   text-decoration: none;
 }
@@ -41,21 +44,22 @@
   .contact__slogan {
     width: 400px;
     margin: 0 auto;
+
     font-size: 40px;
     line-height: 48px;
   }
 
   .contact__item-wrapper {
     display: flex;
-    padding-top: 21px;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: 21px;
   }
 
   .contact__item {
+    box-sizing: border-box;
     width: 50%;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   .contact__item--call {
@@ -86,9 +90,10 @@
 
   .contact__slogan {
     width: 640px;
+    margin-bottom: 14px;
+
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 14px;
   }
 
   .contact__item {
@@ -104,8 +109,8 @@
   }
 
   .contact__item-header--write {
-    padding-bottom: 0;
     margin-bottom: 26px;
+    padding-bottom: 0;
   }
 
   .contact__item--visit {
@@ -113,7 +118,7 @@
   }
 
   .contact__item-header--visit {
-    padding-bottom: 0;
     margin-bottom: 23px;
+    padding-bottom: 0;
   }
 }

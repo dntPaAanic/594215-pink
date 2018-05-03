@@ -1,8 +1,8 @@
 
 .photo-upload__slogan {
   padding-top: 22px;
-  padding-bottom: 42px;
   padding-right: 2px;
+  padding-bottom: 42px;
 
   line-height: 30px;
   text-align: center;
@@ -11,15 +11,17 @@
 }
 
 .photo-upload__form-wrapper {
-  background-color: #f2f2f2;
   padding-top: 20px;
   padding-bottom: 29px;
+
+  background-color: #f2f2f2;
 }
 
 .photo-upload__images {
-  @include container;
-  height: 374px;
   display: block;
+  height: 374px;
+
+  @include container;
 }
 
 .photo-upload__image {
@@ -30,34 +32,29 @@
 .photo-upload__tools {
   font-size: 0;
   line-height: 0;
-
   text-align: center;
 }
 
 .photo-upload__tools-list {
   position: relative;
 
-  padding-top: 42px;
   margin-bottom: 38px;
+  padding-top: 42px;
 }
 
 .photo-upload__tool {
   display: inline-block;
-  vertical-align: middle;
-
-  margin-right: 17px;
-  margin-left: 17px;
-
-  padding-bottom: 76px;
-
   width: 48px;
   height: 44px;
+  margin-right: 17px;
+  margin-left: 17px;
+  padding-bottom: 76px;
 
   font-size: 0;
   line-height: 0;
+  vertical-align: middle;
 
   border: 0;
-
   opacity: 0.3;
 
   &:hover {
@@ -68,6 +65,7 @@
 
 .photo-upload__tool--active {
   opacity: 1;
+
   fill: #d22856;
 
   &:hover {
@@ -79,7 +77,7 @@
 .photo-upload__fill,
 .photo-upload__contrast {
   opacity: 1;
- // fill: #d22856;
+  // fill: #d22856;
 }
 
 .photo-upload__tool--active + .control-scale {
@@ -96,28 +94,23 @@
 
 .photo-upload__button {
   display: block;
-  margin: 0 auto;
-
   box-sizing: border-box;
   width: 280px;
-
+  margin: 0 auto;
   margin-bottom: 12px;
-
-  padding-left: 88px;
-  padding-right: 88px;
   padding-top: 14px;
+  padding-right: 88px;
   padding-bottom: 17px;
+  padding-left: 88px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
-
   text-align: center;
 
-  outline: none;
-
-  border: none;
   background-color: #f2f2f2;
+  border: none;
+  outline: none;
 }
 
 .photo-upload__button--submit {
@@ -127,8 +120,9 @@
   border-radius: 30px;
 
   &:hover {
-    background-color: #d22856;
     color: white;
+
+    background-color: #d22856;
 
     transition: 0.2s;
   }
@@ -148,6 +142,7 @@
 
   &:hover {
     color: rgba(40, 54, 69, 0.3);
+
     border-color: rgba(40, 54, 69, 0.3);
 
     transition: 0.2s;
@@ -155,28 +150,30 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+
     background-color: rgba(40, 54, 69, 0.3);
     border-color: #b5b9be;
+
     transition: 0.1s;
   }
 }
 
 @media (min-width: $tablet-width) {
   .photo-upload__slogan {
+    width: 425px;
+    padding-top: 45px;
+    padding-bottom: 69px;
+
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 69px;
-    padding-top: 45px;
-    width: 425px;
   }
 
   .photo-upload__images {
+    flex-shrink: 0;
     width: 300px;
     height: 400px;
-
-    flex-shrink: 0;
-    margin-left: 0;
     margin-right: 45px;
+    margin-left: 0;
   }
 
   .photo-upload__image {
@@ -190,20 +187,17 @@
   }
 
   .photo-upload__form-inner {
-    @include container;
-
     display: flex;
     justify-content: space-between;
-
     padding-top: 57px;
+
+    @include container;
   }
 
   .photo-upload__tools {
     display: flex;
-    flex-wrap: wrap;
-
     flex-direction: column;
-
+    flex-wrap: wrap;
     min-height: 400px;
 
     background-size: cover;
@@ -213,30 +207,27 @@
   .photo-upload__fill,
   .photo-upload__contrast {
     opacity: 1;
+
     fill: #d22856;
   }
 
   .photo-upload__tools-list {
-    padding-top: 13px;
-
     margin-bottom: 0;
+    padding-top: 13px;
   }
 
   .photo-upload__tool {
     position: absolute;
-
     left: 0;
-
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-
-    padding-bottom: 0;
 
     width: 24px;
     height: 22px;
-    background-size: 24px 22px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
 
+    background-size: 24px 22px;
     opacity: 1;
   }
 
@@ -244,6 +235,7 @@
     position: absolute;
     top: -5px;
     left: 4px;
+
     width: 24px;
     height: 24px;
   }
@@ -252,17 +244,18 @@
     position: absolute;
     top: -3px;
     left: 4px;
+
     width: 24px;
     height: 24px;
   }
 
   .photo-upload__contrast {
     position: absolute;
-    width: 17px;
-    height: 17px;
-
     top: -4px;
     left: 8px;
+
+    width: 17px;
+    height: 17px;
 
     background-position: 50% 50%;
     background-size: 15px 15px;
@@ -270,11 +263,9 @@
 
   .photo-upload__button {
     width: 260px;
-
     margin-left: 0;
-
-    padding-left: 77px;
     padding-right: 77px;
+    padding-left: 77px;
   }
 
   .photo-upload__button--submit {
@@ -293,25 +284,24 @@
   }
 
   .photo-upload__form-wrapper {
-    background-color: #ffffff;
     padding-bottom: 28px;
+
+    background-color: #ffffff;
   }
 
   .photo-upload__form-inner {
-    background-color: #f2f2f2;
-
     justify-content: flex-start;
-
     padding-bottom: 57px;
+
+    background-color: #f2f2f2;
   }
 
   .photo-upload__images {
+    flex-shrink: 0;
     width: 300px;
     height: 400px;
-
-    margin-left: 80px;
     margin-right: 90px;
-    flex-shrink: 0;
+    margin-left: 80px;
   }
 
   .photo-upload__image {
@@ -321,7 +311,6 @@
 
   .photo-upload__tools {
     flex-direction: row;
-
     justify-content: flex-start;
     align-content: space-between;
   }
@@ -335,44 +324,44 @@
 
   .photo-upload__crop {
     position: absolute;
-    width: 48px;
-    height: 48px;
     top: -17px;
     left: -2px;
+
+    width: 48px;
+    height: 48px;
   }
 
   .photo-upload__fill {
     position: absolute;
-    width: 48px;
-    height: 48px;
     top: -16px;
     left: -1px;
+
+    width: 48px;
+    height: 48px;
   }
 
   .photo-upload__contrast {
     position: absolute;
-    width: 32px;
-    height: 32px;
-
     top: -13px;
     left: 5px;
+
+    width: 32px;
+    height: 32px;
   }
 
   .photo-upload__button {
     width: 183px;
-
     margin: 0;
   }
 
   .photo-upload__button--submit {
     margin-right: 44px;
-
-    padding-left: 42px;
     padding-right: 37px;
+    padding-left: 42px;
   }
 
   .photo-upload__button--reset {
-    padding-left: 55px;
     padding-right: 51px;
+    padding-left: 55px;
   }
 }

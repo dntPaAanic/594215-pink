@@ -6,9 +6,10 @@
 }
 
 .feedback__slogan {
-  @include container;
   line-height: 30px;
   text-align: center;
+
+  @include container;
 }
 
 .feedback__fill-form {
@@ -16,18 +17,20 @@
 }
 
 .feedback__field {
-  @include container;
-  border: none;
   box-sizing: border-box;
   padding-top: 28px;
   padding-right: 0;
-  padding-left: 0;
   padding-bottom: 30px;
+  padding-left: 0;
+
+  border: none;
+
+  @include container;
 }
 
 .feedback__items {
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -42,10 +45,11 @@
 }
 
 .feedback__label--caption {
-  color: $font-color-headers-bright;
   display: block;
   margin-bottom: 5px;
   padding-left: 23px;
+
+  color: $font-color-headers-bright;
   text-transform: uppercase;
 }
 
@@ -54,21 +58,19 @@
 .feedback__input--tel,
 .feedback__input--email {
   box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-bottom: 15px;
+  padding-left: 22px;
 
   font-size: 18px;
   line-height: 30px;
-
-  width: 100%;
+  color: $font-color-main;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 14px;
-  padding-bottom: 15px;
-  margin-bottom: 16px;
-  color: $font-color-main;
 
   &::-webkit-input-placeholder {
     color: $font-color-main;
@@ -107,10 +109,11 @@
 }
 
 .feedback__title {
-  text-align: center;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
+
   line-height: 18px;
+  text-align: center;
   color: $font-color-headers-bright;
   text-transform: uppercase;
 }
@@ -121,23 +124,23 @@
 
 .feedback__label--checkbox,
 .feedback__label--radio {
-  display: inline-block;
-  vertical-align: middle;
-
   position: relative;
+
+  display: inline-block;
 
   font-size: 18px;
   line-height: 30px;
+  vertical-align: middle;
 
   &::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
 
+    display: inline-block;
     width: 35px;
     height: 35px;
-
     margin-right: 31px;
+
+    vertical-align: middle;
 
     background-color: white;
     border: 2px solid #e5e5e5;
@@ -176,9 +179,10 @@
 .feedback__checkbox + .feedback__label--checkbox:active .feedback__icon-yes,
 .feedback__checkbox:checked + .feedback__label--checkbox .feedback__icon-yes {
   position: absolute;
-  display: block;
   top: 9px;
   left: 5px;
+
+  display: block;
 
   fill: #d22856;
 }
@@ -189,15 +193,14 @@
 
 .feedback__radio + .feedback__label--radio:active::after,
 .feedback__radio:checked + .feedback__label--radio::after {
-  display: block;
-  position: absolute;
   content: "";
-
-  width: 15px;
-  height: 15px;
-
+  position: absolute;
   top: 12px;
   left: 12px;
+
+  display: block;
+  width: 15px;
+  height: 15px;
 
   background-color: #d22856;
   border-radius: 50%;
@@ -214,8 +217,8 @@
 .feedback__background-color--app {
   box-sizing: border-box;
   min-height: 337px;
-  padding-top: 36px;
   margin-bottom: 58px;
+  padding-top: 36px;
 }
 
 .feedback__field--emotion {
@@ -224,44 +227,45 @@
 }
 
 .feedback__textarea-text {
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   min-height: 201px;
   margin-top: 6px;
-  padding-left: 21px;
-  padding-right: 21px;
   padding-top: 15px;
+  padding-right: 21px;
+  padding-left: 21px;
+
   border: 2px solid #e5e5e5;
   border-radius: 2px;
 }
 
 .feedback__wrapper {
-  padding-top: 44px;
   display: flex;
-  min-height: 128px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-height: 128px;
+  padding-top: 44px;
+
   text-align: center;
 }
 
 .feedback__submit {
   padding-top: 14px;
-  padding-bottom: 14px;
   padding-right: 44px;
+  padding-bottom: 14px;
   padding-left: 44px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-
   color: white;
+  text-transform: uppercase;
 
+  background-color: #2aab6d;
   border: 3px solid #2aab6d;
   border-radius: 3px;
-  background-color: #2aab6d;
+  cursor: pointer;
 
   &:hover {
     background-color: #1c9b5e;
@@ -270,13 +274,15 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+
     outline: none;
   }
 
   &:disabled {
+    color: white;
+
     background-color: #e5e5e5;
     border-color: #e5e5e5;
-    color: white;
   }
 }
 
@@ -287,13 +293,12 @@
 
 @media (min-width: $tablet-width) {
   .feedback__slogan {
-    font-size: 18px;
-    box-sizing: border-box;
-
-    padding-left: 60px;
-    padding-right: 60px;
-
     order: 0;
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    font-size: 18px;
   }
 
   .feedback__fill-form {
@@ -309,9 +314,10 @@
   }
 
   .feedback__field {
-    padding-left: 58px;
     padding-right: 58px;
     padding-bottom: 52px;
+    padding-left: 58px;
+
     border: 2px solid #e5e5e5;
     border-radius: 2px;
   }
@@ -319,26 +325,23 @@
   .feedback__field--input {
     display: flex;
     flex-wrap: wrap;
-    border: none;
-
     align-items: center;
-
     margin-bottom: 52px;
+
+    border: none;
   }
 
   .feedback__item--input {
     display: flex;
     flex-wrap: wrap;
-
     align-items: center;
-
     margin-bottom: 52px;
   }
 
   .feedback__label--caption {
-    padding-left: 0;
-    padding-right: 22px;
     margin-bottom: 0;
+    padding-right: 22px;
+    padding-left: 0;
   }
 
   .feedback__input--text {
@@ -349,6 +352,7 @@
 
   .feedback__background-color--app {
     order: 1;
+
     background-color: #ffffff;
   }
 
@@ -359,9 +363,7 @@
   .feedback__item--contact-info {
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
-
     margin-top: 3px;
     margin-bottom: 29px;
 
@@ -379,28 +381,30 @@
     position: relative;
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
+      top: 19px;
+      right: 18px;
 
       width: 20px;
       height: 19px;
+
       background-image: url("../../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-size: 20px 19px;
-      top: 19px;
-      right: 18px;
     }
 
     &::before {
-      position: absolute;
       content: "";
-      display: block;
-
-      width: 62px;
-      height: 62px;
-      background-color: #e5e5e5;
+      position: absolute;
       top: 0;
       right: 0;
+
+      display: block;
+      width: 62px;
+      height: 62px;
+
+      background-color: #e5e5e5;
     }
   }
 
@@ -410,19 +414,22 @@
 
 
   .feedback__background-color--mindblow {
-    background-color: #ffffff;
     order: 3;
+
+    background-color: #ffffff;
   }
 
   .feedback__field--emotion {
-    @include container;
     order: 4;
     width: 100%;
+
+    @include container;
   }
 
   .feedback__wrapper--submit {
-    @include container;
     order: 5;
+
+    @include container;
   }
 
   .feedback__wrapper {
@@ -432,23 +439,24 @@
   }
 
   .feedback__submit {
-    padding-left: 56px;
     padding-right: 56px;
+    padding-left: 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback__form {
-    @include container;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 0;
+
+    @include container;
   }
 
   .feedback__field {
+    box-sizing: border-box;
     width: auto;
     margin: 0;
-    box-sizing: border-box;
     padding-top: 20px;
   }
 
@@ -463,16 +471,16 @@
   }
 
   .feedback__field--app {
-    width: 100%;
     flex-shrink: 0;
-    padding-left: 0;
+    width: 100%;
     padding-right: 0;
     padding-bottom: 51px;
+    padding-left: 0;
   }
 
   .feedback__title--app {
-    padding-left: 25px;
     padding-right: 25px;
+    padding-left: 25px;
   }
 
   .feedback__items--app {
@@ -490,23 +498,21 @@
   .feedback__items--contact-info {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
   }
 
   .feedback__item--contact-info {
+    flex-grow: 1;
     margin-top: 8px;
     margin-bottom: 13px;
-
-    flex-grow: 1;
 
     &:first-child {
       margin-right: 35px;
     }
 
     &:last-child {
-      margin-left: 35px;
       margin-bottom: 13px;
+      margin-left: 35px;
     }
   }
 
@@ -516,28 +522,25 @@
 
   .feedback__items--mindblow {
     display: flex;
-    flex-wrap: wrap;
-
     flex-direction: row;
-
-
+    flex-wrap: wrap;
     justify-content: space-between;
 
     &::after {
       content: "";
+
       width: 257px;
     }
   }
 
   .feedback__item--mindblow {
-    padding-top: 20px;
+    width: 257px;
     margin-bottom: 23px;
+    padding-top: 20px;
 
     &:first-child {
       padding-top: 20px;
     }
-
-    width: 257px;
   }
 
   .feedback__field--emotion {
@@ -547,7 +550,7 @@
   }
 
   .feedback__title--emotion {
-    padding-left: 38px;
     padding-right: 38px;
+    padding-left: 38px;
   }
 }
