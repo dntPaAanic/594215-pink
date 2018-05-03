@@ -110,6 +110,16 @@
   padding-left: 17px;
 }
 
+
+.price__field-icon--yes {
+  fill: #3dc644;
+}
+
+.price__field-icon--no {
+  fill: #f25b26;
+}
+
+
 @media (max-width: $mobile-width-only) {
   .price__items {
     display: flex;
@@ -131,6 +141,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price__field-icon--yes,
+  .price__field-icon--no {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+  }
+
   .price {
     padding-bottom: 68px;
   }
