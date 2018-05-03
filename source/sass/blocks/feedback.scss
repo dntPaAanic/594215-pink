@@ -318,6 +318,7 @@
 @media (min-width: $tablet-width) {
   .feedback__form {
     padding-top: 93px;
+    padding-bottom: 0;
   }
 
   .feedback__slogan {
@@ -404,17 +405,19 @@
 
   .feedback__field--contact-info {
     order: 2;
+    padding-top: 32px;
+    padding-bottom: 20px;
   }
 
   .feedback__item--contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3px;
-    margin-bottom: 29px;
+    margin-bottom: 23px;
+    margin-top: 0;
 
     &:last-child {
-      margin-bottom: 26px;
+      margin-bottom: 0;
     }
   }
 
@@ -429,8 +432,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 19px;
-      right: 18px;
+      top: 20px;
+      right: 22px;
 
       width: 20px;
       height: 19px;
@@ -454,6 +457,17 @@
     }
   }
 
+  .feedback__input--tel,
+  .feedback__input--email {
+    padding-left: 18px;
+    margin-bottom: 9px;
+  }
+
+  .feedback__label--contact-info {
+    padding-left: 19px;
+    margin-bottom: 6px;
+  }
+
   .feedback__item--email::after {
     background-image: url("../../img/icon-mail.svg");
   }
@@ -463,19 +477,30 @@
     order: 3;
 
     background-color: #ffffff;
+    padding-top: 52px;
+    margin-bottom: 51px;
+  }
+
+  .feedback__field--mindblow {
+    padding-bottom: 3px;
+  }
+
+
+  .feedback__label--checkbox::before {
+    margin-right: 15px;
   }
 
   .feedback__field--emotion {
     order: 4;
     width: 100%;
+    padding-bottom: 50px;
 
     @include container;
   }
 
-  .feedback__wrapper--submit {
-    order: 5;
-
-    @include container;
+  .feedback__textarea-text {
+    margin-top: 20px;
+    min-height: 193px;
   }
 
   .feedback__wrapper {
@@ -484,9 +509,16 @@
     justify-content: space-between;
   }
 
+  .feedback__wrapper--submit {
+    order: 5;
+    padding-top: 34px;
+
+    @include container;
+  }
+
   .feedback__submit {
-    padding-right: 56px;
-    padding-left: 56px;
+    padding-right: 54px;
+    padding-left: 54px;
   }
 }
 
