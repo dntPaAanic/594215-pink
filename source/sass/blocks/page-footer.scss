@@ -69,15 +69,8 @@
   overflow: hidden;
 }
 
-.page-footer__images {
-  display: block;
-
-  width: 320px;
-  margin: 0 auto;
-}
-
 .page-footer__image {
-  width: 320px;
+  width: 100%;
   margin: -446px 0 0 0;
 }
 
@@ -172,13 +165,7 @@
     height: 373px;
   }
 
-  .page-footer__images {
-    width: 660px;
-    margin: 0 auto;
-  }
-
   .page-footer__image {
-    width: 660px;
     margin: -308px 0 0 0;
   }
 
@@ -259,13 +246,7 @@
     height: 528px;
   }
 
-  .page-footer__images {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
   .page-footer__image {
-    width: 1200px;
     margin: -446px 0 0 0;
   }
 
