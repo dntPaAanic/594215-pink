@@ -39,7 +39,7 @@
     background-size: 100% auto;
     z-index: 4;
   }
-
+/*
   &::after {
     content: "";
     position: absolute;
@@ -52,7 +52,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 1;
-  }
+  } */
 }
 
 .page-footer--map-loaded {
@@ -67,11 +67,16 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
+  position: relative;
 }
 
 .page-footer__image {
   width: 100%;
-  margin: -446px 0 0 0;
+  //margin: -446px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -83%);
 }
 
 .page-footer__social-wrapper {
