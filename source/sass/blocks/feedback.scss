@@ -315,6 +315,10 @@
   text-transform: uppercase;
 }
 
+.feedback__hide {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .feedback__form {
     padding-top: 93px;
@@ -667,12 +671,25 @@
 
   .feedback__field--emotion {
     width: 100%;
-    margin-bottom: 65px;
-    padding-bottom: 35px;
+    margin-bottom: 0;
+    padding-bottom: 39px;
   }
 
   .feedback__title--emotion {
     padding-right: 38px;
     padding-left: 38px;
+  }
+
+  .feedback__textarea-text {
+    min-height: 130px;
+    margin-top: 7px;
+  }
+
+  .feedback__wrapper--submit {
+    margin-bottom: 0;
+  }
+
+  .feedback__hide {
+    display: inline;
   }
 }
