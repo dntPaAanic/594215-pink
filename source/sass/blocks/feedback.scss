@@ -114,7 +114,7 @@
 .feedback__background-color--mindblow {
   box-sizing: border-box;
   padding-top: 36px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .feedback__title {
@@ -323,6 +323,8 @@
   .feedback__form {
     padding-top: 93px;
     padding-bottom: 0;
+
+    @include container;
   }
 
   .feedback__slogan {
@@ -442,7 +444,7 @@
       width: 20px;
       height: 19px;
 
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-size: 20px 19px;
     }
@@ -473,7 +475,7 @@
   }
 
   .feedback__item--email::after {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 
 
