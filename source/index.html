@@ -101,7 +101,15 @@
     <symbol viewBox="0 0 26.752 26.752" id="icon-no">
       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
     </symbol>
-
+    <symbol viewBox="0 0 74 73" id="price__hit">
+      <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
+    </symbol>
+    <symbol viewBox="0 0 21.706 41.719" id="reviews__arrow--left">
+      <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+    </symbol>
+    <symbol viewBox="0 0 21.706 41.719" id="reviews__arrow--right">
+      <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+    </symbol>
   </svg>
 
   <header class="page-header">
@@ -240,14 +248,14 @@
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <button class="reviews__toggle reviews__toggle--prev" type="button">
-              <svg class="reviews__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="42px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-                <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              <svg class="reviews__arrow" width="22px" height="42px">
+                <use xlink:href="#reviews__arrow--left"></use>
               </svg>
               Предыдущий отзыв
             </button>
             <button class="reviews__toggle reviews__toggle--next" type="button">
-              <svg class="reviews__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-                <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              <svg class="reviews__arrow" width="21.706px" height="41.719px">
+                <use xlink:href="#reviews__arrow--right"></use>
               </svg>
               Следующий отзыв
             </button>
@@ -269,71 +277,73 @@
           <div class="price__items slider">
             <table class="price__list">
               <thead class="price__list-head">
-              <tr>
-                <th class="price__value price__value--empty"></th>
-                <th class="price__value">База<p class="price__cost">1,99 USD</p></th>
-                <th class="price__value price__value--flag">Стандарт<p class="price__cost">3,99 USD</p><svg class="price__hit" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74px" height="73px" viewBox="0 0 74 73" enable-background="new 0 0 74 73" xml:space="preserve">
-  <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
-</svg></th>
-                <th class="price__value">Анлим<p class="price__cost">9,99 USD</p></th>
-              </tr>
+                <tr>
+                  <th class="price__value price__value--empty"></th>
+                  <th class="price__value">База<p class="price__cost">1,99 USD</p></th>
+                  <th class="price__value price__value--flag">Стандарт<p class="price__cost">3,99 USD</p>
+                    <svg class="price__hit" width="74px" height="73px">
+                      <use xlink:href="#price__hit"></use>
+                    </svg>
+                  </th>
+                  <th class="price__value">Анлим<p class="price__cost">9,99 USD</p></th>
+                </tr>
               </thead>
               <tbody class="price__list-body">
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>Розовый фильтр
-                </td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
                     <use xlink:href="#icon-yes"></use>
                   </svg>Розовый фильтр
-                </td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>Розовый фильтр
-                </td>
-              </tr>
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">Смайлики</td>
-                <td class="price__field price__field--cancel">
-                  <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>Смайлики</td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>Смайлики
-                </td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>Смайлики
-                </td>
-              </tr>
-              <tr>
-                <td class="price__field price__field--empty price__field--fill">Комментарии</td>
-                <td class="price__field price__field--cancel">
-                  <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>Комментарии
-                </td>
-                <td class="price__field price__field--cancel">
-                  <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                    <use xlink:href="#icon-no"></use>
-                  </svg>Комментарии
-                </td>
-                <td class="price__field price__field--ok">
-                  <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>Комментарии
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Розовый фильтр
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Розовый фильтр
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">Смайлики</td>
+                  <td class="price__field price__field--cancel">
+                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>Смайлики</td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Смайлики
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Смайлики
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">Комментарии</td>
+                  <td class="price__field price__field--cancel">
+                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>Комментарии
+                  </td>
+                  <td class="price__field price__field--cancel">
+                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
+                      <use xlink:href="#icon-no"></use>
+                    </svg>Комментарии
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>Комментарии
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <div class="slider__control price__control">
               <input class="price__switcher" type="radio" name="price" id="price-radio-1">
               <label class="slider__control-button" for="price-radio-1">1</label>
