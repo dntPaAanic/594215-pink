@@ -91,7 +91,7 @@
   }
 }
 
-@media ($tablet-width) {
+@media (min-width: $tablet-width) {
   .pop-up {
     left: 50%;
 
@@ -142,7 +142,7 @@
 }
 
 
-@media ($desktop-width) {
+@media (min-width: $desktop-width) {
   .pop-up__wrapper {
     width: auto;
   }
