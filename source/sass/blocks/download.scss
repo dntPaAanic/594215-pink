@@ -135,13 +135,13 @@
     min-height: 555px;
     margin: 0 auto;
 
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: -40px 10px;
     background-size: 700px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-image: url("../img/iphone-hand-tablet@2x.png");
       background-repeat: no-repeat;
       background-position: -40px 10px;
       background-size: 700px;
