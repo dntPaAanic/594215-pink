@@ -105,7 +105,7 @@
     width: 14px;
     height: 14px;
 
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -113,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .user-photo__image-panorama {
-    min-height: 510px;
+    max-height: 510px;
   }
 
   .user-photo--panorama {
@@ -193,7 +193,7 @@
 
 @media (min-width: $desktop-width) {
   .user-photo__image-panorama {
-    min-height: 506px;
+    max-height: 506px;
   }
 
   .user-photo {
