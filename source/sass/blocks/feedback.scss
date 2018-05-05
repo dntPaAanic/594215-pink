@@ -355,6 +355,7 @@
 
     border: 2px solid #e5e5e5;
     border-radius: 2px;
+    position: relative;
   }
 
   .feedback__field--input {
@@ -388,9 +389,16 @@
   }
 
   .feedback__field--app {
-    padding-top: 36px;
+    padding-top: 50px;
     padding-bottom: 17px;
     margin-bottom: 11px;
+  }
+
+  .feedback__title--app-desktop {
+    position: absolute;
+    top: -16px;
+    left: 118px;
+    background-color: #ffffff;
   }
 
   .feedback__label--radio::before {
@@ -405,14 +413,23 @@
 
   .feedback__background-color--app {
     order: 1;
+    padding-top: 51px;
+    margin-bottom: 54px;
 
     background-color: #ffffff;
   }
 
   .feedback__field--contact-info {
     order: 2;
-    padding-top: 32px;
+    padding-top: 46px;
     padding-bottom: 20px;
+  }
+
+  .feedback__title--contact-info {
+    position: absolute;
+    top: -16px;
+    left: 179px;
+    background-color: #ffffff;
   }
 
   .feedback__item--contact-info {
@@ -483,12 +500,20 @@
     order: 3;
 
     background-color: #ffffff;
-    padding-top: 52px;
-    margin-bottom: 51px;
+    padding-top: 66px;
+    margin-bottom: 64px;
   }
 
   .feedback__field--mindblow {
     padding-bottom: 3px;
+    padding-top: 48px;
+  }
+
+  .feedback__title--mindblow {
+    position: absolute;
+    top: -16px;
+    left: 91px;
+    background-color: #ffffff;
   }
 
 
@@ -504,8 +529,15 @@
     @include container;
   }
 
+  .feedback__title--emotion {
+    position: absolute;
+    top: -15px;
+    left: 186px;
+    background-color: #ffffff;
+  }
+
   .feedback__textarea-text {
-    margin-top: 20px;
+    margin-top: 34px;
     min-height: 193px;
   }
 
@@ -517,7 +549,7 @@
 
   .feedback__wrapper--submit {
     order: 5;
-    padding-top: 34px;
+    padding-top: 35px;
 
     @include container;
   }
