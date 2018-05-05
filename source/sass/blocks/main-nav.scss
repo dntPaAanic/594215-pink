@@ -104,7 +104,8 @@
   .main-nav__main-wrapper {
     display: flex;
 
-    @include container;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .main-nav__wrapper {
