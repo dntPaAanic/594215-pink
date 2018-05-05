@@ -70,4 +70,8 @@
       background: #ffffff;
     }
   }
+
+  .site-list__item--active a:hover {
+    color: $font-color-top;
+  }
 }

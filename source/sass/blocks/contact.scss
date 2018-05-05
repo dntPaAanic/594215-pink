@@ -36,6 +36,17 @@
   text-decoration: none;
 }
 
+.contact__item-text--email {
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contact {
     padding-top: 34px;

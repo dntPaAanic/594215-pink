@@ -94,7 +94,8 @@
   display: none;
 }
 
-.page-footer__logo-glass {
+.page-footer__logo-glass,
+.page-footer__logo-glass--desktop {
   margin-bottom: 37px;
 
   fill: #283645;
@@ -108,6 +109,10 @@
 
     fill: #283645;
   }
+}
+
+.page-footer__logo-glass--desktop {
+  display: none;
 }
 
 .page-footer__HTMLAcademy {
@@ -193,6 +198,10 @@
     padding-top: 17px;
   }
 
+  .page-footer__logo-glass--desktop {
+    display: none;
+  }
+
   .page-footer__developer {
     position: relative;
 
@@ -261,6 +270,14 @@
   .page-footer__social-wrapper {
     padding-top: 10px;
     padding-bottom: 65px;
+  }
+
+  .page-footer__logo-glass {
+    display: none;
+  }
+
+  .page-footer__logo-glass--desktop {
+    display: block;
   }
 
   .page-footer__developer {
