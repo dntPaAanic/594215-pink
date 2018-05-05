@@ -29,8 +29,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  //top: 22px;
-  top: 44px;
+  top: 22px;
   right: 20px;
   z-index: 2;
 
@@ -95,6 +94,10 @@
 
   .main-nav__logo {
     top: 27px;
+  }
+
+  .main-nav__toggle {
+    top: 44px;
   }
 }
 
