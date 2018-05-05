@@ -25,7 +25,7 @@
 .page-header__cross {
   padding-left: 21px;
 }
-
+/*
 .page-header__burger,
 .page-header__cross {
   fill: #ffffff;
@@ -33,13 +33,13 @@
 
 .page-header__burger:hover,
 .page-header__cross:hover {
-  fill: $menu-button-hover;
+  fill: #d22856;
 }
 
 .page-header__burger:active,
 .page-header__cross:active {
-  fill: $mobile-menu-button-down;
-}
+  fill: rgba(210, 40, 86, 0.3);
+}*/
 
 @media (max-width: $mobile-width-only) {
   .page-header__logo-tablet,
@@ -53,7 +53,7 @@
   .page-header__logo-desktop {
     display: none;
   }
-
+/*
   .page-header__burger {
     padding-top: 22px;
   }
@@ -61,7 +61,7 @@
   .page-header__cross {
     padding-top: 22px;
     padding-left: 21px;
-  }
+  }*/
 }
 
 @media (min-width: $desktop-width) {

@@ -177,20 +177,22 @@
     z-index: 2;
 
     display: block;
-
-    fill: #bec2c7;
-
-    &:hover {
-      fill: #283645;
-    }
-
-    &:active {
-      opacity: 0.1;
-    }
   }
 
   .reviews__toggle--next {
     right: -32px;
+  }
+
+  .reviews__toggle .reviews__arrow {
+    fill: #bec2c7;
+  }
+
+  .reviews__toggle:hover .reviews__arrow {
+    fill: #283645;
+  }
+
+  .reviews__toggle:active .reviews__arrow {
+    opacity: 0.1;
   }
 
   .reviews__nav {
