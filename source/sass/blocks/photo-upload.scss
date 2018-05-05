@@ -83,7 +83,7 @@
   display: block;
 }
 
-.photo-upload__tool--active + .control-scale + .control-scale__toggle {
+.photo-upload__tool--active + .control-scale .control-scale__toggle {
   background-color: #d22856;
 }
 
