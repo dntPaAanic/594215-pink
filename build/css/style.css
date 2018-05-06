@@ -3121,7 +3121,7 @@ figure {
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 100% auto; }
+    background-size: 100% 33px; }
 
 .page-footer--map-loaded {
   z-index: 3; }
@@ -3213,7 +3213,7 @@ figure {
     height: 373px; }
     .page-footer__map::before {
       height: 68px;
-      background-size: 100% auto; }
+      background-size: 100% 68px; }
   .page-footer__contacts-map {
     height: 373px; }
   .page-footer__image {

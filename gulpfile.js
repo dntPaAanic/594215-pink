@@ -12,7 +12,7 @@ var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
-var posthtml = require("gulp-posthtml")
+var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var jsmin = require('gulp-jsmin');
 var del = require("del");
@@ -122,9 +122,9 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html:update"]);
-  gulp.watch("js/script.js", ["js:update"]);
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/*.html", ["html:update"]);
+  gulp.watch("source/js/script.js", ["js:update"]);
 });
 
 gulp.task ("build", function(fn) {
