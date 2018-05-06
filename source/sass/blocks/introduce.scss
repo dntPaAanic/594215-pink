@@ -7,39 +7,83 @@
 
   text-align: center;
 
+  background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 0;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: 50% -4px;
+    background-size: 700px auto;
+  }
+}
+
+.introduce__wrapper {
+  @include container;
 }
 
 .introduce__title-text {
-  padding-top: 101px;
   margin: 0;
+  padding-top: 96px;
 
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   color: $font-color-top;
 }
 
 @media (min-width: $tablet-width) {
   .introduce__title {
-    min-height: 440px;
+    min-height: 394px;
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% -43px;
+    background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% -43px;
+      background-size: 1200px auto;
+    }
+  }
+
+  .introduce__title-text {
+    padding-top: 136px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .introduce__title {
-    min-height: 400px;
+    min-height: 394px;
 
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 50% 0;
+    background-size: 2560px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 11px;
+      background-size: 2560px auto;
+    }
+  }
+
+  .introduce__title-text {
+    padding-top: 173px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .introduce__title-text-photo {
+    padding-left: 176px;
+    padding-right: 176px;
   }
 }

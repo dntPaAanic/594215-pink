@@ -1,31 +1,367 @@
-.photo-upload {
-  @include container;
-}
-
 .photo-upload__slogan {
-  padding-top: 53px;
+  padding-top: 22px;
+  padding-right: 2px;
+  padding-bottom: 42px;
 
-  font-weight: 400;
   line-height: 30px;
   text-align: center;
 
   @include container;
 }
 
+.photo-upload__form-wrapper {
+  padding-top: 20px;
+  padding-bottom: 29px;
+
+  background-color: #f2f2f2;
+}
+
+.photo-upload__images {
+  display: block;
+  height: 374px;
+
+  @include container;
+}
+
+.photo-upload__image {
+  width: 280px;
+  height: 374px;
+}
+
+.photo-upload__tools {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.photo-upload__tools-list {
+  position: relative;
+
+  margin-bottom: 38px;
+  padding-top: 42px;
+}
+
+.photo-upload__tool {
+  display: inline-block;
+  width: 48px;
+  height: 44px;
+  margin-right: 17px;
+  margin-left: 17px;
+  padding-bottom: 76px;
+
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+
+  border: 0;
+  opacity: 0.3;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.photo-upload__tool--active {
+  opacity: 1;
+
+  fill: #d22856;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.photo-upload__crop,
+.photo-upload__fill,
+.photo-upload__contrast {
+  opacity: 1;
+  // fill: #d22856;
+}
+
+.photo-upload__tool--active + .control-scale {
+  display: block;
+}
+
+.photo-upload__tool--active + .control-scale .control-scale__toggle {
+  background-color: #d22856;
+}
+
+.photo-upload__tool--contrast {
+  position: relative;
+}
+
+.photo-upload__button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding-top: 14px;
+  padding-right: 88px;
+  padding-bottom: 17px;
+  padding-left: 88px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.photo-upload__button--submit {
+  color: #d22856;
+
+  border: 3px solid #d22856;
+  border-radius: 30px;
+
+  &:hover {
+    color: white;
+
+    background-color: #d22856;
+
+    transition: 0.2s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: 0.1s;
+  }
+}
+
+.photo-upload__button--reset {
+  color: rgba(40, 54, 69, 0.1);
+
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 30px;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+
+    border-color: rgba(40, 54, 69, 0.3);
+
+    transition: 0.2s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: #b5b9be;
+
+    transition: 0.1s;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .photo-upload__slogan {
+    width: 425px;
+    padding-top: 45px;
+    padding-bottom: 69px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo-upload__images {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    margin-right: 45px;
+    margin-left: 0;
+  }
+
+  .photo-upload__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-upload__form-wrapper {
+    padding-top: 0;
+    padding-bottom: 37px;
+  }
+
   .photo-upload__form-inner {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    padding-top: 57px;
+
+    @include container;
   }
 
-  .photo-upload__form {
-    display: none;
-  }
-
-  .photo-upload__control-inner {
+  .photo-upload__tools {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-height: 400px;
+
+    background-size: cover;
+  }
+
+  .photo-upload__crop,
+  .photo-upload__fill,
+  .photo-upload__contrast {
+    opacity: 1;
+
+    fill: #d22856;
+  }
+
+  .photo-upload__tools-list {
+    margin-bottom: 0;
+    padding-top: 13px;
+  }
+
+  .photo-upload__tool {
+    position: absolute;
+    left: 0;
+
+    width: 24px;
+    height: 22px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+
+    background-size: 24px 22px;
+    opacity: 1;
+  }
+
+  .photo-upload__crop {
+    position: absolute;
+    top: -5px;
+    left: 4px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .photo-upload__fill {
+    position: absolute;
+    top: -3px;
+    left: 4px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .photo-upload__contrast {
+    position: absolute;
+    top: -4px;
+    left: 8px;
+
+    width: 17px;
+    height: 17px;
+
+    background-position: 50% 50%;
+    background-size: 15px 15px;
+  }
+
+  .photo-upload__button {
+    width: 260px;
+    margin-left: 0;
+    padding-right: 77px;
+    padding-left: 77px;
+  }
+
+  .photo-upload__button--submit {
+    margin-top: auto;
+  }
+
+  .photo-upload__button--reset {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-upload__slogan {
+    padding-top: 5px;
+  }
+
+  .photo-upload__form-wrapper {
+    padding-bottom: 62px;
+
+    background-color: #ffffff;
+  }
+
+  .photo-upload__form-inner {
+    justify-content: flex-start;
+    padding-bottom: 57px;
+
+    background-color: #f2f2f2;
+  }
+
+  .photo-upload__images {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    margin-right: 90px;
+    margin-left: 80px;
+  }
+
+  .photo-upload__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-upload__tools {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+
+  .photo-upload__tool {
+    width: 48px;
+    height: 44px;
+
+    background-size: cover;
+  }
+
+  .photo-upload__crop {
+    position: absolute;
+    top: -17px;
+    left: -2px;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-upload__fill {
+    position: absolute;
+    top: -16px;
+    left: -1px;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-upload__contrast {
+    position: absolute;
+    top: -13px;
+    left: 5px;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-upload__button {
+    width: 183px;
+    margin: 0;
+  }
+
+  .photo-upload__button--submit {
+    margin-right: 44px;
+    padding-right: 37px;
+    padding-left: 42px;
+  }
+
+  .photo-upload__button--reset {
+    padding-right: 51px;
+    padding-left: 55px;
   }
 }

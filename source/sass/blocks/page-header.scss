@@ -1,3 +1,75 @@
 .page-header {
+  position: relative;
+
   color: $font-color-top;
+
+  background-color: $background-menu;
+}
+
+.page-header__logo-mobile,
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  transition: 0.3s;
+
+  fill: #ffffff;
+
+  &:hover {
+    fill: $menu-logo-hover;
+  }
+
+  &:active {
+    fill: $mobile-menu-logo-down;
+  }
+}
+
+.page-header__cross {
+  padding-left: 21px;
+}
+/*
+.page-header__burger,
+.page-header__cross {
+  fill: #ffffff;
+}
+
+.page-header__burger:hover,
+.page-header__cross:hover {
+  fill: #d22856;
+}
+
+.page-header__burger:active,
+.page-header__cross:active {
+  fill: rgba(210, 40, 86, 0.3);
+}*/
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo-tablet,
+  .page-header__logo-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+/*
+  .page-header__burger {
+    padding-top: 22px;
+  }
+
+  .page-header__cross {
+    padding-top: 22px;
+    padding-left: 21px;
+  }*/
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+  }
 }

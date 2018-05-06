@@ -1,14 +1,32 @@
+.users-photo__slogan-wrapper {
+  @include container;
+}
+
 .users-photo__slogan {
-  padding-top: 53px;
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 48px;
 
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+}
 
+.users-photo__inner {
   @include container;
 }
 
 @media (min-width: $tablet-width) {
+  .users-photo__slogan {
+    padding-top: 92px;
+    padding-right: 50px;
+    padding-bottom: 76px;
+    padding-left: 50px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .users-photo__inner {
     display: flex;
     flex-direction: row;
@@ -16,5 +34,13 @@
     justify-content: space-between;
 
     @include container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-photo__slogan {
+    padding-right: 170px;
+    padding-bottom: 88px;
+    padding-left: 170px;
   }
 }
