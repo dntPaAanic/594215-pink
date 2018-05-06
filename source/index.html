@@ -302,75 +302,76 @@
       <section class="price">
         <h2 class="visually-hidden">Цены на услуги</h2>
         <div class="price__wrapper">
-          <div class="price__items slider">
-            <table class="price__list">
-              <thead class="price__list-head">
-                <tr>
-                  <th class="price__value price__value--empty"></th>
-                  <th class="price__value">База<p class="price__cost">1,99 USD</p></th>
-                  <th class="price__value price__value--flag">Стандарт<p class="price__cost">3,99 USD</p>
-                    <svg class="price__hit" width="74px" height="73px">
-                      <use xlink:href="#price__hit"></use>
-                    </svg>
-                  </th>
-                  <th class="price__value">Анлим<p class="price__cost">9,99 USD</p></th>
-                </tr>
-              </thead>
-              <tbody class="price__list-body">
-                <tr>
-                  <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                    <use xlink:href="#icon-yes"></use>
-                  </svg>Розовый фильтр
-                  </td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                      <use xlink:href="#icon-yes"></use>
-                    </svg>Розовый фильтр
-                  </td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                      <use xlink:href="#icon-yes"></use>
-                    </svg>Розовый фильтр
-                  </td>
-                </tr>
-                <tr>
-                  <td class="price__field price__field--empty price__field--fill">Смайлики</td>
-                  <td class="price__field price__field--cancel">
-                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                      <use xlink:href="#icon-no"></use>
-                    </svg>Смайлики</td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                      <use xlink:href="#icon-yes"></use>
-                    </svg>Смайлики
-                  </td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                      <use xlink:href="#icon-yes"></use>
-                    </svg>Смайлики
-                  </td>
-                </tr>
-                <tr>
-                  <td class="price__field price__field--empty price__field--fill">Комментарии</td>
-                  <td class="price__field price__field--cancel">
-                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                      <use xlink:href="#icon-no"></use>
-                    </svg>Комментарии
-                  </td>
-                  <td class="price__field price__field--cancel">
-                    <svg class="price__field-icon price__field-icon--no" width="26" height="26">
-                      <use xlink:href="#icon-no"></use>
-                    </svg>Комментарии
-                  </td>
-                  <td class="price__field price__field--ok">
-                    <svg class="price__field-icon price__field-icon--yes" width="31" height="21">
-                      <use xlink:href="#icon-yes"></use>
-                    </svg>Комментарии
-                  </td>
-                </tr>
-              </tbody>
+          <div class="price__inner slider">
+            <table class="price__table">
+              <tr class="price__table-header">
+                <td class="price__features-header">
+                </td>
+                <th class="price__header">
+                  <div class="price__name">База</div>
+                  <div class="price__price">1,99 USD</div>
+                </th>
+                <th class="price__header  price__header--flag">
+                  <div class="price__name">Стандарт</div>
+                  <div class="price__flag">Хит</div>
+                  <div class="price__price">3,99 USD</div>
+                </th>
+                <th class="price__header">
+                  <div class="price__name">Анлим</div>
+                  <div class="price__price">9,99 USD</div>
+                </th>
+              </tr>
+              <tr>
+                <td class="price__item  price__item--feature-title">
+                  <span class="price__feature">Розовый фильтр</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Розовый фильтр</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__item  price__item--feature-title">
+                  <span class="price__feature">Смайлики</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Смайлики</span>
+                  <span class="price__feature-status  price__feature-status--off">Не включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Смайлики</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Смайлики</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__item  price__item--feature-title">
+                  <span class="price__feature">Комментарии</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Комментарии</span>
+                  <span class="price__feature-status  price__feature-status--off">Не включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Комментарии</span>
+                  <span class="price__feature-status  price__feature-status--off">Не включено</span>
+                </td>
+                <td class="price__item">
+                  <span class="price__feature  price__feature--name">Комментарии</span>
+                  <span class="price__feature-status  price__feature-status--on">Включено</span>
+                </td>
+              </tr>
             </table>
             <div class="slider__control price__control">
               <input class="price__switcher" type="radio" name="price" id="price-radio-1">
@@ -477,7 +478,7 @@
       </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
-    <script src="./js/map.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/ma.js"></script>
+    <script src="./js/men.js"></script>
   </body>
 </html>
