@@ -224,8 +224,8 @@
 }
 
 .feedback__field--contact-info {
-  padding-bottom: 29px;
   padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .feedback__title--close {
@@ -252,6 +252,7 @@
   padding-top: 15px;
   padding-right: 21px;
   padding-left: 18px;
+
   font-size: 18px;
   line-height: 30px;
 
@@ -356,13 +357,14 @@
   }
 
   .feedback__field {
+    position: relative;
+
     padding-right: 58px;
     padding-bottom: 52px;
     padding-left: 58px;
 
     border: 2px solid #e5e5e5;
     border-radius: 2px;
-    position: relative;
   }
 
   .feedback__field--input {
@@ -372,8 +374,8 @@
     margin-bottom: 0;
     padding-top: 72px;
     padding-right: 0;
-    padding-left: 0;
     padding-bottom: 0;
+    padding-left: 0;
 
     border: none;
   }
@@ -400,15 +402,16 @@
   }
 
   .feedback__field--app {
+    margin-bottom: 11px;
     padding-top: 50px;
     padding-bottom: 17px;
-    margin-bottom: 11px;
   }
 
   .feedback__title--app-desktop {
     position: absolute;
     top: -16px;
     left: 118px;
+
     background-color: #ffffff;
   }
 
@@ -424,8 +427,8 @@
 
   .feedback__background-color--app {
     order: 1;
-    padding-top: 51px;
     margin-bottom: 54px;
+    padding-top: 51px;
 
     background-color: #ffffff;
   }
@@ -440,6 +443,7 @@
     position: absolute;
     top: -16px;
     left: 179px;
+
     background-color: #ffffff;
   }
 
@@ -447,8 +451,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 23px;
     margin-top: 0;
+    margin-bottom: 23px;
 
     &:last-child {
       margin-bottom: 0;
@@ -493,13 +497,13 @@
 
   .feedback__input--tel,
   .feedback__input--email {
-    padding-left: 18px;
     margin-bottom: 9px;
+    padding-left: 18px;
   }
 
   .feedback__label--contact-info {
-    padding-left: 19px;
     margin-bottom: 6px;
+    padding-left: 19px;
   }
 
   .feedback__item--email::after {
@@ -509,21 +513,22 @@
 
   .feedback__background-color--mindblow {
     order: 3;
+    margin-bottom: 64px;
+    padding-top: 66px;
 
     background-color: #ffffff;
-    padding-top: 66px;
-    margin-bottom: 64px;
   }
 
   .feedback__field--mindblow {
-    padding-bottom: 3px;
     padding-top: 48px;
+    padding-bottom: 3px;
   }
 
   .feedback__title--mindblow {
     position: absolute;
     top: -16px;
     left: 91px;
+
     background-color: #ffffff;
   }
 
@@ -544,12 +549,13 @@
     position: absolute;
     top: -15px;
     left: 186px;
+
     background-color: #ffffff;
   }
 
   .feedback__textarea-text {
-    margin-top: 34px;
     min-height: 193px;
+    margin-top: 34px;
   }
 
   .feedback__wrapper {
@@ -581,10 +587,10 @@
   }
 
   .feedback__slogan {
-    padding-right: 70px;
-    padding-left: 70px;
     //
     margin-bottom: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
   }
 
   .feedback__field {
@@ -595,26 +601,26 @@
   }
 
   .feedback__field--input {
-    width: 50%;
     align-items: stretch;
-    padding-right: 35px;
+    width: 50%;
     padding-top: 33px;
+    padding-right: 35px;
   }
 
   .feedback__background-color--app {
     width: 50%;
-    padding-left: 35px;
-    //padding-top: 77px;
-    padding-top: 27px;
     //margin-bottom: 65px;
     margin-bottom: 55px;
+    //padding-top: 77px;
+    padding-top: 27px;
+    padding-left: 35px;
   }
 
   .feedback__field--app {
     flex-shrink: 0;
     width: 100%;
-    padding-right: 0;
     padding-top: 30px;
+    padding-right: 0;
     padding-bottom: 17px;
     padding-left: 0;
   }
@@ -639,8 +645,8 @@
 
   .feedback__field--contact-info {
     width: 100%;
-    padding-bottom: 0;
     padding-top: 34px;
+    padding-bottom: 0;
   }
 
   .feedback__items--contact-info {
@@ -685,13 +691,13 @@
   }
 
   .feedback__field--mindblow {
-    padding-right: 10px;
     padding-top: 37px;
+    padding-right: 10px;
   }
 
   .feedback__title--mindblow {
-    left: 251px;
     top: -15px;
+    left: 251px;
   }
 
   .feedback__items--mindblow {
