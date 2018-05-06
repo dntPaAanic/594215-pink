@@ -1,44 +1,138 @@
 .contact {
+  padding-bottom: 39px;
+
   text-align: center;
 
   @include container;
 }
 
 .contact__slogan {
+  margin-top: 22px;
+  margin-bottom: 34px;
+
   font-weight: 300;
   font-size: 24px;
+  line-height: 30px;
+}
+
+.contact__item-wrapper {
+  margin-left: 5px;
 }
 
 .contact__item-header {
-  margin-top: 28px;
-  margin-bottom: 10px;
+  margin-top: 23px;
+  margin-bottom: 4px;
 
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .contact__item-text {
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   color: $font-color-headers-bright;
   text-decoration: none;
 }
 
+.contact__item-text--email {
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: #283645;
+
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .contact {
+    padding-top: 34px;
+    padding-bottom: 28px;
+  }
+
+  .contact__slogan {
+    width: 400px;
+    margin: 0 auto;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   .contact__item-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: 21px;
   }
 
   .contact__item {
+    box-sizing: border-box;
     width: 50%;
     margin: 0 auto;
+  }
+
+  .contact__item--call {
+    padding-right: 11px;
+  }
+
+  .contact__item--write {
+    padding-left: 10px;
+  }
+
+  .contact__item-header--write {
+    padding-bottom: 7px;
+  }
+
+  .contact__item--visit {
+    padding-top: 24px;
+  }
+
+  .contact__item-header--visit {
+    padding-bottom: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
+
+  .contact__slogan {
+    width: 640px;
+    margin-bottom: 14px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .contact__item {
     width: 33%;
+  }
+
+  .contact__item-header--call {
+    margin-bottom: 24px;
+  }
+
+  .contact__item--write {
+    order: 2;
+  }
+
+  .contact__item-header--write {
+    margin-bottom: 26px;
+    padding-bottom: 0;
+  }
+
+  .contact__item--visit {
+    margin-top: -23px;
+  }
+
+  .contact__item-header--visit {
+    margin-bottom: 23px;
+    padding-bottom: 0;
   }
 }

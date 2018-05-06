@@ -1,0 +1,64 @@
+.mobile-os {
+  margin-top: 16px;
+}
+
+.mobile-os__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0;
+
+  list-style: none;
+}
+
+.mobile-os__item {
+  display: block;
+  margin: 0 15px;
+
+  vertical-align: bottom;
+}
+
+.mobile-os__download-app {
+  display: block;
+  width: 50px;
+  height: 60px;
+}
+
+.mobile-os__download-app--apple {
+  width: 47px;
+  height: 56px;
+
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+}
+
+.mobile-os__download-app--android {
+  width: 43px;
+  height: 47px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+}
+
+.mobile-os__download-app--windows-phone {
+  width: 44px;
+  height: 41px;
+
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-os {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-os {
+    margin-top: 53px;
+  }
+}
