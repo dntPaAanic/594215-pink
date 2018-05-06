@@ -39,6 +39,10 @@
 .slider__control-button--checked {
   background-color: white;
   border: 3px solid #283645;
+  
+  &:hover {
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: $desktop-width) {
