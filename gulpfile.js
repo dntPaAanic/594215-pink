@@ -113,7 +113,9 @@ gulp.task ("build", function(fn) {
     "style",
     "js",
     "images",
+    "webp",
     "symbols",
+    "html",
     fn
   );
 });
