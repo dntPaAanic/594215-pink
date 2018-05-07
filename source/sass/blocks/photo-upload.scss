@@ -119,7 +119,8 @@
   border: 3px solid #d22856;
   border-radius: 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
 
     background-color: #d22856;
@@ -140,7 +141,8 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(40, 54, 69, 0.3);
 
     border-color: rgba(40, 54, 69, 0.3);
