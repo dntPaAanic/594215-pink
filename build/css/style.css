@@ -2258,17 +2258,16 @@ figure {
   .feedback__field--emotion {
     width: 100%;
     margin-bottom: 0;
-    padding-bottom: 37px; }
+    padding-bottom: 39px; }
   .feedback__title--emotion {
-    left: 338px; }
-  .feedback__title--emotion {
+    left: 338px;
     padding-right: 38px;
     padding-left: 38px; }
   .feedback__textarea-text {
     min-height: 130px;
     margin-top: 21px; }
   .feedback__wrapper--submit {
-    margin-bottom: 0; }
+    margin-bottom: 2px; }
   .feedback__hide {
     display: inline; } }
 
