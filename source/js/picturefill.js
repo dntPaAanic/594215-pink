@@ -7,6 +7,7 @@
  * Firefox's early picture implementation (prior to FF41) is static and does
  * not react to viewport changes. This tiny module fixes this.
  */
+/* stylelint-disable */
 (function(window) {
 	/*jshint eqnull:true */
 	var ua = navigator.userAgent;
