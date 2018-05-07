@@ -77,14 +77,12 @@
 }
 
 .user-photo__comment {
+  flex-grow: 1;
   margin-top: 4px;
   margin-bottom: 0;
-  flex-grow: 1;
 
   line-height: 24px;
 }
-
-//
 
 .user-photo__like,
 .user-photo__like--panorama {
@@ -96,55 +94,30 @@
 .user-photo__button {
   width: 13px;
   height: 12px;
-  background-color: transparent;
-  border: none;
   padding: 0;
-  text-indent: -1000px;
   overflow: hidden;
+
+  text-indent: -1000px;
+
+  background-color: transparent;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 12px;
+  border: none;
   outline: none;
   cursor: pointer;
 }
 
 .user-photo__stats {
   margin-left: 19px;
+
   font-size: 12px;
   line-height: 24px;
-  text-transform: uppercase;
   color: $font-color-headers-bright;
+  text-transform: uppercase;
   text-decoration: none;
 }
-
-/*.user-photo__like,
-.user-photo__like--panorama {
-  position: relative;
-
-  margin-top: 11px;
-  margin-bottom: 0;
-  padding-left: 31px;
-
-  font-size: 12px;
-  line-height: 24px;
-  color: $font-color-headers-bright;
-  text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-
-    width: 14px;
-    height: 14px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}*/
 
 @media (min-width: $tablet-width) {
   .user-photo__image-panorama {
@@ -188,17 +161,11 @@
   .user-photo__like {
     margin-top: 12px;
     padding-left: 0;
-    /*
-
-    &::before {
-      top: 2px;
-      left: 226px;
-    } */
   }
 
   .user-photo__stats {
-    margin-right: auto;
     order: -1;
+    margin-right: auto;
     margin-left: 0;
   }
 
@@ -210,24 +177,6 @@
     position: absolute;
     top: 11px;
     right: 29px;
-/*
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 4px;
-      right: -30px;
-
-      width: 14px;
-      height: 14px;
-
-      background-image: url(../img/icon-heart.svg);
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }*/
   }
 
   .user-photo__image {

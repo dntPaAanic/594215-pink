@@ -381,21 +381,6 @@ figure {
 .page-header__cross {
   padding-left: 21px; }
 
-/*
-.page-header__burger,
-.page-header__cross {
-  fill: #ffffff;
-}
-
-.page-header__burger:hover,
-.page-header__cross:hover {
-  fill: #d22856;
-}
-
-.page-header__burger:active,
-.page-header__cross:active {
-  fill: rgba(210, 40, 86, 0.3);
-}*/
 @media (max-width: 659px) {
   .page-header__logo-tablet,
   .page-header__logo-desktop {
@@ -404,16 +389,7 @@ figure {
 @media (min-width: 660px) {
   .page-header__logo-mobile,
   .page-header__logo-desktop {
-    display: none; }
-  /*
-  .page-header__burger {
-    padding-top: 22px;
-  }
-
-  .page-header__cross {
-    padding-top: 22px;
-    padding-left: 21px;
-  }*/ }
+    display: none; } }
 
 @media (min-width: 1200px) {
   .page-header__logo-tablet {
@@ -515,9 +491,6 @@ figure {
     top: 44px; } }
 
 @media (min-width: 1200px) {
-  /*.main-nav {
-    display: block;
-  } */
   .main-nav--opened {
     background-color: rgba(0, 0, 0, 0.3); }
   .main-nav--nojs {
@@ -690,21 +663,6 @@ figure {
 .download {
   color: #ffffff;
   background-color: #1d2631; }
-  @media (min-width: 320px) {
-    .download::before {
-      content: "";
-      display: block;
-      height: 463px;
-      background-image: url("../img/bg-back-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover; } }
-  @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
-    .download::before {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover; } }
 
 .download__main {
   position: relative;
@@ -790,6 +748,22 @@ figure {
   font-weight: 300;
   line-height: 24px;
   text-align: center; }
+
+@media (min-width: 320px) {
+  .download::before {
+    content: "";
+    display: block;
+    height: 463px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; } }
+  @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
+    .download::before {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover; } }
 
 @media (min-width: 660px) {
   .download {
@@ -1182,11 +1156,11 @@ figure {
   text-transform: uppercase; }
 
 .user-photo__comment {
-  margin-top: 4px;
-  margin-bottom: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-top: 4px;
+  margin-bottom: 0;
   line-height: 24px; }
 
 .user-photo__like,
@@ -1202,15 +1176,15 @@ figure {
 .user-photo__button {
   width: 13px;
   height: 12px;
-  background-color: transparent;
-  border: none;
   padding: 0;
-  text-indent: -1000px;
   overflow: hidden;
+  text-indent: -1000px;
+  background-color: transparent;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 13px 12px;
+  border: none;
   outline: none;
   cursor: pointer; }
 
@@ -1218,37 +1192,10 @@ figure {
   margin-left: 19px;
   font-size: 12px;
   line-height: 24px;
-  text-transform: uppercase;
   color: #d22856;
+  text-transform: uppercase;
   text-decoration: none; }
 
-/*.user-photo__like,
-.user-photo__like--panorama {
-  position: relative;
-
-  margin-top: 11px;
-  margin-bottom: 0;
-  padding-left: 31px;
-
-  font-size: 12px;
-  line-height: 24px;
-  color: $font-color-headers-bright;
-  text-transform: uppercase;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-
-    width: 14px;
-    height: 14px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-}*/
 @media (min-width: 660px) {
   .user-photo__image-panorama {
     height: 510px; }
@@ -1294,43 +1241,19 @@ figure {
 @media (min-width: 660px) {
   .user-photo__like {
     margin-top: 12px;
-    padding-left: 0;
-    /*
-
-    &::before {
-      top: 2px;
-      left: 226px;
-    } */ }
+    padding-left: 0; }
   .user-photo__stats {
-    margin-right: auto;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    margin-right: auto;
     margin-left: 0; }
   .user-photo__stats--panorama {
     margin-right: 17px; }
   .user-photo__like--panorama {
     position: absolute;
     top: 11px;
-    right: 29px;
-    /*
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 4px;
-      right: -30px;
-
-      width: 14px;
-      height: 14px;
-
-      background-image: url(../img/icon-heart.svg);
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }*/ }
+    right: 29px; }
   .user-photo__image {
     display: block;
     width: 300px;
@@ -2846,13 +2769,13 @@ figure {
   text-indent: -1000px; }
 
 .price__feature-status--on {
-  background-image: url("../img/icon__yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 31px 21px; }
 
 .price__feature-status--off {
-  background: url("../img/icon__no.svg") no-repeat center;
+  background: url("../img/icon-no.svg") no-repeat center;
   background-size: 27px 26px; }
 
 .price__control {
