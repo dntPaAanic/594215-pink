@@ -23,7 +23,7 @@
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: 101% auto;
+  background-size: 101% 33px;
 }
 
 .features__item-wrapper {
@@ -64,7 +64,7 @@
 
 @media (max-width: $mobile-width-only) {
   .features__offer-wrap {
-    padding-top: 42px;
+    padding-top: 40px;
   }
 
   .features__wrapper::after {
@@ -100,6 +100,7 @@
 
   .features__wrapper {
     padding-top: 0;
+    background-size: 101% 50px;
   }
 
   .features__item-wrapper {
