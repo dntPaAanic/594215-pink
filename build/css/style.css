@@ -2450,7 +2450,7 @@ figure {
     background-size: 292px auto; } }
 
 .reviews {
-  padding-top: 14px;
+  padding-top: 16px;
   padding-bottom: 45px; }
 
 .reviews__wrapper {
@@ -2646,7 +2646,7 @@ figure {
     display: none; } }
 
 .price {
-  padding-top: 92px;
+  padding-top: 89px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
