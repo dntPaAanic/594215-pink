@@ -39,12 +39,14 @@
 .contact__item-text--email {
   &:hover {
     color: #283645;
+    text-decoration: underline;
   }
 
   &:active {
     color: #283645;
 
     opacity: 0.3;
+    text-decoration: none;
   }
 }
 

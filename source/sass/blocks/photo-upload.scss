@@ -57,7 +57,6 @@
   opacity: 0.3;
 
   &:hover {
-    cursor: pointer;
     opacity: 0.5;
   }
 }
@@ -76,7 +75,6 @@
 .photo-upload__fill,
 .photo-upload__contrast {
   opacity: 1;
-  // fill: #d22856;
 }
 
 .photo-upload__tool--active + .control-scale {
@@ -84,7 +82,7 @@
 }
 
 .photo-upload__tool--active + .control-scale .control-scale__toggle {
-  background-color: #d22856;
+  //background-color: #d22856;
 }
 
 .photo-upload__tool--contrast {
@@ -231,6 +229,10 @@
 
     background-size: 24px 22px;
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .photo-upload__crop {

@@ -27,19 +27,6 @@
     background-position: 20px 115px, 0 57px;
     background-size: 204px 204px, 241px 278px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 130px;
-      left: 38px;
-
-      width: 172px;
-      height: 172px;
-
-      background-color: white;
-      border-radius: 50%;
-    }
-
     &::after {
       content: "24";
       position: absolute;
@@ -89,14 +76,6 @@
 
     background-position: 23px 76px, 0 6px;
     background-size: 253px 253px, 298px 345px;
-
-    &::before {
-      top: 92px;
-      left: 39px;
-
-      width: 220px;
-      height: 220px;
-    }
 
     &::after {
       top: 135px;
