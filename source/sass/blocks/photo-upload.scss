@@ -83,7 +83,7 @@
 }
 
 .photo-upload__tool--active + .control-scale .control-scale__toggle {
-  background-color: #d22856;
+  //background-color: #d22856;
 }
 
 .photo-upload__tool--contrast {
@@ -230,6 +230,10 @@
 
     background-size: 24px 22px;
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .photo-upload__crop {

@@ -43,6 +43,11 @@
   border: 2px solid #cd2856;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #d22856;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -86,7 +91,7 @@
   .control-scale__toggle--fill {
     left: 339px;
   }
-  
+
   .control-scale__toggle--contrast {
     left: 252px;
   }
