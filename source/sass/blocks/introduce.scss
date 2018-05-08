@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  background-color: #283645;
+  background-color: $background-menu;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -38,6 +38,7 @@
   .introduce__title {
     min-height: 394px;
 
+    background-color: $background-menu;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% -43px;
@@ -63,6 +64,7 @@
   .introduce__title {
     min-height: 394px;
 
+    background-color: $background-menu;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;

@@ -1,5 +1,5 @@
 .price {
-  padding-top: 92px;
+  padding-top: 89px;
   padding-bottom: 26px;
 
   background-color: #f2f2f2;
@@ -21,19 +21,24 @@
 
 .price__wrapper {
   position: relative;
-  background-color: #f2f2f2;
+
+  max-width: 100%;
   padding-top: 0;
   padding-bottom: 20px;
-  max-width: 100%;
   overflow: hidden;
+
+  background-color: #f2f2f2;
 }
 
 .price__table {
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
-  border-collapse: collapse;
+
   width: 840px;
+
+  border-collapse: collapse;
+
+  transform: translateX(-50%);
 }
 
 .price__features-header {
@@ -43,17 +48,20 @@
 }
 
 .price__header + .price__header {
-  border-left: 2px solid transparent;
   border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
 
 .price__header {
   position: relative;
-  background-color: #283645;
-  color: #ffffff;
-  text-transform: uppercase;
+
   padding: 20px;
   padding-top: 17px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #283645;
   background-clip: padding-box;
 
   &:first-of-type {
@@ -62,10 +70,10 @@
   }
 
   &:last-of-type {
+    border-right: none;
+    border-left: none;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    border-left: none;
-    border-right: none;
   }
 }
 
@@ -74,8 +82,10 @@
   position: absolute;
   top: 0;
   left: -2px;
+
   width: 74px;
   height: 73px;
+
   background: url(../img/bg-hit.svg);
   background-repeat: no-repeat;
   background-position: top left;
@@ -86,23 +96,28 @@
   position: absolute;
   top: 12px;
   left: 4px;
+
   width: 78px;
   height: 73px;
-  transform: rotate(-45deg);
+
   font-weight: 400;
+
+  transform: rotate(-45deg);
 }
 
 .price__item {
   position: relative;
-  border-top: 0;
+
   padding-top: 25px;
   padding-right: 68px;
   padding-bottom: 18px;
   padding-left: 22px;
+
   background-color: #ffffff;
-  border: 2px solid #f2f2f2;
-  border-top-width: 0;
   background-clip: padding-box;
+  border: 2px solid #f2f2f2;
+  border-top: 0;
+  border-top-width: 0;
 }
 
 .price__item--feature-title {
@@ -118,46 +133,49 @@
 }
 
 .price__name {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
   margin: 0;
   margin-bottom: 1px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .price__price {
+  font-weight: 300;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 300;
 }
 
 .price__feature-status {
   position: absolute;
+  top: 13px;
+  right: 17px;
+
   display: block;
   width: 31px;
   height: 30px;
-  top: 13px;
-  right: 17px;
-  text-indent: -1000px;
   overflow: hidden;
+
+  text-indent: -1000px;
 }
 
 .price__feature-status--on {
-  background-image: url("../img/icon__yes.svg");
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 31px 21px;
 }
 
 .price__feature-status--off {
-  background: url("../img/icon__no.svg") no-repeat center;
+  background: url("../img/icon-no.svg") no-repeat center;
   background-size: 27px 26px;
 }
 
 .price__control {
-  padding-top: 42px;
   margin-right: 0;
   margin-left: 16px;
+  padding-top: 42px;
 }
 
 @media (min-width: $tablet-width) {
@@ -180,9 +198,9 @@
   }
 
   .price__header {
+    width: 25%;
     padding-top: 10px;
     padding-bottom: 9px;
-    width: 25%;
   }
 
   .price__header--flag::before {
@@ -193,6 +211,7 @@
   .price__flag {
     top: 4px;
     left: 6px;
+
     width: 61px;
     height: 61px;
   }
@@ -209,8 +228,9 @@
     position: relative;
     top: auto;
     right: auto;
-    margin-left: auto;
+
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -218,12 +238,14 @@
   .price__header--flag::before {
     width: 61px;
     height: 61px;
+
     background: url(../img/bg-hit-tablet.svg) no-repeat top left;
     background-size: 61px 61px;
   }
 
   .price__name {
     margin-bottom: 0;
+
     font-size: 16px;
   }
 
@@ -236,6 +258,7 @@
   .price {
     padding-bottom: 0;
   }
+
   .price__wrapper {
     padding-top: 65px;
     padding-bottom: 96px;
@@ -249,6 +272,7 @@
   .price__flag {
     top: 6px;
     left: 3px;
+
     width: 78px;
     height: 73px;
   }
@@ -260,5 +284,4 @@
   .price__feature {
     font-size: 18px;
   }
-
 }

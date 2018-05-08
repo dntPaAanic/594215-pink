@@ -587,7 +587,6 @@
   }
 
   .feedback__slogan {
-    //
     margin-bottom: 50px;
     padding-right: 70px;
     padding-left: 70px;
@@ -609,9 +608,7 @@
 
   .feedback__background-color--app {
     width: 50%;
-    //margin-bottom: 65px;
     margin-bottom: 55px;
-    //padding-top: 77px;
     padding-top: 27px;
     padding-left: 35px;
   }
@@ -743,14 +740,11 @@
   .feedback__field--emotion {
     width: 100%;
     margin-bottom: 0;
-    padding-bottom: 37px;
+    padding-bottom: 39px;
   }
 
   .feedback__title--emotion {
     left: 338px;
-  }
-
-  .feedback__title--emotion {
     padding-right: 38px;
     padding-left: 38px;
   }
@@ -761,7 +755,7 @@
   }
 
   .feedback__wrapper--submit {
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 
   .feedback__hide {
