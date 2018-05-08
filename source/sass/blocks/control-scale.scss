@@ -33,7 +33,7 @@
 .control-scale__toggle {
   position: absolute;
   top: -6px;
-  left: 14px;
+  left: 212px;
   z-index: 10;
 
   width: 10px;
@@ -64,7 +64,7 @@
   }
 
   .control-scale__toggle--fill {
-    left: 128px;
+    left: 81px;
   }
 
   .control-scale__toggle--contrast {
@@ -77,5 +77,17 @@
     width: 410px;
     padding-right: 30px;
     padding-left: 92px;
+  }
+
+  .control-scale__toggle--crop {
+    left: 163px;
+  }
+
+  .control-scale__toggle--fill {
+    left: 339px;
+  }
+  
+  .control-scale__toggle--contrast {
+    left: 252px;
   }
 }
