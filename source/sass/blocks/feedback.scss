@@ -484,12 +484,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2px;
+      right: 2px;
 
       display: block;
-      width: 62px;
-      height: 63px;
+      width: 61px;
+      height: 59px;
 
       background-color: #e5e5e5;
     }
