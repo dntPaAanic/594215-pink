@@ -86,7 +86,7 @@
   width: 74px;
   height: 73px;
 
-  background: url(../img/bg-hit.svg);
+  background: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 74px 73px;
@@ -239,7 +239,7 @@
     width: 61px;
     height: 61px;
 
-    background: url(../img/bg-hit-tablet.svg) no-repeat top left;
+    background: url("../img/bg-hit-tablet.svg") no-repeat top left;
     background-size: 61px 61px;
   }
 
