@@ -39,9 +39,15 @@
 .slider__control-button--checked {
   background-color: white;
   border: 3px solid #283645;
+  cursor: default;
 
   &:hover {
     background-color: #ffffff;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    opacity: 1;
   }
 }
 
